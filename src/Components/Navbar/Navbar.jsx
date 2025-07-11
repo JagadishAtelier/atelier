@@ -1,7 +1,17 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import './Navbar.css';
 import logo from '../../Assets/Logo.png'
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 500); // Change 100 to whatever height you want
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <div>
       <div className="fixed-nav">
@@ -12,13 +22,7 @@ function Navbar() {
           data-easing="ease"
           data-easing2="ease"
           role="banner"
-          className="navbar w-nav"
-          style={{
-            opacity: 1,
-            borderColor: 'rgba(255, 255, 255, 0.08)',
-            willChange: 'background',
-            backgroundColor: 'rgba(255, 255, 255, 0.05)',
-          }}
+          className={`navbar w-nav ${scrolled ? 'scrolled' : ''}`}
         >
           <div className="container navbar-container">
             <div className="navbar-holder">
@@ -36,7 +40,7 @@ function Navbar() {
                     className="brand-image"
                     style={{
                       willChange: 'filter',
-                      filter: 'invert(100%)',
+                      filter: scrolled ? 'none' : 'invert(100%)',
                     }}
                   />
                 </a>
@@ -68,7 +72,7 @@ function Navbar() {
                         rel="noopener noreferrer"
                         className="button w-button"
                       >
-                        Get Template
+                        Book Now
                       </a>
                     </div>
                   </div>
