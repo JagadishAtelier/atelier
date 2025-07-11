@@ -3,7 +3,7 @@ import './SmartFeatures.css';
 
 function SmartFeatures() {
   return (
-    <div>
+    <div style={{marginTop:"10%"}}>
       <section
         id="feature"
         data-w-id="563f3494-b7b7-2e37-b2f7-2fb5d68984a4"

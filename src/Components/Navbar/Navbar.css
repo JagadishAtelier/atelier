@@ -2497,7 +2497,6 @@ html {
   
   .navbar {
     z-index: 50;
-    border-bottom: 1px solid var(--colors--element-stroke-color);
     background-color: var(--colors--bg-color);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
