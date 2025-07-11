@@ -7,10 +7,12 @@ import HeroSection from './Components/HeroSection/HeroSection';
 import Features from './Components/Features/Features';
 import FAQSection from './Components/FAQSection/FAQSection';
 import SmartFeatures from './Components/SmartFeatures/SmartFeatures';
+import WebflowAnimationFix from './Components/WebflowAnimationFix/WebflowAnimationFix';
 function App() {
   return (
     <div>
       <Navbar/>
+      <WebflowAnimationFix/>
       <HeroSection/>
       <Features/>
       <FAQSection/>
