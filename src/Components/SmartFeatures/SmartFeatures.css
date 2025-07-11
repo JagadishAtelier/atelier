@@ -2145,16 +2145,6 @@
   }
   
   
-  .text-field {
-    padding-right: var(--s);
-    padding-left: var(--s);
-    border: 1px solid var(--neutral-02);
-    border-radius: var(--3xs);
-    background-color: var(--neutral-01);
-    height: 44px;
-    margin-bottom: 0;
-  }
-  
   .text-field:focus {
     border-color: var(--neutral-08);
   }
