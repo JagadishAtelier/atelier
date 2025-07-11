@@ -2027,10 +2027,6 @@
             let r = "TURNSTILE_LOADED";
             var l, c, d, s, u, f = {}, p = e(document), g = window.location, I = window.XDomainRequest && !window.atob, E = ".w-form", T = /e(-)?mail/i, y = /^\S+@\S+$/, m = window.alert, b = a.env();
             let O = p.find("[data-turnstile-sitekey]").data("turnstile-sitekey");
-            var v = /list-manage[1-9]?.com/i
-              , h = t.debounce(function() {
-                m("Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.")
-            }, 100);
             f.ready = f.design = f.preview = function() {
                 (function() {
                     O && ((o = document.createElement("script")).src = "https://challenges.cloudflare.com/turnstile/v0/api.js",

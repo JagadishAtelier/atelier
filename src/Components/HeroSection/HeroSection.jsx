@@ -87,11 +87,6 @@ style={{
                           <span>Thank you!</span> We&#x27;ll reach out soon
                         </div>
                       </div>
-                      <div className="error-message w-form-fail">
-                        <div>
-                          Oops! Something went wrong while submitting the form.
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

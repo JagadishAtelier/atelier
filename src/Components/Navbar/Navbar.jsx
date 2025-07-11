@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import logo from '../../Assets/Logo.png'
 function Navbar() {
   return (
     <div>
@@ -29,7 +30,7 @@ function Navbar() {
                   aria-label="home"
                 >
                   <img
-                    src="https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d406e2e36f6c00399f2_Logo%20Black.svg"
+                    src={logo}
                     loading="lazy"
                     alt="logo"
                     className="brand-image"
