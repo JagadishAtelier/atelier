@@ -62,7 +62,7 @@ function Navbar() {
                     </div>
                     <div className="nav-button-holder">
                       <a
-                        href="https://webflow.com/templates/designers/over-sight"
+                        href="/template"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="button w-button"
