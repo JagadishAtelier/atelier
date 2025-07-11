@@ -3647,6 +3647,13 @@
     .section.header, .section.integration {
       padding-top: var(--4xl);
     }
+    .smart-feature-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .smart-containers{
+        padding: 20px;
+    }
   
     .display-h5 {
       font-size: 1.25rem;

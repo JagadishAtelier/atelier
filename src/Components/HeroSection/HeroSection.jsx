@@ -186,43 +186,195 @@ function HeroSection() {
         </div>
 
         <div className="company-logo-wrapper">
-          <div className="company-logo-holder">
-            <div className="fade-in-on-scroll">
-              <div className="company-logo-holder-2">
-                {[...Array(2)].map((_, i) => (
-                  <div className="company-logo-container" key={i}>
-                    {[
-                      'Logo 03.svg',
-                      'Logo 01.svg',
-                      'Logo 02.svg',
-                      'Logo 04.svg',
-                      'Logo 05.svg',
-                      'Logo 01.svg',
-                      'Logo 02.svg',
-                      i === 1 ? 'Logo 05.svg' : 'Logo 03.svg',
-                    ].map((logo, index) => (
-                      <div className="company-logo-wrapper-2" key={index}>
-                        <img
-                          loading="lazy"
-                          src={`https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/${logo}`}
-                          alt=""
-                          className="company-logo-2"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                ))}
+      <div className="company-logo-holder">
+        <div
+          className="fade-in-on-scroll"
+          style={{
+            transform:
+              "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+            transformStyle: "preserve-3d",
+            opacity: 1,
+          }}
+        >
+          <div className="company-logo-holder-2">
+            <div
+              className="company-logo-container"
+              style={{
+                transform:
+                  "translate3d(-60.089%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                transformStyle: "preserve-3d",
+                willChange: "transform",
+              }}
+            >
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
               </div>
-              <div className="graident-for-logos"></div>
-              <div className="graident-for-logos right"></div>
-            </div>
-            <div className="fade-in-on-scroll">
-              <div className="container _100width">
-                <div className="line"></div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b82_Logo%2004.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b79_Logo%2005.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82974e65f89a3c0ca8baf_Logo%2005.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
               </div>
             </div>
+
+            <div
+              className="company-logo-container"
+              style={{
+                transform:
+                  "translate3d(-60.089%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                transformStyle: "preserve-3d",
+                willChange: "transform",
+              }}
+            >
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b82_Logo%2004.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b79_Logo%2005.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+              <div className="company-logo-wrapper-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82974e65f89a3c0ca8baf_Logo%2005.svg"
+                  alt=""
+                  className="company-logo-2"
+                />
+              </div>
+            </div>
+
+            <div className="graident-for-logos"></div>
+            <div className="graident-for-logos right"></div>
           </div>
         </div>
+
+        <div
+          className="fade-in-on-scroll"
+          style={{
+            transform:
+              "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+            transformStyle: "preserve-3d",
+            opacity: 1,
+          }}
+        >
+          <div className="container _100width">
+            <div
+              className="line"
+              style={{
+                transform:
+                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                transformStyle: "preserve-3d",
+                opacity: 1,
+              }}
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   );

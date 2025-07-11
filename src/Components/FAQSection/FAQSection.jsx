@@ -70,40 +70,6 @@ function FAQSection() {
                 Our team of experienced financial advisors is here to provide
                 personalized guidance and support.
               </p>
-              <div
-                className="faq-btn-wrap"
-                style={{
-                  opacity: 1,
-                  transform:
-                    "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                  transformStyle: "preserve-3d",
-                }}
-              >
-                <a
-                  href="/inner-pages/contact"
-                  className="secondary-button w-inline-block"
-                >
-                  <div className="secondary-btn-wrap">
-                    <div className="secondary-text-wrap">
-                      <div className="secondary-btn-text">Contact us</div>
-                      <div className="secondary-btn-text">Contact us</div>
-                    </div>
-                    <div className="secondary-icon-wrap">
-                      <img
-                        src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/681cc09d12f97f72f483b28a_Arrow%20Icon%20(1).svg"
-                        alt="Arrow Icon"
-                        className="secondary-btn-icon"
-                      />
-                      <img
-                        src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/681cc09d12f97f72f483b28a_Arrow%20Icon%20(1).svg"
-                        alt="Arrow Icon"
-                        className="secondary-btn-icon"
-                      />
-                    </div>
-                  </div>
-                  <div className="secondary-btn-bg" style={{ width: "0%" }}></div>
-                </a>
-              </div>
             </div>
 
             {/* FAQ Right Side */}

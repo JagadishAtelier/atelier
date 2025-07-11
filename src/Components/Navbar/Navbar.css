@@ -5039,6 +5039,7 @@ html {
   
   .company-logo-wrapper {
     padding-top: 160px;
+    z-index: 3;
   }
   
   .bg-video {
