@@ -1841,7 +1841,6 @@
   
   .section.feature {
     z-index: 11;
-    background-color: var(--neutral-01);
     position: relative;
   }
   

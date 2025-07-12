@@ -1,0 +1,197 @@
+.cta-container {
+    max-width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10%;
+}
+.w-layout-blockcontainer-cta {
+    max-width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.w-container-cta {
+    max-width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-wrapper {
+    background-image: url(https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/681d638f2ff391909e99c835_CTA%20BG%20Image.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-left: 80px;
+    display: flex
+;
+    overflow: hidden;
+}
+.cta-left-wrap {
+    max-width: 388px;
+}
+.cta-right-wrap {
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 523px;
+    display: flex
+;
+    overflow: hidden;
+}
+.cta-title {
+    background-image: linear-gradient(180deg, var(--white), var(--rgb-color-01));
+    -webkit-text-fill-color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: -2.08px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 120%;
+}
+.cta-details {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 150%;
+    color: gray;
+}
+.cta-button-wrap {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex
+;
+}
+.cta-secondary-button {
+    border: 1px solid var(--primary-color);
+    background-color: blue;
+    text-transform: capitalize;
+    border-radius: 8px;
+    padding: 15px 26px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+.cta-secondary-btn-wrap {
+    z-index: 1;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex
+;
+    position: relative;
+}
+.cta-secondary-btn-bg {
+    background-color: var(--black);
+    position: absolute;
+    inset: 0% auto 0% 0%;
+}
+.cta-secondary-text-wrap {
+    z-index: 1;
+    height: 24px;
+    overflow: hidden;
+}
+.cta-secondary-icon-wrap {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 14px;
+    height: 14px;
+    display: flex
+;
+    overflow: hidden;
+    transform: rotate(-45deg);
+}
+.cta-secondary-btn-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.cta-right-wrap {
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 523px;
+    display: flex
+;
+    overflow: hidden;
+}
+/* Tablet (≤991px) */
+@media screen and (max-width: 991px) {
+    .cta-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 30px;
+      background-size: cover;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    .cta-left-wrap,
+    .cta-right-wrap {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .cta-title {
+      font-size: 40px;
+    }
+  
+    .cta-details {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  
+    .cta-button-wrap {
+      justify-content: center;
+    }
+  }
+  
+  /* Mobile (≤767px) */
+  @media screen and (max-width: 767px) {
+    .cta-wrapper {
+      padding: 40px 20px;
+      border-radius: 16px;
+    }
+  
+    .cta-title {
+      font-size: 28px;
+      letter-spacing: -1px;
+    }
+  
+    .cta-details {
+      font-size: 14px;
+    }
+  
+    .cta-secondary-button {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  
+    .cta-secondary-btn-text {
+      font-size: 14px;
+    }
+  
+    .cta-secondary-icon-wrap {
+      width: 12px;
+      height: 12px;
+    }
+  
+    .cta-button-wrap {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
