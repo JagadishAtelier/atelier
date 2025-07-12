@@ -2010,19 +2010,11 @@ html {
     text-align: left;
     cursor: pointer;
     color: #222;
-    background-color: #ddd;
+    background-color: none !important;
     padding: 9px 30px;
     text-decoration: none;
     display: inline-block;
     position: relative;
-  }
-  
-  .w-tab-link.w--current {
-    background-color: #c8c8c8;
-  }
-  
-  .w-tab-link:focus {
-    outline: 0;
   }
   
   .w-tab-content {
@@ -3502,16 +3494,6 @@ html {
   .blog-details---title {
     font-size: 50px;
     font-weight: 600;
-  }
-  
-  .blog-details-content {
-    grid-column-gap: 18px;
-    grid-row-gap: 18px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 710px;
-    display: flex;
   }
   
   .form-block-2 {

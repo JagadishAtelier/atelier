@@ -15,7 +15,7 @@ function HeroSection() {
         start: "top 60%",          // when the top of dashboard hits 60% viewport
         end: "+=1500",             // total scroll distance
         scrub: true,
-        markers: false
+        markers: false,
       }
     });
 

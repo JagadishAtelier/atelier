@@ -1518,15 +1518,10 @@
     text-align: left;
     cursor: pointer;
     color: #222;
-    background-color: #ddd;
     padding: 9px 30px;
     text-decoration: none;
     display: inline-block;
     position: relative;
-  }
-  
-  .w-tab-link.w--current {
-    background-color: #c8c8c8;
   }
   
   .w-tab-link:focus {
