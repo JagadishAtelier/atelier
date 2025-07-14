@@ -13,7 +13,7 @@ import SmartFeatures from './Components/SmartFeatures/SmartFeatures';
 import BlogPost from './Components/BlogPost/BlogPost';
 import BlogDetails from './Components/BlogDetails/BlogDetails';
 import AboutPageHero from './Components/AboutPage/AboutPageHero/AboutPageHero';
-
+import PortfolioFooter from './Components/PortfolioFooter/PortfolioFooter'
 function HomePage() {
   return (
     <>
@@ -36,6 +36,7 @@ function App() {
         <Route path="/blog/:name" element={<BlogDetails />} />
         <Route path="/about" element={<AboutPageHero/>} />
       </Routes>
+      <PortfolioFooter/>
     </Router>
   );
 }

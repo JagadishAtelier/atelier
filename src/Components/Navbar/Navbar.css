@@ -1,21 +1,4 @@
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    font-family: sans-serif;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-    display: block;
-  }
-  
-  audio, canvas, progress, video {
-    vertical-align: baseline;
-    display: inline-block;
-  }
+
   
   audio:not([controls]) {
     height: 0;
@@ -2015,6 +1998,8 @@ html {
     text-decoration: none;
     display: inline-block;
     position: relative;
+    height: max-content;
+    width: 140px !important;
   }
   
   .w-tab-content {
@@ -2378,7 +2363,7 @@ html {
     text-align: center;
     border: 1px solid #a6b0fb59;
     border-radius: 50px;
-    padding: 12px 32px;
+    padding: 10px 32px;
     font-size: 15px;
     font-weight: 500;
     transition: transform .325s cubic-bezier(.175, .885, .32, 1.275), background-position .25s, background-color .45s;
@@ -3011,7 +2996,7 @@ html {
   }
   
   .brand {
-    height: 180px;
+    height: 60px;
   }
   
   .title-holder {
@@ -5020,7 +5005,6 @@ html {
   }
   
   .company-logo-wrapper {
-    padding-top: 160px;
     z-index: 3;
   }
   

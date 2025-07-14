@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./BlogPost.css";
 import { useNavigate } from "react-router-dom";
 const categories = ["All Articles", "Marketing", "Technology"];
-
+import { useRef } from "react";
 const blogData = [
   {
     image: "https://cdn.prod.website-files.com/67a39d8671f8e918b2289409/67b539de150af8f39e190f83_Frame%202147224714%20(5).png",
@@ -57,11 +57,21 @@ const blogData = [
 function BlogPost() {
   const [selectedCategory, setSelectedCategory] = useState("All Articles");
     const navigate = useNavigate()
+    const sliderRef = useRef(null);
   const filteredData =
     selectedCategory === "All Articles"
       ? blogData
       : blogData.filter((item) => item.category === selectedCategory);
-
+      const scrollSlider = (direction) => {
+        const scrollAmount = 320 + 20; // card width + gap
+        if (sliderRef.current) {
+          sliderRef.current.scrollBy({
+            left: direction === "left" ? -scrollAmount : scrollAmount,
+            behavior: "smooth",
+          });
+        }
+      };
+      
   return (
     <div className=" blog-container">
 
@@ -84,8 +94,12 @@ function BlogPost() {
           ))}
         </div>
         </div>
-        <div className="blog-collection-list">
-  <div className="slider-track">
+                {/* Slider Controls */}
+                <div className="blog-slider-controls">
+          <button onClick={() => scrollSlider("left")} className="slider-btn">‹</button>
+          <button onClick={() => scrollSlider("right")} className="slider-btn">›</button>
+        </div>
+        <div className="blog-collection-list"ref={sliderRef}>
     {[...filteredData, ...filteredData].map((post, idx) => (
       <div className="blog-collection-item" key={idx + post.name}>
         <div className="blog-card" onClick={()=>navigate(`/blog/${post.name}`,{state:{post}})} style={{cursor:"pointer"}}>
@@ -114,7 +128,7 @@ function BlogPost() {
         </div>
       </div>
     ))}
-  </div>
+
 </div>
 
       </div>

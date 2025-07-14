@@ -1,5 +1,22 @@
+.feature-card {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  perspective: 1000px;
+}
 
-  
+.feature-card:hover {
+  z-index: 5;
+}
+
+
   legend {
     border: 0;
     padding: 0;

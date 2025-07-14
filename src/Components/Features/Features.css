@@ -1,5 +1,8 @@
 
-
+.svg-image{
+  width: 100%;
+  height: 300px;
+}
 a {
   background-color: #0000;
 }

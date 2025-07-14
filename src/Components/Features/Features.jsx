@@ -1,6 +1,8 @@
 import React from 'react'
 import './Features.css'
-
+import Lottie from "lottie-react";
+import animationData from "../../Assets/data.json"; 
+import svgData from '../../Assets/svg.json'
 function Features() {
   return (
     <section className="section easy">
@@ -34,19 +36,12 @@ function Features() {
                 className="easy-item-wrap"
               >
                 <div className="easy-image-wrap _01">
-                  <div
-                    data-w-id="6eb28c92-7adb-585e-7358-5438dc2b7f6c"
-                    data-is-ix2-target="1"
-                    className="lottie"
-                    data-animation-type="lottie"
-                    data-src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/685ede9ad47ecba278c234d8_data.json"
-                    data-loop="0"
-                    data-direction="1"
-                    data-autoplay="0"
-                    data-renderer="svg"
-                    data-default-duration="0"
-                    data-duration="3.0166666666666666"
-                  ></div>
+    <Lottie
+      animationData={animationData}
+      loop={false}
+      autoplay={true}
+      className="svg-image"
+    />
                 </div>
                 <div className="easy-item-details-wrap">
                   <div className="easy-item-title">Advance Analysic</div>
@@ -63,19 +58,12 @@ function Features() {
                 className="easy-item-wrap"
               >
                 <div className="easy-image-wrap _02">
-                  <div
-                    className="feature-lottie-ii"
-                    data-w-id="13e4e5b2-1eef-e416-7eaf-71b6e1d10aaf"
-                    data-animation-type="lottie"
-                    data-src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/685ee5a620a5accb70118091_data.json"
-                    data-loop="0"
-                    data-direction="1"
-                    data-autoplay="1"
-                    data-is-ix2-target="0"
-                    data-renderer="svg"
-                    data-default-duration="0"
-                    data-duration="0"
-                  ></div>
+                <Lottie
+      animationData={svgData}
+      loop={false}
+      autoplay={true}
+      className="svg-image"
+    />
                   <img
                     src="https://cdn.prod.website-files.com/placeholder.svg"
                     loading="lazy"

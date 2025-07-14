@@ -2,22 +2,32 @@ import React, { useEffect,useRef } from 'react';
 import './HeroSection.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+const logos = [
+  "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg",
+  "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg",
+  "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg",
+  "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b82_Logo%2004.svg",
+  "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b79_Logo%2005.svg",
+  "https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82974e65f89a3c0ca8baf_Logo%2005.svg",
+];
+
 gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
   useEffect(() => {
     const dash = document.querySelector(".dashobard-wrapper");
     const alignX = dash.offsetWidth / 2;
-    const alignY = dash.offsetHeight / 6;
+    const alignY = dash.offsetHeight / 0.95;
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".dashobard-wrapper",
-        start: "top 60%",          // when the top of dashboard hits 60% viewport
-        end: "+=1500",             // total scroll distance
+        start: "top 40%",          // when the top of dashboard hits 60% viewport
+        end: "+=3000",             // total scroll distance
         scrub: true,
         markers: false,
       }
-    });
+    },0);
+    
 
     // 🟪 Step 1: Move diagonally to alignment
     tl.to(".dashobard-wrapper", {
@@ -29,7 +39,7 @@ function HeroSection() {
 
     // 🟨 Step 2: After alignment, keep going down on scroll
     tl.to(".dashobard-wrapper", {
-      y: alignY + 600, // move down from aligned position
+      y: alignY + 300, // move down from aligned position
       ease: "none",
       duration: 1
     });
@@ -186,172 +196,20 @@ function HeroSection() {
         </div>
 
         <div className="company-logo-wrapper">
+      <div className='slider-tracker'>
       <div className="company-logo-holder">
-        <div
-          className="fade-in-on-scroll"
-          style={{
-            transform:
-              "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-            opacity: 1,
-          }}
-        >
-          <div className="company-logo-holder-2">
-            <div
-              className="company-logo-container"
-              style={{
-                transform:
-                  "translate3d(-60.089%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-                willChange: "transform",
-              }}
-            >
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b82_Logo%2004.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b79_Logo%2005.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82974e65f89a3c0ca8baf_Logo%2005.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-            </div>
-
-            <div
-              className="company-logo-container"
-              style={{
-                transform:
-                  "translate3d(-60.089%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-                willChange: "transform",
-              }}
-            >
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b82_Logo%2004.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b79_Logo%2005.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-              <div className="company-logo-wrapper-2">
-                <img
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82974e65f89a3c0ca8baf_Logo%2005.svg"
-                  alt=""
-                  className="company-logo-2"
-                />
-              </div>
-            </div>
-
-            <div className="graident-for-logos"></div>
-            <div className="graident-for-logos right"></div>
-          </div>
-        </div>
-
+        <div className="company-logo-holder-2">
+  {[...logos, ...logos].map((logo, idx) => (
+    <div className="company-logo-wrapper-2" key={idx}>
+      <img
+        loading="lazy"
+        src={logo}
+        alt={`Company Logo ${idx + 1}`}
+        className="company-logo-2"
+      />
+    </div>
+  ))}
+</div>
         <div
           className="fade-in-on-scroll"
           style={{
@@ -373,6 +231,7 @@ function HeroSection() {
             ></div>
           </div>
         </div>
+      </div>
       </div>
     </div>
       </div>
