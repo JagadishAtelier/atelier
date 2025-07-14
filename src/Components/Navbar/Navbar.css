@@ -1413,7 +1413,8 @@
   
   @media screen and (max-width: 767px) {
     .w-nav-brand {
-      padding-left: 10px;
+      height: 45px !important;
+      width: fit-content !important;
     }
   }
   
@@ -1953,10 +1954,6 @@
   
     .w-nav[data-collapse="small"] .w-nav-button {
       display: block;
-    }
-  
-    .w-nav-brand {
-      padding-left: 10px;
     }
   }
   
@@ -5417,8 +5414,8 @@
   
     .secondary-hero-holder {
       height: auto;
-      padding-top: 300px;
-      padding-bottom: 150px;
+      padding-top: 210px;
+      padding-bottom:0;
     }
   
     .bg-video {
@@ -6261,11 +6258,11 @@
     }
   
     .secondary-hero-holder {
-      padding-top: 240px;
+      padding-top: 210px;
     }
   
     .company-logo-wrapper {
-      padding-top: 120px;
+      padding-top:0;
     }
   }
   

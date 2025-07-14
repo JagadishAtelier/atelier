@@ -103,12 +103,17 @@
     width: 4px;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
+
 .about-bus-approach-line {
-    background-color: var(--white);
-    border-radius: 10px;
-    width: 4px;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #007bff;
+  transform: scaleY(0);
+  transform-origin: top; /* default, but will change dynamically */
+  transition: transform 7s ease;
 }
 .about-business-item-flex-wrap {
     grid-column-gap: 16px;

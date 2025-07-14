@@ -1,7 +1,32 @@
 import React from 'react';
 import './AboutBusiness.css';
-
+import { useEffect } from 'react';
 function AboutBusiness() {
+  useEffect(() => {
+    const line = document.querySelector('.about-bus-approach-line');
+    const wrap = document.querySelector('.about-bus-approach-line-wrap');
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+
+      const rect = wrap.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Check if it's in the viewport
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        // Fill the line
+        line.style.transformOrigin = scrollDirection === 'down' ? 'top' : 'bottom';
+        line.style.transform = 'scaleY(1)';
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <div>
       <section

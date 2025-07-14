@@ -47,7 +47,7 @@
 }
 .secondary-button.gray {
     border-color: var(--transparent);
-    background-color: gray;
+    background-color: blue;
     text-decoration: none;
     color: black;
 }

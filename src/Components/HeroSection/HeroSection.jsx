@@ -14,37 +14,66 @@ const logos = [
 gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  
     const dash = document.querySelector(".dashobard-wrapper");
-    const alignX = dash.offsetWidth / 2;
-    const alignY = dash.offsetHeight / 0.95;
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".dashobard-wrapper",
-        start: "top 40%",          // when the top of dashboard hits 60% viewport
-        end: "+=3000",             // total scroll distance
-        scrub: true,
-        markers: false,
+  
+    ScrollTrigger.matchMedia({
+      // Desktop
+      "(min-width: 768px)": function () {
+        const alignX = dash.offsetWidth / 2;
+        const alignY = dash.offsetHeight / 0.95;
+  
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".dashobard-wrapper",
+            start: "top 40%",
+            end: "+=3000",
+            scrub: true,
+            markers: false,
+          }
+        });
+  
+        tl.to(".dashobard-wrapper", {
+          x: alignX,
+          y: alignY,
+          ease: "power2.out",
+          duration: 1,
+        }).to(".dashobard-wrapper", {
+          y: alignY + 300,
+          ease: "none",
+          duration: 1,
+        });
+      },
+  
+      // Mobile
+      "(max-width: 767px)": function () {
+        const alignX = 0; // Minimal horizontal movement
+        const alignY = dash.offsetHeight / 1.2;
+  
+        const tlMobile = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".dashobard-wrapper",
+            start: "top 70%",
+            end: "+=1000",
+            scrub: true,
+            markers: false,
+          }
+        });
+  
+        tlMobile.to(".dashobard-wrapper", {
+          y: alignY,
+          ease: "power2.out",
+          duration: 1,
+        }).to(".dashobard-wrapper", {
+          y: alignY + 150,
+          ease: "none",
+          duration: 1,
+        });
       }
-    },0);
-    
-
-    // 🟪 Step 1: Move diagonally to alignment
-    tl.to(".dashobard-wrapper", {
-      x: alignX,
-      y: alignY,
-      ease: "power2.out",
-      duration: 1
     });
-
-    // 🟨 Step 2: After alignment, keep going down on scroll
-    tl.to(".dashobard-wrapper", {
-      y: alignY + 300, // move down from aligned position
-      ease: "none",
-      duration: 1
-    });
-
   }, []);
+  
   
   
   

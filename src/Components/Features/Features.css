@@ -3781,8 +3781,8 @@ figure {
 }
 
 .section-sub-title {
-  background-color: var(--white);
-  color: var(--black);
+  background-color:black;
+  color:white;
   border-radius: 65px;
   padding: 4px 12px;
   font-size: 12px;
@@ -7557,7 +7557,7 @@ figure {
   }
 
   .section.contact, .section.blog, .section.checkout, .section.feature {
-    padding-top: 160px;
+    padding-top:0;
   }
 
   .section.automate {
@@ -8782,8 +8782,8 @@ figure {
 
   .section.feature {
     background-size: cover;
-    padding-top: 140px;
-    padding-bottom: 80px;
+    padding-top:0;
+    padding-bottom:0;
   }
 
   .section.automate {
@@ -10242,8 +10242,8 @@ figure {
   }
 
   .section.feature {
-    padding-top: 120px;
-    padding-bottom: 30px;
+    padding-top:0;
+    padding-bottom:0;
   }
 
   .section.automate {

@@ -1,8 +1,11 @@
 import React,{useEffect,useState} from 'react';
 import './Navbar.css';
 import logo from '../../Assets/AST.png'
+import { useLocation } from 'react-router-dom';
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +15,8 @@ function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  const isNotHome = location.pathname !== '/';
+  const isWhiteBackground = scrolled || isNotHome;
   return (
     <div>
       <div className="fixed-nav">
@@ -22,7 +27,7 @@ function Navbar() {
           data-easing="ease"
           data-easing2="ease"
           role="banner"
-          className={`navbar w-nav ${scrolled ? 'scrolled' : ''}`}
+          className={`navbar w-nav ${isWhiteBackground ? 'scrolled' : ''}`}
         >
           <div className="container navbar-container">
             <div className="navbar-holder">
@@ -39,12 +44,15 @@ function Navbar() {
                     alt="logo"
                     className="brand-image"
                     style={{
-                      willChange: 'filter',
-                      filter: scrolled ? 'none' : 'invert(100%)',
+                      filter: isWhiteBackground ? 'none' : 'invert(100%)',
                     }}
                   />
                 </a>
-                <nav role="navigation" className="nav-menu w-nav-menu">
+                <nav
+  role="navigation"
+  className={`nav-menu w-nav-menu ${isMenuOpen ? 'open' : ''}`}
+>
+
                   <div className="nav-menu-link-holder">
                     <div className="nav-menu-link-container">
                       <div className="nav-links">
@@ -82,9 +90,9 @@ function Navbar() {
                   aria-label="menu"
                   role="button"
                   tabIndex={0}
-                  aria-controls="w-nav-overlay-0"
                   aria-haspopup="menu"
-                  aria-expanded="false"
+                  aria-expanded={isMenuOpen}
+                  onClick={() => setIsMenuOpen(prev => !prev)}
                 >
                   <div className="icon w-icon-nav-menu"></div>
                 </div>

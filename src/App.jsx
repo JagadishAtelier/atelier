@@ -14,6 +14,7 @@ import BlogPost from './Components/BlogPost/BlogPost';
 import BlogDetails from './Components/BlogDetails/BlogDetails';
 import AboutPageHero from './Components/AboutPage/AboutPageHero/AboutPageHero';
 import PortfolioFooter from './Components/PortfolioFooter/PortfolioFooter'
+import ContactPage from './Components/ContactPage/ContactPage';
 function HomePage() {
   return (
     <>
@@ -35,6 +36,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/blog/:name" element={<BlogDetails />} />
         <Route path="/about" element={<AboutPageHero/>} />
+        <Route path="/inner-pages/contact" element={<ContactPage/>} />
       </Routes>
       <PortfolioFooter/>
     </Router>
