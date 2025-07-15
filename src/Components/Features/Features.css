@@ -5718,7 +5718,6 @@ figure {
 }
 
 .easy-item-wrap {
-  border: 1px solid var(--fill-color);
   background-color: rgb(30, 29, 29);
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
@@ -5728,10 +5727,19 @@ figure {
   align-items: center;
   transition: border-color .3s;
   display: flex;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  perspective: 1000px;
 }
 
+
 .easy-item-wrap:hover {
-  border: 1px solid #ffffff3d;
+  z-index: 5;
 }
 
 .easy-image-wrap {
@@ -5796,13 +5804,20 @@ figure {
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px;
-    transition: border-color .3s;
-    display: flex
+    display: flex;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    perspective: 1000px;
 ;
 }
 
 .easy-single-wrap:hover {
-  border: 1px solid #ffffff3d;
+z-index: 5;
 }
 
 .easy-single-wrap._01 {
@@ -5810,8 +5825,18 @@ figure {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  perspective: 1000px;
 }
-
+.easy-single-wrap._01{
+  z-index: 5;
+}
 .easy-single-image {
   flex-flow: column;
   justify-content: center;
