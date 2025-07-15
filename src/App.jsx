@@ -13,8 +13,8 @@ import SmartFeatures from './Components/SmartFeatures/SmartFeatures';
 import BlogPost from './Components/BlogPost/BlogPost';
 import BlogDetails from './Components/BlogDetails/BlogDetails';
 import AboutPageHero from './Components/AboutPage/AboutPageHero/AboutPageHero';
-import PortfolioFooter from './Components/PortfolioFooter/PortfolioFooter'
 import ContactPage from './Components/ContactPage/ContactPage';
+import FooterSection from './Components/FooterSection/FooterSection';
 function HomePage() {
   return (
     <>
@@ -38,7 +38,7 @@ function App() {
         <Route path="/about" element={<AboutPageHero/>} />
         <Route path="/inner-pages/contact" element={<ContactPage/>} />
       </Routes>
-      <PortfolioFooter/>
+      <FooterSection/>
     </Router>
   );
 }

@@ -1,5 +1,7 @@
 
-  
+.mobile-nav-menu {
+  display: none;
+}
   audio:not([controls]) {
     height: 0;
     display: none;
@@ -2519,7 +2521,7 @@
   }
   
   .nav-links {
-    grid-column-gap: 6px;
+    grid-column-gap: 30px;
     justify-content: flex-start;
     align-items: center;
     padding: 6px 12px;
@@ -2994,6 +2996,7 @@
   
   .brand {
     height: 60px;
+    width: 180px;
   }
   
   .title-holder {
@@ -3722,7 +3725,6 @@
     flex-flow: column;
     justify-content: flex-start;
     align-items: stretch;
-    padding-top: 32px;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -4270,7 +4272,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 32px;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -5428,6 +5429,48 @@
   }
   
   @media screen and (max-width: 767px) {
+    .mobile-nav-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px; /* adjust to match navbar height */
+      right: 0;
+      z-index: 1000;
+      background-color: white;
+      padding: 1rem;
+      gap: 1rem;
+      width: 50%;
+    }
+  
+    .mobile-nav-link {
+      color: black;
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+  
+    .mobile-nav-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  
+    .mobile-nav-button {
+      background: linear-gradient(122deg, var(--_main---main-02), var(--_main---main-01));
+      color: white;
+      border: none;
+      border-radius: var(--2xl);
+      padding: 0.75rem 1rem;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    .menu-button {
+      display: block;
+      cursor: pointer;
+      z-index: 1001;
+    }
     h1 {
       font-size: 30px;
     }

@@ -44,13 +44,13 @@ function Navbar() {
                     alt="logo"
                     className="brand-image"
                     style={{
-                      filter: isWhiteBackground ? 'none' : 'invert(100%)',
+                      filter: isWhiteBackground ? 'none' : '',
                     }}
                   />
                 </a>
                 <nav
   role="navigation"
-  className={`nav-menu w-nav-menu ${isMenuOpen ? 'open' : ''}`}
+  className='nav-menu w-nav-menu'
 >
 
                   <div className="nav-menu-link-holder">
@@ -75,7 +75,7 @@ function Navbar() {
                     </div>
                     <div className="nav-button-holder">
                       <a
-                        href="/template"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="button w-button"
@@ -96,6 +96,16 @@ function Navbar() {
                 >
                   <div className="icon w-icon-nav-menu"></div>
                 </div>
+                {isMenuOpen && (
+          <div className="mobile-nav-menu">
+            <a href="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Home</a>
+            <a href="/features" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
+            <a href="/about" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>About</a>
+            <a href="/blog" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Blog</a>
+            <a href="/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            <a href="#" className="mobile-nav-button" onClick={() => setIsMenuOpen(false)}>Book Now</a>
+          </div>
+        )}
               </div>
             </div>
           </div>

@@ -22,7 +22,7 @@ function HeroSection() {
       // Desktop
       "(min-width: 768px)": function () {
         const alignX = dash.offsetWidth / 2;
-        const alignY = dash.offsetHeight / 0.95;
+        const alignY = dash.offsetHeight / 0.8;
   
         const tl = gsap.timeline({
           scrollTrigger: {
@@ -41,6 +41,7 @@ function HeroSection() {
           duration: 1,
         }).to(".dashobard-wrapper", {
           y: alignY + 300,
+          rotation:40,
           ease: "none",
           duration: 1,
         });
