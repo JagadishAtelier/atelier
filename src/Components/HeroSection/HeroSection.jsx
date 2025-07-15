@@ -17,70 +17,91 @@ function HeroSection() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
   
-    const dash = document.querySelector(".dashboad-holder");
+    const dash = document.querySelector(".dashboad-holder img");
   
-    ScrollTrigger.matchMedia({
-      // Desktop
-      "(min-width: 768px)": function () {
-        const alignX = dash.offsetWidth / 2;
-        const alignY = dash.offsetHeight / 0.8;
+    if (!dash) return;
   
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".dashboad-holder",
-            start: "top 40%",
-            end: "+=3000",
-            scrub: true,
-            markers: false,
-          }
-        });
+    const handleImageLoad = () => {
+      ScrollTrigger.matchMedia({
+        "(min-width: 768px)": function () {
+          const alignX = dash.offsetWidth / 2;
+          const alignY = dash.offsetHeight / 0.8;
   
-        tl.to(".dashboad-holder", {
-          x: alignX,
-          y: alignY,
-          ease: "power2.out",
-          duration: 1,
-        })
-        .to(dash, {
-          boxShadow: "-10px -10px 30px rgba(0, 0, 0, 0.80)",
-          ease: "none",
-          duration: 1,
-        }, .01)
-        .to(".dashboad-holder", {
-          y: alignY + 300,
-          rotation:40,
-          ease: "none",
-          duration: 1,
-        });
-      },
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".dashboad-holder",
+              start: "top 40%",
+              end: "+=3000",
+              scrub: true,
+              markers: false,
+            },
+          });
   
-      // Mobile
-      "(max-width: 767px)": function () {
-        const alignX = 0; // Minimal horizontal movement
-        const alignY = dash.offsetHeight / 1.2;
+          tl.to(".dashboad-holder", {
+            x: alignX,
+            y: alignY,
+            ease: "power2.out",
+            duration: 1,
+          })
+            .to(
+              ".dashboad-holder",
+              {
+                boxShadow: "-10px -10px 30px rgba(0, 0, 0, 0.80)",
+                ease: "none",
+                duration: 1,
+              },
+              0.01
+            )
+            .to(".dashboad-holder", {
+              y: alignY + 300,
+              rotation: 40,
+              ease: "none",
+              duration: 1,
+            });
+        },
   
-        const tlMobile = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".dashboad-holder",
-            start: "top 70%",
-            end: "+=1000",
-            scrub: true,
-            markers: false,
-          }
-        });
+        "(max-width: 767px)": function () {
+          const alignX = 0;
+          const alignY = dash.offsetHeight / 1.2;
   
-        tlMobile.to(".dashboad-holder", {
-          y: alignY,
-          ease: "power2.out",
-          duration: 1,
-        }).to(".dashboad-holder", {
-          y: alignY + 150,
-          ease: "none",
-          duration: 1,
-        });
-      }
-    });
+          const tlMobile = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".dashboad-holder",
+              start: "top 70%",
+              end: "+=1000",
+              scrub: true,
+              markers: false,
+            },
+          });
+  
+          tlMobile
+            .to(".dashboad-holder", {
+              y: alignY,
+              ease: "power2.out",
+              duration: 1,
+            })
+            .to(".dashboad-holder", {
+              y: alignY + 150,
+              ease: "none",
+              duration: 1,
+            });
+        },
+      });
+    };
+  
+    // Check if image is already loaded
+    if (dash.complete) {
+      handleImageLoad();
+    } else {
+      dash.addEventListener("load", handleImageLoad);
+    }
+  
+    return () => {
+      dash.removeEventListener("load", handleImageLoad);
+    };
   }, []);
+  
+  
   
   
   
@@ -154,7 +175,13 @@ function HeroSection() {
                   <div className="perspective">
                     <div className="dashobard-wrapper">
                       <div className="dashboad-holder">
-                      <img src="https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard.png" loading="lazy" sizes="(max-width: 2391px) 100vw, 2391px" srcset="https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-500.png 500w, https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-800.png 800w, https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-1080.png 1080w, https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-1600.png 1600w, https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-2000.png 2000w, https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard.png 2391w" alt="" className="dashobard-image"/>
+                      <img
+  src={dashBoard}
+  alt="Dashboard"
+  className="dashobard-image"
+  loading="lazy"
+/>
+
                       </div>
                       <div className="blue-blur"></div>
                     </div>
