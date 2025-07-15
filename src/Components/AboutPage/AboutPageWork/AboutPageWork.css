@@ -82,12 +82,22 @@
     display: grid
 ;
 }
+.about-work-card-wrap:hover{
+z-index: 5;
+}
 .about-work-card-wrap {
     border: 1px solid var(--stock-color);
     background-color:black;
     border-radius: 10px;
     padding: 24px;
-    transition: all .4s;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    perspective: 1000px;
 }
 .about-work-single-title {
     color: var(--white);

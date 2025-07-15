@@ -112,8 +112,18 @@
     background-size: 100% 100%;
     border-radius: 26px;
     padding: 80px 24px 24px;
-    transition: border-color .3s;
     position: relative;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    perspective: 1000px;
+}
+.abt-cho-choose-v1-single-wrap:hover{
+  z-index: 5;
 }
 .abt-cho-choose-plus-icon {
     display: none;
