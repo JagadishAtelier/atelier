@@ -1,7 +1,11 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import './AboutBusiness.css';
 import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 function AboutBusiness() {
+  const imageRef = useRef(null);
   useEffect(() => {
     const cards = document.querySelectorAll(".about-business-single-wrap");
 
@@ -27,30 +31,49 @@ function AboutBusiness() {
     });
   }, []);
   useEffect(() => {
-    const line = document.querySelector('.about-bus-approach-line');
-    const wrap = document.querySelector('.about-bus-approach-line-wrap');
-    let lastScrollY = window.scrollY;
-
+    const image = document.querySelector('.scroll-line-img');
+    const wrapper = document.querySelector('.about-bus-approach-line-wrap');
+  
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
-
-      const rect = wrap.getBoundingClientRect();
+      if (!image || !wrapper) return;
+  
+      const rect = wrapper.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-
-      // Check if it's in the viewport
+  
+      // If element is in viewport
       if (rect.top < windowHeight && rect.bottom > 0) {
-        // Fill the line
-        line.style.transformOrigin = scrollDirection === 'down' ? 'top' : 'bottom';
-        line.style.transform = 'scaleY(1)';
+        const scrollPercent = (windowHeight - rect.top) / (windowHeight + rect.height);
+        const maxTranslate = 50; // px
+        const translateY = Math.min(Math.max(scrollPercent * maxTranslate, 0), maxTranslate);
+  
+        image.style.transform = `translate(-50%, ${translateY}px)`;
       }
-
-      lastScrollY = currentScrollY;
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  useEffect(() => {
+    const img = imageRef.current;
+
+    gsap.fromTo(
+      img,
+      { y: 100 }, // starting Y offset
+      {
+        y: 1000, // end Y offset
+        ease: 'none',
+        scrollTrigger: {
+          trigger: img,
+          start: 'top 0',
+          end: '+=1000', // stretch animation across 1500px of scrolling
+          scrub: true,
+          markers: false,
+        }
+        
+      }
+    );
+  }, []);
+  
   return (
     <div>
       <section
@@ -99,12 +122,6 @@ function AboutBusiness() {
                           alt="Arrow Icon"
                           className="secondary-btn-icon"
                         />
-                        <img
-                          src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/681cc09d12f97f72f483b28a_Arrow%20Icon%20(1).svg"
-                          loading="lazy"
-                          alt="Arrow Icon"
-                          className="secondary-btn-icon"
-                        />
                       </div>
                     </div>
                     <div style={{ width: '0%' }} className="secondary-btn-bg"></div>
@@ -114,11 +131,16 @@ function AboutBusiness() {
 
               {/* RIGHT */}
               <div className="about-business-right-wrap">
-                <div className="about-business-right-image-wrap">
-                  <div className="about-bus-approach-line-wrap">
-                    <div className="about-bus-approach-line"></div>
-                  </div>
-                </div>
+              <div className="works-02-center-wrap">
+      <img
+        ref={imageRef}
+        loading="lazy"
+        src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/684d14a11a3afe28a09d1874_Line.avif"
+        alt=""
+        className="w2-timeline"
+      />
+      <div className="w2-timeline-border"></div>
+    </div>
 
                 <div className="about-business-item-flex-wrap">
                   {[
