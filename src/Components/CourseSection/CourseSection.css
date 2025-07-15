@@ -30,8 +30,8 @@
   }
   
   .lms-feature-card {
-    background-color: #fff;
-    border: 1px solid #d4e9d2;
+    background-color: white;
+    border: 1px solid rgb(232, 231, 231);
     border-radius: 12px;
     padding: 30px 24px;
     width: 350px;
