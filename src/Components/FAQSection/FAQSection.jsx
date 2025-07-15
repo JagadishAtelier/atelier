@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./FAQSection.css";
 
 function FAQSection() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
 
   const toggleAnswer = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -91,10 +92,14 @@ function FAQSection() {
                         onClick={() => toggleAnswer(index)}
                         style={{ cursor: "pointer" }}
                       >
-                        <div
-                          className="faq-question"
-                          style={{ color: "rgb(154, 154, 154)" }}
-                        >
+<div
+  className="faq-question"
+  style={{
+    color: activeIndex === index ? "#000" : "rgb(154, 154, 154)", // Black when active
+    fontWeight: activeIndex === index ? "600" : "normal",
+  }}
+>
+
                           {item.question}
                         </div>
                         <img

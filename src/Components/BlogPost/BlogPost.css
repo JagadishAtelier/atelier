@@ -1,6 +1,7 @@
 .blog-container{
     margin-top: 10%;
     overflow: hidden;
+    position: relative;
 }
 .blog-head-and-tabs{
     display: flex;
@@ -82,6 +83,9 @@
   justify-content: flex-end;
   gap: 10px;
   margin: 10px 20px;
+  position:absolute;
+  top: 15px;
+  right: 0;
 }
 .slider-btn {
   background-color: #f9f4ff;
