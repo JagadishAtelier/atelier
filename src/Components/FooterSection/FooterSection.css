@@ -5,7 +5,7 @@
     grid-row-gap: var(--4xl);
     background-color: var(--neutral-01);
     border-top: 1px solid #fff3;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 .foo-container {
     padding-right: var(--4xl);

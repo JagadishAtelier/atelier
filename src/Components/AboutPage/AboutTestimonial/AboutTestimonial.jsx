@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './AboutTestimonial.css';
-
+import { useLocation } from "react-router-dom";
 const box1Testimonials = [
   { text: "Their platform has completely transformed how we handle transactions.Amazing service, very professional and effective.", name: "Smith Runner" },
   { text: "Amazing service, very professional and effective.", name: "Jessica Poe" },
@@ -32,7 +32,17 @@ function AboutTestimonial() {
   const [fade1, setFade1] = useState(true);
   const [fade2, setFade2] = useState(true);
   const [fade3, setFade3] = useState(true);
+  const location = useLocation();
 
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   useEffect(() => {
     const interval = setInterval(() => {
       setFade1(false);
@@ -54,7 +64,7 @@ function AboutTestimonial() {
 
   return (
     <div>
-      <section className="test-section trusted">
+      <section className="test-section trusted" id='testimonials'>
         <div className="w-layout-blockcontainer-test test-container w-containertest">
           <div className="trusted-wrap">
             <div className="trusted-top-wrap">

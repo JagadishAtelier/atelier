@@ -29,7 +29,7 @@ function Features() {
     });
   }, []);
   return (
-    <section className="section easy">
+    <section className="section easy" id='features'>
       <div className="w-layout-blockcontainer containers w-container">
         <div className="easy-wrapper">
           <div className="easy-top-wrap">

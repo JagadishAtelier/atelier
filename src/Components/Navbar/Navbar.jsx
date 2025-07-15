@@ -56,19 +56,16 @@ function Navbar() {
                   <div className="nav-menu-link-holder">
                     <div className="nav-menu-link-container">
                       <div className="nav-links">
-                        <a href="/" className="nav-link w-nav-link w--current" style={{ color: '#f5f4fd' }}>
+                        <a href="/" className={`nav-link w-nav-link ${location.pathname === '/' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
                           Home
                         </a>
-                        <a href="/features" className="nav-link w-nav-link" style={{ color: '#f5f4fd' }}>
+                        <a href="/features" className={`nav-link w-nav-link ${location.pathname === '/features' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
                           Features
                         </a>
-                        <a href="/about" className="nav-link w-nav-link" style={{ color: '#f5f4fd' }}>
+                        <a href="/about" className={`nav-link w-nav-link ${location.pathname === '/about' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
                           About
                         </a>
-                        <a href="/blog" className="nav-link w-nav-link" style={{ color: '#f5f4fd' }}>
-                          Blog
-                        </a>
-                        <a href="/contact" className="nav-link w-nav-link" style={{ color: '#f5f4fd' }}>
+                        <a href="/inner-pages/contact" className={`nav-link w-nav-link ${location.pathname === '/inner-pages/contact' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
                           Contact
                         </a>
                       </div>
@@ -101,8 +98,7 @@ function Navbar() {
             <a href="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Home</a>
             <a href="/features" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
             <a href="/about" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>About</a>
-            <a href="/blog" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Blog</a>
-            <a href="/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            <a href="/inner-pages/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <a href="#" className="mobile-nav-button" onClick={() => setIsMenuOpen(false)}>Book Now</a>
           </div>
         )}

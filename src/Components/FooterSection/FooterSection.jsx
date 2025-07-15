@@ -52,28 +52,19 @@ function FooterSection() {
                   <a href="/" className="foo-navbar-link footer foo-w-inline-block">
                     <div className="foo-nav footer">Home</div>
                   </a>
-                  <a href="https://lenora-template.webflow.io/#feature" className="foo-navbar-link footer w-inline-block">
+                  <a href="/#features" className="foo-navbar-link footer w-inline-block">
                     <div className="foo-nav footer">Features</div>
                   </a>
-                  <a href="https://lenora-template.webflow.io/#pricing" className="foo-navbar-link footer w-inline-block">
-                    <div className="foo-nav footer">Pricing</div>
-                  </a>
-                  <a href="https://lenora-template.webflow.io/#integration" className="foo-navbar-link footer w-inline-block">
-                    <div className="foo-nav footer">Integrations</div>
-                  </a>
-                  <a href="https://lenora-template.webflow.io/#contact" className="foo-navbar-link footer w-inline-block">
+                  <a href="/inner-pages/contact" className="foo-navbar-link footer w-inline-block">
                     <div className="foo-nav footer">Contact</div>
                   </a>
                 </div>
 
                 <div className="foo-footer-nav-menu">
-                  <a href="https://lenora-template.webflow.io/#faq" className="foo-navbar-link footer foo-w-inline-block">
+                  <a href="/#faq" className="foo-navbar-link footer foo-w-inline-block">
                     <div className="foo-nav footer">FAQ</div>
                   </a>
-                  <a href="/blog" className="foo-navbar-link footer foo-w-inline-block">
-                    <div className="foo-nav footer">Blog</div>
-                  </a>
-                  <a href="https://lenora-template.webflow.io/#testimonial" className="foo-navbar-link footer foo-w-inline-block">
+                  <a href="/about#testimonials" className="foo-navbar-link footer foo-w-inline-block">
                     <div className="foo-nav footer">Testimonials</div>
                   </a>
                   <a href="/terms-and-conditions" className="foo-navbar-link footer foo-w-inline-block">
@@ -91,7 +82,7 @@ function FooterSection() {
             <div className="foo-footer-copyrights">
               <p className="foo-paragraph">
                 Designed by{" "}
-                <a href="https://lunisdesign.com" target="_blank" rel="noopener noreferrer" className="foo-link footer">
+                <a href="/" target="_blank" rel="noopener noreferrer" className="foo-link footer">
                   Atelier Technology Solution
                 </a>
               </p>

@@ -2,9 +2,10 @@ import React from 'react'
 import './BlogDetails.css'
 import { useParams, useLocation } from "react-router-dom";
 function BlogDetails() {
-    const { name } = useParams();
-    const location = useLocation();
-    const post = location.state?.post;
+  const { name } = useParams();
+  const location = useLocation();
+
+  const post = location.state?.post;
   return (
     <div className='blog-details-container'>
         <section className="blog-details">
