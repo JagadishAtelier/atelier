@@ -2,6 +2,7 @@ import React, { useEffect,useRef } from 'react';
 import './HeroSection.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import dashBoard from '../../Assets/dashBoard.png'
 const logos = [
   "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg",
   "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg",
@@ -148,18 +149,10 @@ function HeroSection() {
                     <div className="dashobard-wrapper">
                       <div className="dashboad-holder">
                         <img
-                          src="https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard.png"
+                          src={dashBoard}
                           loading="lazy"
                           alt=""
                           sizes="(max-width: 2391px) 100vw, 2391px"
-                          srcSet="
-                            https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-500.png   500w,
-                            https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-800.png   800w,
-                            https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-1080.png 1080w,
-                            https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-1600.png 1600w,
-                            https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard-p-2000.png 2000w,
-                            https://cdn.prod.website-files.com/67f82974e65f89a3c0ca8b7c/67f82d4295804261dec89f6a_Dashboard.png        2391w
-                          "
                           className="dashobard-image"
                         />
                       </div>
