@@ -28,7 +28,7 @@
 .blog-content {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    background-color: var(--neutral-2);
+    background-color: rgb(246, 245, 245);
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
     justify-content: space-between;
@@ -137,8 +137,9 @@
     .blog-container {
       margin-top: 60px;
       padding: 0 15px;
+      padding-bottom:20%;
     }
-  
+    
     .blog-head-and-tabs {
       width: 100%;
       flex-direction: column;
@@ -195,6 +196,13 @@
       flex-direction: row;
       align-items: center;
       gap: 12px;
+    }
+    .blog-slider-controls {
+      position: absolute; /* ✅ keep it consistent */
+      bottom: 15px !important;
+      right: auto;
+      z-index: 5;
+      top: auto;
     }
   }
   
