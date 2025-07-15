@@ -31,7 +31,7 @@ function HeroSection() {
             start: "top 40%",
             end: "+=3000",
             scrub: true,
-            markers: true,
+            markers: false,
           }
         });
   
@@ -41,11 +41,7 @@ function HeroSection() {
           ease: "power2.out",
           duration: 1,
         })
-        .to(".dashobard-wrapper", {
-          boxShadow: "10px 10px 30px black",
-          ease: "none",
-          duration: 0.001,
-        },0.3) // Appear at 1500px scroll (midpoint of 3000)
+
         .to(".dashobard-wrapper", {
           y: alignY + 300,
           rotation:40,
