@@ -31,8 +31,17 @@ const features = [
 
 function CourseSection() {
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 3;
+  const [visibleCards, setVisibleCards] = useState(window.innerWidth <= 768 ? 1 : 3);
   const totalCards = features.length;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleCards(window.innerWidth <= 768 ? 1 : 3);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const getVisibleFeatures = () => {
     const endIndex = startIndex + visibleCards;
@@ -44,11 +53,11 @@ function CourseSection() {
   };
 
   const handleNext = () => {
-    setStartIndex((prev) => (prev + 1) % totalCards);
+    setStartIndex((prev) => (prev + visibleCards) % totalCards);
   };
 
   const handlePrev = () => {
-    setStartIndex((prev) => (prev - 1 + totalCards) % totalCards);
+    setStartIndex((prev) => (prev - visibleCards + totalCards) % totalCards);
   };
 
   useEffect(() => {
@@ -56,7 +65,7 @@ function CourseSection() {
       handleNext();
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [visibleCards]);
 
   return (
     <section className="lms-section">
@@ -67,12 +76,14 @@ function CourseSection() {
       </p>
 
       <div className="lms-features-wrapper">
-        <button className="lms-arrow-button left" onClick={handlePrev}>
-          <i className="bi bi-chevron-left"></i>
-        </button>
+        {visibleCards > 1 && (
+          <button className="lms-arrow-button left" onClick={handlePrev}>
+            <i className="bi bi-chevron-left"></i>
+          </button>
+        )}
 
         <div className="carousel-viewport">
-          <div className="carousel-track" style={{ display: 'flex', transition: 'transform 0.5s ease-in-out' }}>
+          <div className="carousel-track">
             {getVisibleFeatures().map((feature, index) => (
               <div key={index} className="lms-feature-card">
                 <div className="lms-feature-icon">
@@ -86,9 +97,11 @@ function CourseSection() {
           </div>
         </div>
 
-        <button className="lms-arrow-button right" onClick={handleNext}>
-          <i className="bi bi-chevron-right"></i>
-        </button>
+        {visibleCards > 1 && (
+          <button className="lms-arrow-button right" onClick={handleNext}>
+            <i className="bi bi-chevron-right"></i>
+          </button>
+        )}
       </div>
     </section>
   );

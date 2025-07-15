@@ -100,10 +100,12 @@
   
   .lms-arrow-button.left {
     left:7%;
+    z-index: 1001;
   }
   
   .lms-arrow-button.right {
     right: 7%;
+    z-index: 10001;
   }
   
   .lms-arrow-button i {
@@ -130,6 +132,10 @@
   
     .lms-arrow-button {
       display: none;
+    }
+    .lms-feature-card{
+      width: 100%;
+      max-width: 450px;
     }
   }
   
