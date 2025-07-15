@@ -254,7 +254,7 @@
     }
   
     .foo-subscribe-form {
-      flex-direction: row;
+      flex-direction:column;
       align-items: stretch;
     }
   
@@ -291,10 +291,16 @@
     }
   
     .foo-subscribe-form {
-      flex-direction: row;
+      flex-direction: column;
       align-items: flex-start;
+      background: none;
+      box-shadow: none;
     }
-  
+    .foo-text-field{
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+    }
     .foo-primary-button {
       font-size: 0.95rem;
       padding: var(--2xs) var(--s);
