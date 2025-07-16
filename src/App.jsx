@@ -16,6 +16,7 @@ import AboutPageHero from './Components/AboutPage/AboutPageHero/AboutPageHero';
 import ContactPage from './Components/ContactPage/ContactPage';
 import FooterSection from './Components/FooterSection/FooterSection';
 import CourseSection from './Components/CourseSection/CourseSection';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 function HomePage() {
   return (
@@ -34,7 +35,8 @@ function HomePage() {
 function App() {
   return (
     <Router>
-            <Navbar />
+      <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog/:name" element={<BlogDetails />} />
