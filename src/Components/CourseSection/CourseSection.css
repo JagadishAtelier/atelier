@@ -141,8 +141,21 @@
       display: none;
     }
     .lms-feature-card{
-      width: 100%;
-      max-width: 450px;
+      min-width: 350px;  /* Full viewport width */
+      max-width: 100%;
+      flex: 0 0 auto;
+    }
+    .carousel-track {
+      display: flex;
+    }
+  
+    .carousel-viewport {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .lms-feature-card {
+      scroll-snap-align: center;
     }
   }
   

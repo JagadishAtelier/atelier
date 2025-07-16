@@ -177,7 +177,8 @@
     .blog-collection-list {
       flex-direction: row;     /* ✅ Ensure horizontal layout */
       overflow-x: auto;
-      overflow-y: hidden;      /* ✅ Hide vertical scroll */
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;     /* ✅ Hide vertical scroll */
       gap: 20px;
     }
   
@@ -188,8 +189,10 @@
     }
   
     .blog-collection-item {
-      min-width: 100%;
-      scroll-snap-align: start;
+      min-width: 380px;
+      max-width: 100%;
+      scroll-snap-align: center;
+      flex: 0 0 auto;
     }
   
     .blog-content {

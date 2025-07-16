@@ -66,22 +66,28 @@ function BlogPost() {
       useEffect(() => {
         const interval = setInterval(() => {
           if (sliderRef.current) {
-            const scrollAmount = 340; // card width + gap (adjust if needed)
+            const scrollAmount = window.innerWidth <= 768 
+              ? sliderRef.current.clientWidth 
+              : 340; // fallback for desktop
+      
             const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
-    
-            // Reset to start when reaching end
+      
             if (scrollLeft + clientWidth >= scrollWidth) {
               sliderRef.current.scrollTo({ left: 0, behavior: "smooth" });
             } else {
               sliderRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
             }
           }
-        }, 3000); // change slide every 3 seconds
-    
-        return () => clearInterval(interval); // cleanup on unmount
+        }, 3000);
+      
+        return () => clearInterval(interval);
       }, [filteredData]);
+      
       const scrollSlider = (direction) => {
-        const scrollAmount = 340; // card width + gap
+        const scrollAmount = window.innerWidth <= 768 
+          ? sliderRef.current.clientWidth 
+          : 340;
+      
         if (sliderRef.current) {
           sliderRef.current.scrollBy({
             left: direction === "left" ? -scrollAmount : scrollAmount,
@@ -89,6 +95,7 @@ function BlogPost() {
           });
         }
       };
+      
       
       
   return (

@@ -35,7 +35,10 @@ function CourseSection() {
 
   useEffect(() => {
     const handleResize = () => {
-      const newCardWidth = window.innerWidth <= 768 ? 100 : 350 + 30;
+      const newCardWidth = window.innerWidth <= 768
+      ? window.innerWidth // Full width of mobile screen
+      : 350 + 30;
+    
       setCardWidth(newCardWidth);
     };
 
