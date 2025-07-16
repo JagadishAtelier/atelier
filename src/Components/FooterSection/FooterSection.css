@@ -83,7 +83,7 @@
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 10px;
-    line-height: 110%;
+    line-height:normal !important;
 }
 .foo-form {
     background-color: #fff0;
@@ -320,4 +320,7 @@
       font-size: 1.25rem;
     }
   }
-  
+  .foo-text-field:focus{
+    outline: none;
+    border: 0;
+  }
