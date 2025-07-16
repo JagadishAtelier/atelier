@@ -81,13 +81,13 @@ function HeroSection() {
   
         "(max-width: 767px)": function () {
           const alignX = 0;
-          const alignY = dash.offsetHeight / 1.2;
+          const alignY = dash.offsetHeight / 0.8;
   
           const tlMobile = gsap.timeline({
             scrollTrigger: {
               trigger: ".dashboad-holder",
-              start: "top 70%",
-              end: "+=1000",
+              start: "top 40%",
+              end: "+=1300",
               scrub: true,
               markers: false,
             },
@@ -100,7 +100,20 @@ function HeroSection() {
               duration: 1,
             })
             .to(".dashboad-holder", {
-              y: alignY + 150,
+              rotateY: -40,
+              scale: 1.01,
+              rotateZ:3,
+              ease: "power1.out",
+              duration: 0.5,
+            }, 0.3)
+            .to(".dashboad-holder", {
+              rotateY: -45,
+              scale: 1.015,
+              ease: "power1.out",
+              duration: 0.5,
+            })
+            .to(".dashboad-holder", {
+              y: alignY + 450,
               ease: "none",
               duration: 1,
             });
