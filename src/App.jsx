@@ -16,6 +16,7 @@ import AboutPageHero from './Components/AboutPage/AboutPageHero/AboutPageHero';
 import ContactPage from './Components/ContactPage/ContactPage';
 import FooterSection from './Components/FooterSection/FooterSection';
 import CourseSection from './Components/CourseSection/CourseSection';
+
 function HomePage() {
   return (
     <>

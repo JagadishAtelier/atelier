@@ -47,3 +47,6 @@
     }
   }
   
+.dashboad-holder {
+  transform-style: preserve-3d;
+}

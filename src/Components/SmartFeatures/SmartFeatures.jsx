@@ -30,7 +30,6 @@ function SmartFeatures() {
   return (
     <div style={{marginTop:"10%"}}>
       <section
-        id="feature"
         data-w-id="563f3494-b7b7-2e37-b2f7-2fb5d68984a4"
         className="section feature"
       >
@@ -45,7 +44,7 @@ function SmartFeatures() {
                 opacity: 1,
               }}
             >
-              <div className="tag">Features</div>
+              <div className="tag" id="features">Features</div>
             </div>
             <div
               className="section-header"

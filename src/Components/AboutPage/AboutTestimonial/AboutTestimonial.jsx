@@ -66,11 +66,11 @@ function AboutTestimonial() {
 
   return (
     <div>
-      <section className="test-section trusted" id='testimonials'>
+      <section className="test-section trusted">
         <div className="w-layout-blockcontainer-test test-container w-containertest">
           <div className="trusted-wrap">
             <div className="trusted-top-wrap">
-              <h2 className="team-title">Trusted by 6k+ people to move business forward</h2>
+              <h2 className="team-title"id='testimonials'>Trusted by 6k+ people to move business forward</h2>
             </div>
 
             <div className="trusted-bottom-wrap">

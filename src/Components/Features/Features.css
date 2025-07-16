@@ -5718,14 +5718,13 @@ figure {
 }
 
 .easy-item-wrap {
-  background-color: rgb(30, 29, 29);
-  -webkit-backdrop-filter: blur(50px);
-  backdrop-filter: blur(50px);
+  background-color:white;
+  border: 1px solid white;
+  box-shadow: 8px 12px 25px #0000001f;
   border-radius: 16px;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  transition: border-color .3s;
   display: flex;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
@@ -5766,11 +5765,11 @@ figure {
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 58px;
-  color: gray;
+  color: black;
 }
 
 .easy-item-title {
-  color: white;
+  color: black;
   letter-spacing: -.96px;
   font-size: 24px;
   font-weight: 500;
@@ -5781,7 +5780,7 @@ figure {
   margin-top: 14px;
   font-weight: 400;
   line-height: 150%;
-  color: gray;
+  color: black;
 }
 
 .easy-btm-grid-wrap {
@@ -5795,10 +5794,9 @@ figure {
 }
 
 .easy-single-wrap {
-    border: 1px solid var(--fill-color);
-    background-color:rgb(30, 29, 29);
-    -webkit-backdrop-filter: blur(50px);
-    backdrop-filter: blur(50px);
+    border: 1px solid white;
+    background-color:white;
+    box-shadow:8px 12px 25px #0000001f;
     border-radius: 16px;
     flex-flow: column;
     justify-content: space-between;

@@ -25,13 +25,13 @@ function HeroSection() {
       ScrollTrigger.matchMedia({
         "(min-width: 768px)": function () {
           const alignX = dash.offsetWidth / 2;
-          const alignY = dash.offsetHeight / 0.8;
+          const alignY = dash.offsetHeight /0.8;
   
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: ".dashboad-holder",
               start: "top 40%",
-              end: "+=3000",
+              end: "+=4000",
               scrub: true,
               markers: false,
             },
@@ -52,16 +52,20 @@ function HeroSection() {
               },
               0.01
             )
-            .to(
-              ".dashboad-holder",
-              {
-                rotateY:50,
-                rotateZ:10,
-                ease: "none",
-                duration: 1,
-              },
-              0.3
-            )
+            .to(".dashboad-holder", {
+              rotateY: -40,
+              scale: 1.01,
+              rotateZ:3,
+              ease: "power1.out",
+              duration: 0.5,
+            }, 0.1)
+            .to(".dashboad-holder", {
+              rotateY: -45,
+              scale: 1.015,
+              ease: "power1.out",
+              duration: 0.5,
+            })
+            
             .to(".dashboad-holder", {
               y: alignY + 300,
               rotation: 40,
