@@ -46,11 +46,21 @@ function HeroSection() {
             .to(
               ".dashboad-holder",
               {
-                boxShadow: "-10px -10px 30px rgba(0, 0, 0, 0.80)",
+                boxShadow: "-10px -10px 30px rgba(0, 0, 0, 0.30)",
                 ease: "none",
                 duration: 1,
               },
               0.01
+            )
+            .to(
+              ".dashboad-holder",
+              {
+                rotateY:50,
+                rotateZ:10,
+                ease: "none",
+                duration: 1,
+              },
+              0.3
             )
             .to(".dashboad-holder", {
               y: alignY + 300,
