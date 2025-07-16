@@ -43,15 +43,20 @@ function HeroSection() {
             ease: "power2.out",
             duration: 1,
           })
-            .to(
-              ".dashboad-holder",
-              {
-                boxShadow: "-10px -10px 30px rgba(0, 0, 0, 0.30)",
-                ease: "none",
-                duration: 1,
-              },
-              0.01
-            )
+          .to(
+            ".dashboad-holder",
+            {
+              boxShadow: `
+                10px 10px 30px rgba(0, 0, 0, 0.3),
+               -10px -10px 30px rgba(0, 0, 0, 0.3),
+                -10px 10px 30px rgba(0, 0, 0, 0.3),
+                10px -10px 30px rgba(0, 0, 0, 0.3)
+              `,
+              ease: "none",
+              duration: 1,
+            },
+            0.01
+          )          
             .to(".dashboad-holder", {
               rotateY: -40,
               scale: 1.01,
