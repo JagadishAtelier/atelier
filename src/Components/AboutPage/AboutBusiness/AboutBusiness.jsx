@@ -60,7 +60,7 @@ function AboutBusiness() {
       img,
       { y: 100 }, // starting Y offset
       {
-        y: 1000, // end Y offset
+        y: 1100, // end Y offset
         ease: 'none',
         scrollTrigger: {
           trigger: img,

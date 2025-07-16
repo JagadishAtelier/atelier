@@ -256,4 +256,5 @@
     width: 100%;
     position: absolute;
     top: -40%;
+    z-index: 1001 !important;
 }

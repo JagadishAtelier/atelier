@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './AboutTestimonial.css';
 import { useLocation } from "react-router-dom";
+
 const box1Testimonials = [
   { text: "Their platform has completely transformed how we handle transactions.Amazing service, very professional and effective.", name: "Smith Runner" },
   { text: "Amazing service, very professional and effective.", name: "Jessica Poe" },
@@ -43,6 +44,7 @@ function AboutTestimonial() {
       }
     }
   }, [location]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setFade1(false);
@@ -56,7 +58,7 @@ function AboutTestimonial() {
         setFade1(true);
         setFade2(true);
         setFade3(true);
-      }, 300); // match fade-out duration
+      }, 300);
     }, 4000);
 
     return () => clearInterval(interval);
@@ -76,15 +78,17 @@ function AboutTestimonial() {
               <div className="trusted-row-01">
                 <div className="trusted-item-list-wraap">
                   <div className="trusted-item _02">
-                    <p className="trusted-item-text">{box1Testimonials[index1].text}</p>
-                    <div className="client-info-02">
-                      <div className="client-name-01">{box1Testimonials[index1].name}</div>
-                      <img
-                        src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/684c7210205b44a55c161e87_Star.svg"
-                        loading="lazy"
-                        alt=""
-                        className="star-image"
-                      />
+                    <div className={`trusted-item-text-wrapper ${fade1 ? 'fade-in' : 'fade-out'}`}>
+                      <p className="trusted-item-text">{box1Testimonials[index1].text}</p>
+                      <div className="client-info-02">
+                        <div className="client-name-01">{box1Testimonials[index1].name}</div>
+                        <img
+                          src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/684c7210205b44a55c161e87_Star.svg"
+                          loading="lazy"
+                          alt=""
+                          className="star-image"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="border-absolute"></div>
@@ -104,7 +108,7 @@ function AboutTestimonial() {
                 </div>
               </div>
 
-              {/* Row 2 (unchanged content) */}
+              {/* Row 2 */}
               <div className="trusted-row-02">
                 <div className="trusted-item-image">
                   <img
@@ -132,15 +136,17 @@ function AboutTestimonial() {
               <div className="trusted-row-03">
                 <div className="trusted-item-list-wraap">
                   <div className="trusted-item _03">
-                    <p className="trusted-item-text">{box2Testimonials[index2].text}</p>
-                    <div className="client-info-02">
-                      <div className="client-name-01">{box2Testimonials[index2].name}</div>
-                      <img
-                        src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/684c7210205b44a55c161e87_Star.svg"
-                        loading="lazy"
-                        alt=""
-                        className="star-image"
-                      />
+                    <div className={`trusted-item-text-wrapper ${fade2 ? 'fade-in' : 'fade-out'}`}>
+                      <p className="trusted-item-text">{box2Testimonials[index2].text}</p>
+                      <div className="client-info-02">
+                        <div className="client-name-01">{box2Testimonials[index2].name}</div>
+                        <img
+                          src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/684c7210205b44a55c161e87_Star.svg"
+                          loading="lazy"
+                          alt=""
+                          className="star-image"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="border-absolute"></div>
@@ -148,15 +154,17 @@ function AboutTestimonial() {
 
                 <div className="trusted-item-list-wraap">
                   <div className="trusted-item _02">
-                    <p className="trusted-item-text">{box3Testimonials[index3].text}</p>
-                    <div className="client-info-02">
-                      <div className="client-name-01">{box3Testimonials[index3].name}</div>
-                      <img
-                        src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/684c7210205b44a55c161e87_Star.svg"
-                        loading="lazy"
-                        alt=""
-                        className="star-image"
-                      />
+                    <div className={`trusted-item-text-wrapper ${fade3 ? 'fade-in' : 'fade-out'}`}>
+                      <p className="trusted-item-text">{box3Testimonials[index3].text}</p>
+                      <div className="client-info-02">
+                        <div className="client-name-01">{box3Testimonials[index3].name}</div>
+                        <img
+                          src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/684c7210205b44a55c161e87_Star.svg"
+                          loading="lazy"
+                          alt=""
+                          className="star-image"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="border-absolute"></div>

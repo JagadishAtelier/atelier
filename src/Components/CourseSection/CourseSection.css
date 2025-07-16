@@ -31,14 +31,16 @@
   
   .lms-feature-card {
     background-color: white;
-    border: 1px solid rgb(232, 231, 231);
+    border: 1px solid white;
     border-radius: 12px;
     padding: 30px 24px;
     width: 350px;
     height: 350px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.04);
-    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease;
+    flex-shrink: 0; 
+    z-index: 2;
   }
   
   .lms-feature-icon {
@@ -113,15 +115,19 @@
     color: #444;
   }
   .carousel-viewport {
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
     max-width: 1100px;
+    scroll-behavior: smooth;
+    padding: 30px 0;
   }
   
   .carousel-track {
     display: flex;
     gap: 30px;
+    width: max-content;
   }
+  
   
   
   

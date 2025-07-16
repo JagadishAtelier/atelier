@@ -23,8 +23,8 @@ function HomePage() {
       <HeroSection />
       <SmartFeatures />
       <Features />
-      <BlogPost />
       <CourseSection/>
+      <BlogPost />
       <FAQSection />
     </>
   );

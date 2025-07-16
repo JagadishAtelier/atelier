@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./BlogPost.css";
 import { useNavigate } from "react-router-dom";
 const categories = ["All Articles", "Marketing", "Technology"];
@@ -58,12 +58,30 @@ function BlogPost() {
   const [selectedCategory, setSelectedCategory] = useState("All Articles");
     const navigate = useNavigate()
     const sliderRef = useRef(null);
+  
   const filteredData =
     selectedCategory === "All Articles"
       ? blogData
       : blogData.filter((item) => item.category === selectedCategory);
+      useEffect(() => {
+        const interval = setInterval(() => {
+          if (sliderRef.current) {
+            const scrollAmount = 340; // card width + gap (adjust if needed)
+            const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
+    
+            // Reset to start when reaching end
+            if (scrollLeft + clientWidth >= scrollWidth) {
+              sliderRef.current.scrollTo({ left: 0, behavior: "smooth" });
+            } else {
+              sliderRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+            }
+          }
+        }, 3000); // change slide every 3 seconds
+    
+        return () => clearInterval(interval); // cleanup on unmount
+      }, [filteredData]);
       const scrollSlider = (direction) => {
-        const scrollAmount = 320 + 20; // card width + gap
+        const scrollAmount = 340; // card width + gap
         if (sliderRef.current) {
           sliderRef.current.scrollBy({
             left: direction === "left" ? -scrollAmount : scrollAmount,
@@ -71,6 +89,7 @@ function BlogPost() {
           });
         }
       };
+      
       
   return (
     <div className=" blog-container">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './CourseSection.css';
 
 const features = [
@@ -30,42 +30,33 @@ const features = [
 ];
 
 function CourseSection() {
-  const [startIndex, setStartIndex] = useState(0);
-  const [visibleCards, setVisibleCards] = useState(window.innerWidth <= 768 ? 1 : 3);
-  const totalCards = features.length;
+  const sliderRef = useRef(null);
+  const [cardWidth, setCardWidth] = useState(350 + 30); // Card width + gap
 
   useEffect(() => {
     const handleResize = () => {
-      setVisibleCards(window.innerWidth <= 768 ? 1 : 3);
+      const newCardWidth = window.innerWidth <= 768 ? 100 : 350 + 30;
+      setCardWidth(newCardWidth);
     };
 
+    handleResize(); // Initial call
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const getVisibleFeatures = () => {
-    const endIndex = startIndex + visibleCards;
-    if (endIndex <= totalCards) {
-      return features.slice(startIndex, endIndex);
-    } else {
-      return [...features.slice(startIndex), ...features.slice(0, endIndex % totalCards)];
-    }
-  };
-
-  const handleNext = () => {
-    setStartIndex((prev) => (prev + visibleCards) % totalCards);
-  };
-
-  const handlePrev = () => {
-    setStartIndex((prev) => (prev - visibleCards + totalCards) % totalCards);
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
-      handleNext();
-    }, 4000);
+      if (sliderRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
+        if (scrollLeft + clientWidth >= scrollWidth) {
+          sliderRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          sliderRef.current.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        }
+      }
+    }, 3000);
     return () => clearInterval(interval);
-  }, [visibleCards]);
+  }, [cardWidth]);
 
   return (
     <section className="lms-section">
@@ -76,15 +67,16 @@ function CourseSection() {
       </p>
 
       <div className="lms-features-wrapper">
-        {visibleCards > 1 && (
-          <button className="lms-arrow-button left" onClick={handlePrev}>
-            <i className="bi bi-chevron-left"></i>
-          </button>
-        )}
-
-        <div className="carousel-viewport">
+      <button className="lms-arrow-button left" onClick={() => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    }
+  }}>
+    <i className="bi bi-chevron-left"></i>
+  </button>
+        <div className="carousel-viewport" ref={sliderRef}>
           <div className="carousel-track">
-            {getVisibleFeatures().map((feature, index) => (
+            {[...features, ...features].map((feature, index) => (
               <div key={index} className="lms-feature-card">
                 <div className="lms-feature-icon">
                   <i className={`bi ${feature.icon}`}></i>
@@ -96,12 +88,13 @@ function CourseSection() {
             ))}
           </div>
         </div>
-
-        {visibleCards > 1 && (
-          <button className="lms-arrow-button right" onClick={handleNext}>
-            <i className="bi bi-chevron-right"></i>
-          </button>
-        )}
+        <button className="lms-arrow-button right" onClick={() => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    }
+  }}>
+    <i className="bi bi-chevron-right"></i>
+  </button>
       </div>
     </section>
   );
