@@ -59,7 +59,7 @@ function Navbar() {
                         <a href="/" className={`nav-link w-nav-link ${location.pathname === '/' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
                           Home
                         </a>
-                        <a href="/features" className={`nav-link w-nav-link ${location.pathname === '/features' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
+                        <a href="/#features" className={`nav-link w-nav-link ${location.pathname === '/#features' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
                           Features
                         </a>
                         <a href="/about" className={`nav-link w-nav-link ${location.pathname === '/about' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
@@ -96,7 +96,7 @@ function Navbar() {
                 {isMenuOpen && (
           <div className="mobile-nav-menu">
             <a href="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="/features" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
+            <a href="/#features" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
             <a href="/about" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="/inner-pages/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <a href="#" className="mobile-nav-button" onClick={() => setIsMenuOpen(false)}>Book Now</a>

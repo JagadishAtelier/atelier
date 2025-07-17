@@ -43,19 +43,24 @@ function HeroSection() {
             ease: "power2.out",
             duration: 1,
           })
+          tl.to(".dashboad-holder", {
+            boxShadow: `0 0 50px 50px rgba(255, 255, 255, 0.20)`,  // white glow only
+            duration: 0.3,
+            ease: "none",
+          }, 0)
           .to(
             ".dashboad-holder",
             {
               boxShadow: `
-                10px 10px 30px rgba(0, 0, 0, 0.3),
-               -10px -10px 30px rgba(0, 0, 0, 0.3),
-                -10px 10px 30px rgba(0, 0, 0, 0.3),
-                10px -10px 30px rgba(0, 0, 0, 0.3)
+                10px 10px 30px rgba(0, 0, 0, 0.1),
+               -10px -10px 30px rgba(0, 0, 0, 0.1),
+                -10px 10px 30px rgba(0, 0, 0, 0.1),
+                10px -10px 30px rgba(0, 0, 0, 0.1)
               `,
               ease: "none",
-              duration: 1,
+              duration:0.3,
             },
-            0.01
+            0.3
           )          
             .to(".dashboad-holder", {
               rotateY: -40,
