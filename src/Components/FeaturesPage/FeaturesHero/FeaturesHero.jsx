@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import PlatformSection from '../PlatformSection/PlatformSection';
 import FeaturesProduct from '../FeaturesProduct/FeaturesProduct';
 import GiantsSection from '../GiantsSection/GiantsSection';
+import ProgressSection from '../ProgressSection/ProgressSection';
+import ProductivitySection from '../ProductivitySection/ProductivitySection';
+import BlogPost from '../../BlogPost/BlogPost';
+import LaunchFaster from '../LaunchFaster/LaunchFaster';
 function FeaturesHero() {
   return (
     <div>
@@ -156,6 +160,10 @@ function FeaturesHero() {
     <PlatformSection/>
     <FeaturesProduct/>
     <GiantsSection/>
+    <ProgressSection/>
+    <ProductivitySection/>
+    <BlogPost/>
+    <LaunchFaster/>
     </div>
   )
 }
