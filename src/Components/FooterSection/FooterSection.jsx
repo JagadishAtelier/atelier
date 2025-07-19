@@ -52,7 +52,7 @@ function FooterSection() {
                   <a href="/" className="foo-navbar-link footer foo-w-inline-block">
                     <div className="foo-nav footer">Home</div>
                   </a>
-                  <a href="/#features" className="foo-navbar-link footer w-inline-block">
+                  <a href="/features" className="foo-navbar-link footer w-inline-block">
                     <div className="foo-nav footer">Features</div>
                   </a>
                   <a href="/inner-pages/contact" className="foo-navbar-link footer w-inline-block">
