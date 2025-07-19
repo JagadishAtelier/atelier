@@ -147,3 +147,108 @@
     position: absolute;
     top: 0;
 }
+.swiper {
+    padding-bottom: 50px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    top: 45%;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+  }
+  /* Responsive CSS */
+@media (max-width: 991px) {
+    .pro-product-layout {
+      flex-direction: column;
+      padding: 24px;
+      gap: 40px;
+    }
+  
+    .pro-product-thumb-wrap,
+    .pro-product-content {
+      max-width: 100%;
+    }
+  
+    .pro-common-title {
+      font-size: 36px;
+      line-height: 3rem;
+    }
+  
+    .pro-product-title {
+      font-size: 28px;
+      line-height: 2.8rem;
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 50%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .pro-section-spacing {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    .pro-common-title {
+      font-size: 28px;
+      line-height: 2.5rem;
+    }
+  
+    .pro-product-title {
+      font-size: 24px;
+      line-height: 2.2rem;
+    }
+  
+    .pro-product-text {
+      font-size: 15px;
+    }
+  
+    .pro-btn-wrap {
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .pro-section-spacing {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  
+    .pro-common-title {
+      font-size: 22px;
+      line-height: 2rem;
+    }
+  
+    .pro-product-title {
+      font-size: 20px;
+      line-height: 2rem;
+    }
+  
+    .pro-product-layout {
+      padding: 16px;
+    }
+  
+    .pro-btn-wrap {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none; /* Optional: hide arrows on very small screens */
+    }
+  }
+  

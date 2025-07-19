@@ -4256,7 +4256,7 @@
   }
   
   .bg-overlay {
-    background-image: linear-gradient(180deg, #f5f4fd00, var(--colors--bg-color));
+    background-image: linear-gradient(180deg, #f5f4fd00, white);
     height: 400px;
     position: absolute;
     inset: auto 0% 0%;

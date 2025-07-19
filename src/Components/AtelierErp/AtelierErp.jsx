@@ -1,5 +1,11 @@
 import React from 'react'
 import './AtelierErp.css'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Grid } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/grid';
+
 function AtelierErp() {
   return (
     <div>
@@ -62,53 +68,92 @@ function AtelierErp() {
               data-w-id="aeb35c57-a2fb-8f94-e8b6-a01b0ce2ceca"
               className="erp-help-transform_content-right"
             >
-              {[
-                {
-                  title: "Streamlined Workflow",
-                  description:
-                    "Effortlessly Collaborate Across Teams and Projects with Saas.Pro is Seamless and Intuitive Collaboration Tools",
-                  icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9940cf61fbec096d2a02c_base-station-line.svg",
-                },
-                {
-                  title: "Robust Data Security",
-                  description:
-                    "Protect Your Sensitive Information with Cutting-Edge Encryption and Security Measures solutions",
-                  icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d997d6096a6c911bd9c1a9_centos-line.svg",
-                },
-                {
-                  title: "Seamless Productivity",
-                  description:
-                    "Streamline teamwork with Saas.Pro simple, seamless, and built for effortless collaboration",
-                  icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d997d6096a6c911bd9c1a9_centos-line.svg",
-                },
-                {
-                  title: "Effortless Operations",
-                  description:
-                    "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
-                  icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
-                },
-              ].map((item, i) => (
-                <div key={i} className="erp-help-transform_card erp-drop-shadow">
-                  <div className="erp-help-transform_icon-wrapper">
-                    <img
-                      loading="lazy"
-                      src={item.icon}
-                      alt={item.title}
-                      className="erp-help-transform_icon-image"
-                    />
-                  </div>
-                  <div className="erp-help-transform_text-block">
-                    <div className="erp-text-lg erp-text-weight-semibold erp-text-color-black-900">
-                      {item.title}
-                    </div>
-                    <div className="erp-why-appe-card_text">
-                      <div className="erp-text-sm erp-text-color-black-600">
-                        {item.description}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
+<Swiper
+  modules={[Autoplay, Grid]}
+  autoplay={{ delay: 4000, disableOnInteraction: false }}
+  loop={true}
+  slidesPerView={2}
+  grid={{
+    rows: 2,
+    fill: 'row',
+  }}
+  spaceBetween={20}
+  className="erp-help-transform_swiper"
+>
+  {[
+    {
+      title: "Streamlined Workflow",
+      description:
+        "Effortlessly Collaborate Across Teams and Projects with Saas.Pro is Seamless and Intuitive Collaboration Tools",
+      icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9940cf61fbec096d2a02c_base-station-line.svg",
+    },
+    {
+      title: "Robust Data Security",
+      description:
+        "Protect Your Sensitive Information with Cutting-Edge Encryption and Security Measures solutions",
+      icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d997d6096a6c911bd9c1a9_centos-line.svg",
+    },
+    {
+      title: "Seamless Productivity",
+      description:
+        "Streamline teamwork with Saas.Pro simple, seamless, and built for effortless collaboration",
+      icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d997d6096a6c911bd9c1a9_centos-line.svg",
+    },
+    {
+      title: "Effortless Operations",
+      description:
+        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+      icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
+    },
+    {
+      title: "Effortless Operations",
+      description:
+        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+      icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
+    },
+    {
+      title: "Effortless Operations",
+      description:
+        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+      icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
+    },
+    {
+      title: "Effortless Operations",
+      description:
+        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+      icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
+    },
+    {
+      title: "Effortless Operations",
+      description:
+        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+      icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
+    },
+  ].map((item, i) => (
+    <SwiperSlide key={i}>
+      <div className="erp-help-transform_card erp-drop-shadow">
+        <div className="erp-help-transform_icon-wrapper">
+          <img
+            loading="lazy"
+            src={item.icon}
+            alt={item.title}
+            className="erp-help-transform_icon-image"
+          />
+        </div>
+        <div className="erp-help-transform_text-block">
+          <div className="erp-text-lg erp-text-weight-semibold erp-text-color-black-900">
+            {item.title}
+          </div>
+          <div className="erp-why-appe-card_text">
+            <div className="erp-text-sm erp-text-color-black-600">
+              {item.description}
+            </div>
+          </div>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
               <div className="erp-help-transform_bg"></div>
             </div>
           </div>

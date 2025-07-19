@@ -199,3 +199,104 @@
     position: relative;
     right: -45px;
 }
+
+/* Responsive CSS */
+@media (max-width: 991px) {
+    .pla-common-title {
+      font-size: 36px;
+      line-height: 3rem;
+    }
+  
+    .pla-platform-layout {
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .pla-platform-layout-3 {
+      flex-direction: column;
+      gap: 32px;
+      padding: 48px 24px;
+    }
+  
+    .pla-platform-item-thumb-wrap-2,
+    .pla-platform-item-content-2 {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .pla-platform-item-title-2 {
+      font-size: 30px;
+      line-height: 2.5rem;
+    }
+  
+    .pla-platform-item-title-wrap-2 {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .pla-section-spacing {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    .pla-common-title {
+      font-size: 28px;
+      line-height: 2.5rem;
+    }
+  
+    .pla-platform-item-title-2 {
+      font-size: 24px;
+      line-height: 2.2rem;
+    }
+  
+    .pla-btn-wrap {
+      font-size: 13px;
+      padding: 10px 14px;
+    }
+  
+    .pla-platform-item-text,
+    .pla-platform-item-list {
+      font-size: 14px;
+    }
+  
+    .pla-platform-item-thumb-2 {
+      right: 0;
+    }
+  
+    .pla-platform-shape-wrap {
+      width: 100%;
+      height: 120px;
+      filter: blur(60px);
+      inset: 40px auto auto 0;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .pla-section-spacing {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  
+    .pla-common-title {
+      font-size: 22px;
+      line-height: 2rem;
+    }
+  
+    .pla-platform-item-title-2 {
+      font-size: 20px;
+      line-height: 2rem;
+    }
+  
+    .pla-btn-wrap {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  
+    .pla-platform-item-list {
+      margin-bottom: 16px;
+      padding-left: 22px;
+      background-size: 12px;
+    }
+  }
+  

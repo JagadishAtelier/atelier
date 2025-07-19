@@ -131,3 +131,68 @@
     width: 14px;
     line-height: 1px;
 }
+
+@media (max-width: 1024px) {
+    .prog-progress-layout {
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+    }
+  
+    .prog-common-title {
+      font-size: 36px;
+      line-height: 2.8rem;
+      text-align: center;
+    }
+  
+    .prog-section-heading.progress-heading {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .prog-progress-thumb-wrap {
+      max-width: 100%;
+    }
+  
+    .prog-features-text,
+    .prog-progress-list {
+      text-align: center;
+    }
+  
+    .prog-progress-btn-wrap {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .prog-progress-section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  
+    .prog-common-title {
+      font-size: 28px;
+      line-height: 2.2rem;
+    }
+  
+    .prog-features-text {
+      font-size: 14px;
+    }
+  
+    .prog-progress-list {
+      font-size: 14px;
+      padding-left: 20px;
+      background-size: 14px;
+    }
+  
+    .prog-btn-wrap {
+      font-size: 12px;
+      padding: 10px 14px;
+    }
+  
+    .prog-btn-icon {
+      width: 12px;
+    }
+  }
+  

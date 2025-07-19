@@ -137,3 +137,68 @@
     width: 14px;
     line-height: 1px;
 }
+/* Responsive CSS */
+@media (max-width: 991px) {
+    .lau-common-title {
+      font-size: 36px;
+      line-height: 3rem;
+    }
+  
+    .lau-section-heading.cta-heading {
+      max-width: 90%;
+    }
+  
+    .lau-cta-btn-wrap {
+      gap: 16px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .lau-common-title {
+      font-size: 28px;
+      line-height: 2.5rem;
+    }
+  
+    .lau-cta-btn-wrap {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+  
+    .lau-btn-wrap,
+    .lau-btn-wrap-3 {
+      font-size: 13px;
+      padding: 10px 14px;
+      text-align: center;
+    }
+  
+    .lau-section-heading.cta-heading {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .lau-common-title {
+      font-size: 22px;
+      line-height: 2rem;
+    }
+  
+    .lau-section-heading.cta-heading {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  
+    .lau-btn-wrap,
+    .lau-btn-wrap-3 {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  
+    .lau-cta-btn-wrap {
+      gap: 10px;
+    }
+  }
+  

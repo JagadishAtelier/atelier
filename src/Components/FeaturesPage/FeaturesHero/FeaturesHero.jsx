@@ -8,6 +8,7 @@ import ProgressSection from '../ProgressSection/ProgressSection';
 import ProductivitySection from '../ProductivitySection/ProductivitySection';
 import BlogPost from '../../BlogPost/BlogPost';
 import LaunchFaster from '../LaunchFaster/LaunchFaster';
+
 function FeaturesHero() {
   return (
     <div>
@@ -103,56 +104,38 @@ function FeaturesHero() {
             </div>
           </div>
 
-          <div
-      className="fea-about-hero-thumb-wrap"
-      style={{
-        opacity: 1,
-        transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-        transformStyle: 'preserve-3d',
-      }}
-    >
+          <div className="fea-about-hero-thumb-wrap">
+  {[
+    {
+      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      alt: "Atelier Portal",
+      title: "Atelier Portal",
+    },
+    {
+      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      alt: "Atelier ERP",
+      title: "Atelier ERP",
+    },
+    {
+      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
+      alt: "Atelier HRMs",
+      title: "Atelier HRMs",
+    },
+  ].map((item, index) => (
+    <div className="image-hover-wrapper" key={index}>
       <img
-        src="https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp"
-        loading="eager"
-        sizes="(max-width: 1547px) 100vw, 1547px"
-        srcSet="
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9-p-500.webp 500w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9-p-800.webp 800w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9-p-1080.webp 1080w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp 1547w
-        "
-        alt="thumb-9"
+        src={item.src}
+        alt={item.alt}
         className="fea-about-hero-thumb"
+        loading={index === 2 ? 'lazy' : 'eager'}
       />
-
-      <img
-        src="https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp"
-        loading="eager"
-        sizes="(max-width: 1547px) 100vw, 1547px"
-        srcSet="
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10-p-500.webp 500w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10-p-800.webp 800w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10-p-1080.webp 1080w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp 1547w
-        "
-        alt="thumb-10"
-        className="fea-about-hero-thumb"
-      />
-
-      <img
-        src="https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp"
-        loading="lazy"
-        sizes="(max-width: 1547px) 100vw, 1547px"
-        srcSet="
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11-p-500.webp 500w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11-p-800.webp 800w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11-p-1080.webp 1080w,
-          https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp 1547w
-        "
-        alt="thumb-11"
-        className="fea-about-hero-thumb"
-      />
+      <div className="image-hover-overlay">
+        <span>{item.title}</span>
+      </div>
     </div>
+  ))}
+</div>
+
         </div>
       </div>
       <div className="fea-c-overlay"></div>
