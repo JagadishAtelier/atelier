@@ -17,7 +17,8 @@ import ContactPage from './Components/ContactPage/ContactPage';
 import FooterSection from './Components/FooterSection/FooterSection';
 import CourseSection from './Components/CourseSection/CourseSection';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
-import FeaturesHero from './Components/FeaturesPage/FeaturesHero/FeaturesHero';
+// import FeaturesHero from './Components/FeaturesPage/FeaturesHero/FeaturesHero';
+import AtelierErp from './Components/AtelierErp/AtelierErp';
 
 function HomePage() {
   return (
@@ -26,6 +27,7 @@ function HomePage() {
       <HeroSection />
       <SmartFeatures />
       <Features />
+      <AtelierErp/>
       <CourseSection/>
       <BlogPost />
       <FAQSection />
@@ -43,7 +45,7 @@ function App() {
         <Route path="/blog/:name" element={<BlogDetails />} />
         <Route path="/about" element={<AboutPageHero/>} />
         <Route path="/inner-pages/contact" element={<ContactPage/>} />
-        <Route path="/features" element={<FeaturesHero/>} />
+        {/* <Route path="/features" element={<FeaturesHero/>} /> */}
       </Routes>
       <FooterSection/>
     </Router>

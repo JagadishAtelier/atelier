@@ -1,0 +1,184 @@
+.erp-section-margin {
+    margin-bottom: 11.25rem;
+    margin-top: 10%;
+}
+.erp-global-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.erp-help-transform_wrapper {
+    justify-content: space-between;
+    display: flex
+;
+}
+.erp-help-transform_content-left {
+    grid-row-gap: 2.5rem;
+    flex-flow: column;
+    align-items: flex-start;
+    max-width: 29.75rem;
+    display: flex
+;
+}
+.erp-section-headline_wrapper {
+    grid-row-gap: 1.25rem;
+    flex-flow: column;
+    align-items: center;
+    display: flex
+;
+}
+.erp-section-headline-text {
+    color: var(--black-900);
+    font-weight: 600;
+    letter-spacing: -1.92px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Inter, sans-serif;
+    font-size: 3rem;
+    line-height: 120%;
+}
+.erp-text-color-black-900 {
+    color: var(--black-900);
+}
+.erp-text-lg-2 {
+    letter-spacing: -.54px;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+}
+.erp-button-sm {
+    grid-column-gap: 8px;
+    background-color:black;
+    border: 1px solid #e0e0e0;
+    border-radius: 10rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: .875rem 1.75rem;
+    text-decoration: none;
+    display: inline-flex
+;
+}
+.erp-button-cmponent-text.text-sm.text-weight-medium {
+    font-weight: 500;
+}
+.erp-text-color-white {
+    color: var(--primary-white);
+}
+.erp-text-sm {
+    letter-spacing: -.14px;
+    margin-bottom: 0;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+.erp-button-image_block {
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+}
+.erp-button-image_content {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex
+;
+}
+.erp-button-big-arrow-image-w {
+    width: .7rem;
+}
+.erp-help-transform_content-right {
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    max-width: 660px;
+    display: grid
+;
+    position: relative;
+}
+.erp-help-transform_card.drop-shadow {
+    box-shadow: 0 24px 24px -12px #0000000a, 0 12px 12px -6px #0000000a, 0 6px 6px -3px #0000000a, 0 3px 3px -1.5px #0000000a, 0 1px 1px -.5px #0000000a, 0 0 0 1px #0000000d;
+}
+.erp-help-transform_bg {
+    z-index: -1;
+    filter: blur(144px);
+    background-image: linear-gradient(#d7c3ff, #fbe8f3);
+    border-radius: 62.5rem;
+    width: 32.8125rem;
+    height: 32.8125rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    inset: 2% 0% 0%;
+    overflow: hidden;
+}
+.erp-help-transform_icon-wrapper {
+    background-color: var(--primary-white);
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    display: flex
+;
+    box-shadow: 0 24px 24px -3px #0000000a, 0 12px 12px -3px #0000000a, 0 6px 6px -3px #0000000a, 0 2px 2px -1px #0000000a, 0 1px 1px -.5px #0000000a, 0 0 0 1px #00000014;
+}
+.erp-help-transform_text-block {
+    grid-row-gap: 1rem;
+    flex-flow: column;
+    display: flex
+;
+}
+.erp-text-lg.text-weight-semibold {
+    font-weight: 600;
+}
+.erp-text-lg {
+    letter-spacing: -.6px;
+    margin-bottom: 0;
+    font-family: Inter, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+.erp-text-color-black-900 {
+    color: var(--black-900);
+}
+.erp-text-color-black-600 {
+    color: var(--black-600);
+}
+
+.erp-drop-shadow {
+    box-shadow: 0 24px 24px -12px #0000000a, 0 12px 12px -6px #0000000a, 0 6px 6px -3px #0000000a, 0 3px 3px -1.5px #0000000a, 0 1px 1px -.5px #0000000a, 0 0 0 1px #0000000d;
+}
+.erp-help-transform_card {
+    z-index: 999;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem 2.375rem 1.5rem 1.5rem;
+    display: flex
+;
+    position: relative;
+}
+.header-design-for-all{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.header-design-for-all h1{
+    font-weight: bold;
+    width: 60%;
+    margin: auto;
+    font-size: 40px;
+    line-height: 3.5rem;
+}

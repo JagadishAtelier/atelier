@@ -1,0 +1,122 @@
+import React from 'react'
+import './AtelierErp.css'
+function AtelierErp() {
+  return (
+    <div>
+          <section className="erp-section_help-transform erp-section-margin">
+          <div className='header-design-for-all'>
+                  <div className="pla-c-sub-title-wrap">
+              <div className="pla-c-sub-title">Atelier Portal</div>
+            </div>
+            <h1>Comprehensive Management Information System for Educational Institutions</h1>
+            </div>
+      <div className="erp-w-layout-blockcontainer erp-global-wrapper erp-w-container">
+        <div className="erp-global-padding">
+          <div className="erp-help-transform_wrapper">
+            {/* Left Content */}
+            <div
+              data-w-id="aeb35c57-a2fb-8f94-e8b6-a01b0ce2cec3"
+              className="erp-help-transform_content-left"
+            >
+              <div className="erp-section-headline_wrapper erp-section-align-left">
+                <h3 className="erp-section-headline-text">
+                  We help transforms your businees
+                </h3>
+                <p className="erp-text-lg-2 erp-text-color-black-900">
+                  Our mission is to empower individuals and organizations to
+                  unleash their creative potential
+                </p>
+              </div>
+              <div className="erp-section-button">
+                <a href="/contact" className="erp-button-sm">
+                  <div className="erp-button-cmponent-text erp-text-sm erp-text-weight-medium erp-text-color-white">
+                    Get Started
+                  </div>
+                  <div className="erp-button-image_block">
+                    <div className="erp-button-image_content">
+                      <img
+                        loading="lazy"
+                        src="https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d5e9deae483e2d92925c27_Vector.svg"
+                        alt="Button Arrow"
+                        className="erp-button-big-arrow-image-w"
+                      />
+                    </div>
+                    <div className="erp-button-image_content-w">
+                      {[...Array(2)].map((_, index) => (
+                        <img
+                          key={index}
+                          loading="lazy"
+                          src="https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d5e9deae483e2d92925c25_Vector.svg"
+                          alt="Button Arrow"
+                          className="erp-button-big-arrow-image-b"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            {/* Right Content */}
+            <div
+              data-w-id="aeb35c57-a2fb-8f94-e8b6-a01b0ce2ceca"
+              className="erp-help-transform_content-right"
+            >
+              {[
+                {
+                  title: "Streamlined Workflow",
+                  description:
+                    "Effortlessly Collaborate Across Teams and Projects with Saas.Pro is Seamless and Intuitive Collaboration Tools",
+                  icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9940cf61fbec096d2a02c_base-station-line.svg",
+                },
+                {
+                  title: "Robust Data Security",
+                  description:
+                    "Protect Your Sensitive Information with Cutting-Edge Encryption and Security Measures solutions",
+                  icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d997d6096a6c911bd9c1a9_centos-line.svg",
+                },
+                {
+                  title: "Seamless Productivity",
+                  description:
+                    "Streamline teamwork with Saas.Pro simple, seamless, and built for effortless collaboration",
+                  icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d997d6096a6c911bd9c1a9_centos-line.svg",
+                },
+                {
+                  title: "Effortless Operations",
+                  description:
+                    "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+                  icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
+                },
+              ].map((item, i) => (
+                <div key={i} className="erp-help-transform_card erp-drop-shadow">
+                  <div className="erp-help-transform_icon-wrapper">
+                    <img
+                      loading="lazy"
+                      src={item.icon}
+                      alt={item.title}
+                      className="erp-help-transform_icon-image"
+                    />
+                  </div>
+                  <div className="erp-help-transform_text-block">
+                    <div className="erp-text-lg erp-text-weight-semibold erp-text-color-black-900">
+                      {item.title}
+                    </div>
+                    <div className="erp-why-appe-card_text">
+                      <div className="erp-text-sm erp-text-color-black-600">
+                        {item.description}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="erp-help-transform_bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  )
+}
+
+export default AtelierErp
