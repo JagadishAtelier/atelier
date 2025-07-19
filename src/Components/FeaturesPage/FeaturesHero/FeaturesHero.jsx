@@ -2,6 +2,8 @@ import React from 'react'
 import './FeaturesHero.css'
 import { Link } from 'react-router-dom';
 import PlatformSection from '../PlatformSection/PlatformSection';
+import FeaturesProduct from '../FeaturesProduct/FeaturesProduct';
+import GiantsSection from '../GiantsSection/GiantsSection';
 function FeaturesHero() {
   return (
     <div>
@@ -152,6 +154,8 @@ function FeaturesHero() {
       <div className="fea-c-overlay"></div>
     </div>
     <PlatformSection/>
+    <FeaturesProduct/>
+    <GiantsSection/>
     </div>
   )
 }
