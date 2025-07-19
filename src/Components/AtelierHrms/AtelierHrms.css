@@ -11,8 +11,6 @@
     position: relative;
 }
 .hrm-vertical-padding-small {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     display: block;
 }
 .hrm-container-large {
@@ -92,7 +90,7 @@
 .hrm-feature-wrapper {
     grid-column-gap: 1.875rem;
     grid-row-gap: 1.875rem;
-    background-color: var(--background-light-secondary);
+    background-color: white;
     border: .03125rem solid #d9d4f5;
     border-radius: .75rem;
     flex-flow: column;
@@ -139,4 +137,16 @@
     grid-auto-columns: 1fr;
     display: grid
 ;
+}
+.hrm-card-image-02 {
+    border-radius: .75rem;
+    width: 23.75rem;
+}
+.hrm-grid-feature-01{
+    grid-template-rows: auto;
+    grid-template-columns: 1.5fr 1fr;
+}
+.hrm-grid-feature-02 {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1.5fr;
 }

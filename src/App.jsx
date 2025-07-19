@@ -19,7 +19,7 @@ import CourseSection from './Components/CourseSection/CourseSection';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import FeaturesHero from './Components/FeaturesPage/FeaturesHero/FeaturesHero';
 import AtelierErp from './Components/AtelierErp/AtelierErp';
-// import AtelierHrms from './Components/AtelierHrms/AtelierHrms';
+import AtelierHrms from './Components/AtelierHrms/AtelierHrms';
 
 function HomePage() {
   return (
@@ -29,7 +29,7 @@ function HomePage() {
       <SmartFeatures />
       <Features />
       <AtelierErp/>
-      {/* <AtelierHrms/> */}
+      <AtelierHrms/>
       <CourseSection/>
       <BlogPost />
       <FAQSection />

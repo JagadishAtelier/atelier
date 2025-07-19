@@ -44,9 +44,11 @@ function AtelierHrms() {
             <div className="hrm-divider-blank-medium" />
             <div className="hrm-title-section-center">
               <div className="hrm-feature-title">
-                <div className="hrm-small-title">
-                  <p className="hrm-text-neutral-03 hrm-text-accent">Our Features</p>
-                </div>
+              <div className='header-design-for-all'>
+                  <div className="pla-c-sub-title-wrap">
+              <div className="pla-c-sub-title">Atelier HRM</div>
+            </div>
+            </div>
                 <h3 className="hrm-section-title hrm-slide-bottom-400ms">
                   Take control of your day,<br />
                   <span className="hrm-text-weight-bold">organize your life</span>
@@ -97,7 +99,7 @@ function AtelierHrms() {
       </div>
 
       {/* Mobile Version */}
-      <div className="feature-01-mobile">
+      {/* <div className="feature-01-mobile">
         <div className="vertical-padding-small">
           <div className="w-layout-blockcontainer container-large w-container">
             <div className="divider-blank-medium" />
@@ -136,7 +138,7 @@ function AtelierHrms() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
     </div>
   )
