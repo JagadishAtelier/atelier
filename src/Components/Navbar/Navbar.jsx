@@ -72,7 +72,7 @@ function Navbar() {
                     </div>
                     <div className="nav-button-holder">
                       <a
-                        href="#"
+                        href="/inner-pages/contact"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="button w-button"
@@ -99,7 +99,7 @@ function Navbar() {
             <a href="/features" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
             <a href="/about" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="/inner-pages/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a>
-            <a href="#" className="mobile-nav-button" onClick={() => setIsMenuOpen(false)}>Book Now</a>
+            <a href="/inner-pages/contact" className="mobile-nav-button" onClick={() => setIsMenuOpen(false)}>Book Now</a>
           </div>
         )}
               </div>

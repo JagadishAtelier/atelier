@@ -17,7 +17,7 @@ function LaunchFaster() {
               </h1>
             </div>
             <div className="lau-cta-btn-wrap">
-              <Link to="/contact" className="lau-btn-wrap">
+              <Link to="/inner-pages/contact" className="lau-btn-wrap">
                 <div className="lau-btn-inner">
                   <div>Get Started</div>
                   <div className="lau-btn-icon-wrap">
@@ -41,7 +41,7 @@ function LaunchFaster() {
                 </div>
               </Link>
 
-              <Link to="/pricing" className="lau-btn-wrap-3">
+              <Link to="/inner-pages/contact" className="lau-btn-wrap-3">
                 <div className="lau-btn-inner-3">
                   <div>Book a demo</div>
                   <div className="lau-btn-icon-wrap">

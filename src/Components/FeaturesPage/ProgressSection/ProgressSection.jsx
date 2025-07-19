@@ -53,7 +53,7 @@ function ProgressSection() {
               </ul>
 
               <div className="prog-progress-btn-wrap">
-                <a href="/contact" className="prog-btn-wrap">
+                <a href="/inner-pages/contact" className="prog-btn-wrap">
                   <div className="prog-btn-inner">
                     <div>Get Started</div>
                     <div className="prog-btn-icon-wrap">

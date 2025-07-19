@@ -72,61 +72,85 @@ function AtelierErp() {
   modules={[Autoplay, Grid]}
   autoplay={{ delay: 4000, disableOnInteraction: false }}
   loop={true}
+  spaceBetween={5}
   slidesPerView={2}
+  style={{marginBottom:"30px"}}
   grid={{
     rows: 2,
     fill: 'row',
   }}
-  spaceBetween={20}
+  breakpoints={{
+    0: {
+      // 👇 For small devices
+      slidesPerView: 1,
+      grid: {
+        rows: 1, // remove the 2-row layout on mobile
+      },
+    },
+    768: {
+      // 👇 Tablet
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+    },
+    1024: {
+      // 👇 Desktop
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+    },
+  }}
   className="erp-help-transform_swiper"
 >
   {[
     {
-      title: "Streamlined Workflow",
+      title: "Admission & Academics Management",
       description:
-        "Effortlessly Collaborate Across Teams and Projects with Saas.Pro is Seamless and Intuitive Collaboration Tools",
+        "Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9940cf61fbec096d2a02c_base-station-line.svg",
     },
     {
-      title: "Robust Data Security",
+      title: "Hostel & Transport Management",
       description:
-        "Protect Your Sensitive Information with Cutting-Edge Encryption and Security Measures solutions",
+        "Handles hostel allotment, room management, mess facilities, and student transportation, ensuring smooth accommodation and commute for students.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d997d6096a6c911bd9c1a9_centos-line.svg",
     },
     {
-      title: "Seamless Productivity",
+      title: "Learning & Library Management",
       description:
-        "Streamline teamwork with Saas.Pro simple, seamless, and built for effortless collaboration",
+        "Supports e-learning modules, online course content, library cataloging, and book issuance, enhancing the academic experience for students and faculty.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d997d6096a6c911bd9c1a9_centos-line.svg",
     },
     {
-      title: "Effortless Operations",
+      title: "Alumni & Placement Management",
       description:
-        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+        "Manages alumni engagement, networking events, and placement activities, connecting students with job opportunities and industry professionals.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
     },
     {
-      title: "Effortless Operations",
+      title: "COE & Advanced Reporting",
       description:
-        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+        "Manages examination processes, results, certifications, and generates detailed reports for data-driven decision-making.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
     },
     {
-      title: "Effortless Operations",
+      title: "Office & Governance Management",
       description:
-        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+        "Covers administrative operations, document handling, compliance, and governance policies to maintain institutional efficiency.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
     },
     {
-      title: "Effortless Operations",
+      title: "Grievance & Survey Management",
       description:
-        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+        "Facilitates student and faculty feedback, grievance redressal mechanisms, and surveys to improve institutional policies and services.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
     },
     {
-      title: "Effortless Operations",
+      title: "Portal & Payment Management",
       description:
-        "Work smarter with Saas.Pro—intuitive tools that keep your teams connected and projects on track",
+        "Oversees the institutional website, student portals, online fee payments, and digital transactions for a seamless user experience.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
     },
   ].map((item, i) => (

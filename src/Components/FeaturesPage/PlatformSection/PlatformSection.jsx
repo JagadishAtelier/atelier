@@ -100,7 +100,7 @@ function PlatformSection() {
                 </li>
               </ul>
               <div className="pla-platform-item-btn-wrap">
-                <Link to="/contact" className="pla-btn-wrap">
+                <Link to="/inner-pages/contact" className="pla-btn-wrap">
                   <div className="pla-btn-inner">
                     <div>Get Started</div>
                     <div className="pla-btn-icon-wrap">

@@ -35,7 +35,7 @@ function ProductivitySection() {
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">
-                <Link to="/contact" className="prod-btn-wrap w-inline-block">
+                <Link to="/inner-pages/contact" className="prod-btn-wrap w-inline-block">
                   <div className="prod-btn-inner">
                     <div>Get Started</div>
                     <div className="prod-btn-icon-wrap">

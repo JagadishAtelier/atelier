@@ -30,7 +30,7 @@ function FeaturesHero() {
               </p>
             </div>
             <div className="fea-hero-btn-wrap">
-              <Link to="/contact" className="fea-btn-wrap">
+              <Link to="/inner-pages/contact" className="fea-btn-wrap">
                 <div className="fea-btn-inner">
                   <div>Get Started</div>
                   <div className="fea-btn-icon-wrap">
@@ -66,7 +66,7 @@ function FeaturesHero() {
                 </div>
               </Link>
 
-              <Link to="/pricing" className="fea-btn-wrap-3">
+              <Link to="/inner-pages/contact" className="fea-btn-wrap-3">
                 <div className="fea-btn-inner-3">
                   <div>Book a demo</div>
                   <div className="fea-btn-icon-wrap">
