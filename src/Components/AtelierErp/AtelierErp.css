@@ -272,6 +272,9 @@
       line-height: 2.2rem;
       text-align: start;
     }
+    .erp-section-button{
+      margin: auto;
+    }
     .erp-help-transform_swiper{
         margin-bottom: 50px !important;
     }

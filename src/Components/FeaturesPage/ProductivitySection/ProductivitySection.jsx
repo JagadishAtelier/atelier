@@ -9,8 +9,10 @@ function ProductivitySection() {
         <div className="prod-container">
           <div className="prod-progress-layout-2">
             <div className="prod-section-heading progress-heading-2">
-              <div className="prod-c-sub-title-wrap">
-                <div className="prod-c-sub-title">Dixine Productivity</div>
+              <div className='prod-center-mob'>
+                <div className="prod-c-sub-title-wrap">
+                  <div className="prod-c-sub-title">Atelier Productivity</div>
+                </div>
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">

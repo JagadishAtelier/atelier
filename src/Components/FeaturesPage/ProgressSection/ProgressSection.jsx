@@ -26,7 +26,7 @@ function ProgressSection() {
 
             <div className="prog-section-heading progress-heading">
               <div className="prog-c-sub-title-wrap">
-                <div className="prog-c-sub-title">Dixine Progress</div>
+                <div className="prog-c-sub-title">Atelier Progress</div>
               </div>
               <div className="prog-common-title-wrap">
                 <h1 className="prog-common-title">

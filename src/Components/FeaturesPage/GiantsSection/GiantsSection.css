@@ -103,7 +103,9 @@
       font-size: 28px;
       line-height: 2.5rem;
     }
-  
+    .gia-giants-section{
+      padding-top: 0;
+    }
     .gia-giants-layout {
       grid-template-columns: 1fr;
       gap: 30px;

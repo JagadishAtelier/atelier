@@ -34,7 +34,7 @@ function AtelierErp() {
                 </p>
               </div>
               <div className="erp-section-button">
-                <a href="/contact" className="erp-button-sm">
+                <a href="/inner-pages/contact" className="erp-button-sm">
                   <div className="erp-button-cmponent-text erp-text-sm erp-text-weight-medium erp-text-color-white">
                     Get Started
                   </div>
