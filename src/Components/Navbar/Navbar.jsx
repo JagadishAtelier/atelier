@@ -129,7 +129,8 @@ function Navbar() {
                 {isMenuOpen && (
           <div className="mobile-nav-menu">
             <a href="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="/features" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
+            <a href="/features/admission" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Admission & Academics Management</a>
+      <a href="/features/students" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Student Engagement & Support</a>
             <a href="/about" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="/inner-pages/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <a href="/inner-pages/contact" className="mobile-nav-button" onClick={() => setIsMenuOpen(false)}>Book Now</a>
