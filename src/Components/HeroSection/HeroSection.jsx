@@ -29,7 +29,7 @@ function HeroSection() {
           start: "top -80%",   // start when element is near entering viewport
           end: "bottom top",  // finish when it scrolls out
           scrub: 5,           // 👈 adds smooth catch-up (1s smoothing)
-          markers: true,      // debug
+          markers: false,      // debug
         },
       }
     );
