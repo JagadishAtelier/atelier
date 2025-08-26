@@ -28,7 +28,7 @@ function SmartFeatures() {
   }, []);
 
   return (
-    <div style={{marginTop:"10%"}}>
+    <div style={{marginTop:"2%"}}>
       <section
         data-w-id="563f3494-b7b7-2e37-b2f7-2fb5d68984a4"
         className="section feature"
@@ -54,7 +54,10 @@ function SmartFeatures() {
                 opacity: 1,
               }}
             >
-              <h2 className="display-h2">Streamline Finances with Smart Features</h2>
+              <h2 className="display-h2">Our Services Includes</h2>
+            </div>
+            <div className='text-center'>
+            <p>Developing awesome website, process oriented automation (including software and hardware)that is better than your competitors. Provide guidance on taking web presence</p>
             </div>
           </div>
 
@@ -73,21 +76,21 @@ function SmartFeatures() {
                 }}
               >
                 <div className="feature-header">
-                  <h3 className="display-h4">Real-Time Analytics</h3>
+                  <h3 className="display-h4">Business Administration Services</h3>
                   <div className="paragraph t---neutral-10">
-                    Monitor your finances live with clear, intuitive dashboards.
+                  Turning vision into action—with clarity, structure, and support to help your business grow and adapt in any market.
                   </div>
                 </div>
                 <img
-                  src="https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b6_5f6509a0242b30f88806aa1eabfed0c2_Asset%2039.png"
+                  src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/business.jpeg"
                   loading="lazy"
                   width="313"
                   alt="Chart"
                   sizes="(max-width: 479px) 100vw, 313px"
                   srcSet="
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b6_5f6509a0242b30f88806aa1eabfed0c2_Asset%2039-p-500.png 500w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b6_5f6509a0242b30f88806aa1eabfed0c2_Asset%2039-p-800.png 800w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b6_5f6509a0242b30f88806aa1eabfed0c2_Asset%2039.png 976w"
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/business.jpeg 500w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/business.jpeg 800w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/business.jpeg 976w"
                   className="feature-image"
                 />
               </div>
@@ -105,21 +108,21 @@ function SmartFeatures() {
                 }}
               >
                 <div className="feature-header">
-                  <h3 className="display-h4">Automated Reports</h3>
+                  <h3 className="display-h4">Cloud Computing</h3>
                   <div className="paragraph t---neutral-10">
-                    Generate summaries instantly—no manual work needed.
+                  Transform your operations with cloud software—flexible, scalable, and cost-efficient. Pay only for what you use.
                   </div>
                 </div>
                 <img
-                  src="https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b5_9803be50bc139999f06bc74eaf96a654_Asset%2038.png"
+                  src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/cloud.jpeg"
                   loading="lazy"
                   width="313"
                   alt="Chart"
                   sizes="313px"
                   srcSet="
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b5_9803be50bc139999f06bc74eaf96a654_Asset%2038-p-500.png 500w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b5_9803be50bc139999f06bc74eaf96a654_Asset%2038-p-800.png 800w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b5_9803be50bc139999f06bc74eaf96a654_Asset%2038.png 932w"
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/cloud.jpeg 500w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/cloud.jpeg 800w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/cloud.jpeg 932w"
                   className="feature-image"
                 />
               </div>
@@ -137,21 +140,21 @@ function SmartFeatures() {
                 }}
               >
                 <div className="feature-header">
-                  <h3 className="display-h4">Smart Budgeting</h3>
+                  <h3 className="display-h4">E-Commerce</h3>
                   <div className="paragraph t---neutral-10">
-                    Plan and adjust with AI-powered budget suggestions.
+                  We create secure, scalable e-commerce solutions that drive growth and enhance your digital storefront.
                   </div>
                 </div>
                 <img
-                  src="https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b4_156cd028c9017d98ee244eda00843995_Asset%2037.png"
+                  src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/ecommerce.jpeg"
                   loading="lazy"
                   width="313"
                   alt="Chart"
                   sizes="313px"
                   srcSet="
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b4_156cd028c9017d98ee244eda00843995_Asset%2037-p-500.png 500w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b4_156cd028c9017d98ee244eda00843995_Asset%2037-p-800.png 800w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202b4_156cd028c9017d98ee244eda00843995_Asset%2037.png 927w"
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/ecommerce.jpeg 500w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/ecommerce.jpeg 800w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/ecommerce.jpeg 927w"
                   className="feature-image"
                 />
               </div>
@@ -171,20 +174,20 @@ function SmartFeatures() {
                 }}
               >
                 <div className="feature-header w-variant-cf55b21c-0f72-5bb5-a0ba-5f89ad39895f">
-                  <h3 className="display-h4">Secure Syncing</h3>
+                  <h3 className="display-h4">Technology Solutions</h3>
                   <div className="paragraph t---neutral-10">
-                    Monitor your finances live with dashboards.
+                  Align your tech investment with growth and security. We guide your digital transformation with clarity and precision.
                   </div>
                 </div>
                 <img
-                  src="https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202a2_2f607487748b8ed97503fab44312c123_daniil-silantev-nBuiLbz_j4A-unsplash.png"
+                  src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/technology%20solution.jpeg"
                   loading="lazy"
                   width="313"
                   alt="Chart"
                   sizes="313px"
                   srcSet="
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202a2_2f607487748b8ed97503fab44312c123_daniil-silantev-nBuiLbz_j4A-unsplash-p-500.png 500w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202a2_2f607487748b8ed97503fab44312c123_daniil-silantev-nBuiLbz_j4A-unsplash.png 929w"
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/technology%20solution.jpeg 500w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/technology%20solution.jpeg 929w"
                   className="feature-image w-variant-cf55b21c-0f72-5bb5-a0ba-5f89ad39895f"
                 />
               </div>
@@ -201,21 +204,21 @@ function SmartFeatures() {
                 }}
               >
                 <div className="feature-header w-variant-cf55b21c-0f72-5bb5-a0ba-5f89ad39895f">
-                  <h3 className="display-h4">Growth Score</h3>
+                  <h3 className="display-h4">Web Application</h3>
                   <div className="paragraph t---neutral-10">
-                    Generate summaries instantly.
+                  Streamline operations and scale faster with powerful, flexible browser-based applications.
                   </div>
                 </div>
                 <img
-                  src="https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202a1_10bed021acc80335836a8d329ea8d8c1_Asset%2018.png"
+                  src="https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/webapplication.jpeg"
                   loading="lazy"
                   width="313"
                   alt="Chart"
                   sizes="313px"
                   srcSet="
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202a1_10bed021acc80335836a8d329ea8d8c1_Asset%2018-p-500.png 500w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202a1_10bed021acc80335836a8d329ea8d8c1_Asset%2018-p-800.png 800w,
-                    https://cdn.prod.website-files.com/680ee0879bf5c75689c201ff/680ee0889bf5c75689c202a1_10bed021acc80335836a8d329ea8d8c1_Asset%2018.png 927w"
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/webapplication.jpeg 500w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/webapplication.jpeg 800w,
+                  https://enovasolutions.com/sites/enovasolutions.com/files/images/icons/webapplication.jpeg 927w"
                   className="feature-image w-variant-cf55b21c-0f72-5bb5-a0ba-5f89ad39895f"
                 />
               </div>

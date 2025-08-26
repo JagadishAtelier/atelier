@@ -2,10 +2,28 @@ import React,{useEffect,useState} from 'react';
 import './Navbar.css';
 import logo from '../../Assets/AST.png'
 import { useLocation } from 'react-router-dom';
+import { useRef } from 'react';
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
+  const closeTimeout = useRef(null);
+
+
+  const handleMouseEnter = () => {
+    if (closeTimeout.current) {
+      clearTimeout(closeTimeout.current); // cancel pending close
+    }
+    setIsFeaturesOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    // wait 5 seconds before closing
+    closeTimeout.current = setTimeout(() => {
+      setIsFeaturesOpen(false);
+    }, 500);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,9 +77,24 @@ function Navbar() {
                         <a href="/" className={`nav-link w-nav-link ${location.pathname === '/' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
                           Home
                         </a>
-                        <a href="/features" className={`nav-link w-nav-link ${location.pathname === '/features' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
-                          Features
-                        </a>
+                        <div 
+  className="features-wrapper"
+  onMouseEnter={handleMouseEnter}
+  onMouseLeave={handleMouseLeave}
+>
+  <div className="nav-link w-nav-link features-link">
+    Features
+    <i className={`bi bi-chevron-down arrow-icon ${isFeaturesOpen ? "rotate" : ""}`}></i>
+  </div>
+
+  {isFeaturesOpen && (
+    <div className="dropdown-menu">
+      <a href="/features" className="dropdown-item">Admission</a>
+      <a href="/features" className="dropdown-item">Students</a>
+    </div>
+  )}
+</div>
+
                         <a href="/about" className={`nav-link w-nav-link ${location.pathname === '/about' ? 'active' : ''}`} style={{ color: '#f5f4fd' }}>
                           About
                         </a>

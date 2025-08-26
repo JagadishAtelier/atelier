@@ -5,7 +5,7 @@
     grid-row-gap: var(--4xl);
     background-color: var(--neutral-01);
     border-top: 1px solid #fff3;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .foo-container {
     padding-right: var(--4xl);
@@ -23,7 +23,7 @@
 }
 .foo-footer-content {
     grid-column-gap: 2.5rem;
-    grid-row-gap: 2.5rem;
+    grid-row-gap: 1.5rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

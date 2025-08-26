@@ -44,7 +44,7 @@ function FAQSection() {
 
   return (
     <div id='faq'>
-      <div className="w-layout-blockcontainer containers w-container" style={{marginTop:'10%'}}>
+      <div className="w-layout-blockcontainer containers w-container" style={{marginTop:'5%'}}>
         <div className="faq-wrapper">
           <div className="faq-flex-wrap">
             <div className="faq-left-wrap">
