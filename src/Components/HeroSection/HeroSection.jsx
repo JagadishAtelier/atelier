@@ -16,6 +16,24 @@ gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      ".feature-grid-content-holder-2",
+      { y: 0, opacity: 1 },
+      { 
+        y: 200,
+        opacity: 0.9,
+        ease: "power1.out",   // softer ease than "none"
+        scrollTrigger: {
+          trigger: ".feature-grid-content-holder-2",
+          start: "top -80%",   // start when element is near entering viewport
+          end: "bottom top",  // finish when it scrolls out
+          scrub: 5,           // 👈 adds smooth catch-up (1s smoothing)
+          markers: true,      // debug
+        },
+      }
+    );
+    
   
     const dash = document.querySelector(".dashboad-holder img");
   
