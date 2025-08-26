@@ -26,11 +26,11 @@ function HomePage() {
     <>
 
       <HeroSection />
-      <SmartFeatures />
-      <Features />
+      {/* <Features /> */}
       <AtelierErp/>
       <AtelierHrms/>
       <CourseSection/>
+      <SmartFeatures />
       <BlogPost />
       <FAQSection />
     </>
