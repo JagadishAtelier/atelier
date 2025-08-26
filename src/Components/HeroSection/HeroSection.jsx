@@ -33,7 +33,6 @@ function HeroSection() {
         },
       }
     );
-    
   
     const dash = document.querySelector(".dashboad-holder img");
   
@@ -156,14 +155,6 @@ function HeroSection() {
     };
   }, []);
   
-  
-  
-  
-  
-  
-  
-
-
   return (
     <div>
       <div data-w-id="fa14a2cc-8e59-b8f9-6108-3fd80f7015c7" className="wrapper">

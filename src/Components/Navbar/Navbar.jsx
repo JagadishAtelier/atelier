@@ -89,8 +89,8 @@ function Navbar() {
 
   {isFeaturesOpen && (
     <div className="dropdown-menu">
-      <a href="/features" className="dropdown-item">Admission</a>
-      <a href="/features" className="dropdown-item">Students</a>
+      <a href="/features/admission" className="dropdown-item">Admission & Academics Management</a>
+      <a href="/features/students" className="dropdown-item">Student Engagement & Support</a>
     </div>
   )}
 </div>

@@ -5063,10 +5063,6 @@
     .wrapper {
       overflow: hidden;
     }
-  
-    .company-logo-wrapper {
-      padding-top: 260px;
-    }
   }
   
   @media screen and (max-width: 991px) {

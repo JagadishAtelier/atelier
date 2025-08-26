@@ -20,6 +20,7 @@ import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import FeaturesHero from './Components/FeaturesPage/FeaturesHero/FeaturesHero';
 import AtelierErp from './Components/AtelierErp/AtelierErp';
 import AtelierHrms from './Components/AtelierHrms/AtelierHrms';
+import AdmissionPageHero from './Pages/AdmissionPage/AdmissionPageHero/AdmissionPageHero';
 
 function HomePage() {
   return (
@@ -47,7 +48,8 @@ function App() {
         <Route path="/blog/:name" element={<BlogDetails />} />
         <Route path="/about" element={<AboutPageHero/>} />
         <Route path="/inner-pages/contact" element={<ContactPage/>} />
-        <Route path="/features" element={<FeaturesHero/>} />
+        <Route path="/features/students" element={<FeaturesHero/>} />
+        <Route path="/features/admission" element={<AdmissionPageHero/>} />
       </Routes>
       <FooterSection/>
     </Router>
