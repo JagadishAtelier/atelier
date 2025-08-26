@@ -5001,7 +5001,7 @@
   }
   
   .fixed-nav {
-    z-index: 20;
+    z-index: 99999;
     position: fixed;
     inset: 0% 0% auto;
   }

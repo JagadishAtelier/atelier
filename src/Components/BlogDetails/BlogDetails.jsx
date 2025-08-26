@@ -8,7 +8,7 @@ function BlogDetails() {
   const post = location.state?.post;
   return (
     <div className='blog-details-container'>
-        <section className="blog-details">
+        <section className="blog-detailss">
         <div className="w-layout-blockcontainer container w-container">
           <div className="hero-content-wrapper about">
             <div className="hero-inner primary">

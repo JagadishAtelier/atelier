@@ -2934,14 +2934,12 @@ margin: 0;
     padding-top: 70px;
   }
   
-  .blog-details {
+  .blog-detailss {
     border: 1px solid var(--neutral-5);
     background-image: url("https://cdn.prod.website-files.com/67a39d8671f8e918b2289403/67afe7e852e9c6a7cfe2920e_Header.webp");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1310px;
-    width: 100%;
     border-radius: 20px;
     margin-top: 20px;
     margin-left: 20px;
