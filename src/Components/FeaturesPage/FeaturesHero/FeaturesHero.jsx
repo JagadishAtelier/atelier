@@ -8,6 +8,7 @@ import ProgressSection from '../ProgressSection/ProgressSection';
 import ProductivitySection from '../ProductivitySection/ProductivitySection';
 import BlogPost from '../../BlogPost/BlogPost';
 import LaunchFaster from '../LaunchFaster/LaunchFaster';
+import StudentEngagement from '../StudentEngagement/StudentEngagement';
 
 function FeaturesHero() {
   return (
@@ -20,13 +21,11 @@ function FeaturesHero() {
               <div className="fea-hero-subtitle">Atelier Features</div>
             </div>
             <div className="fea-hero-title-wrap">
-              <h1 className="fea-hero-title">Features of the Atelier management</h1>
+              <h1 className="fea-hero-title">Student Engagement & Support</h1>
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">
-                Temptatio libero tumultus delicate despecto aduro caute.
-                Admoneo decet comprehendo ambulo ultra color cenaculum
-                asperiores cui.
+              Our Student Engagement & Support module is designed to nurture student well-being, encourage participation, and provide the guidance students need to thrive—academically, emotionally, and socially.
               </p>
             </div>
             <div className="fea-hero-btn-wrap">
@@ -140,8 +139,9 @@ function FeaturesHero() {
       </div>
       <div className="fea-c-overlay"></div>
     </div>
-    <PlatformSection/>
-    <FeaturesProduct/>
+    {/* <PlatformSection/> */}
+    <StudentEngagement/>
+    {/* <FeaturesProduct/> */}
     <GiantsSection/>
     <ProgressSection/>
     <ProductivitySection/>

@@ -1,0 +1,160 @@
+.blue-bg-sectn {
+    /* background: #ebf0ff !important; */
+    background: white !important;
+    padding-bottom: 0 !important;
+}
+.gbb-row-wrapper {
+    position: relative;
+}
+.gbb-row .bb-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.gbb-row-wrapper .bb-container {
+    position: relative;
+    z-index: 2;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.bg-size-cover {
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.gsc-heading.align-center {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.gsc-heading {
+    padding: 0 0 35px;
+    display: block;
+    width: 100%;
+}
+.gsc-heading.style-1 .title {
+    font-size: 40px;
+    position: relative;
+}
+.gsc-heading .title {
+    position: relative;
+    margin: 0;
+    letter-spacing: -1px;
+}
+.gsc-heading.style-1 .title-desc {
+    margin-top: 25px;
+}
+.white_card .column-inner {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    height: 100%;
+    /* margin-bottom: 40px; */
+}
+.white_card .column-inner .box-margin-medium {
+    margin-bottom: 0px !important;
+}
+.gsc-icon-box.left, .gsc-icon-box.left-2 {
+    text-align: left;
+}
+.gsc-icon-box.right, .gsc-icon-box.left {
+    display: table;
+    max-width: 600px;
+}
+.gsc-icon-box {
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+}
+
+.gsc-icon-box.left .highlight-icon, .gsc-icon-box.left-2 .highlight-icon {
+    padding-right: 20px;
+}
+.gsc-icon-box.right .highlight-icon, .gsc-icon-box.left .highlight-icon {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.gsc-icon-box.left, .gsc-icon-box.left-2 {
+    text-align: left;
+}
+.gsc-icon-box .highlight-icon .icon-container {
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    color: #2A2C38;
+}
+.color-theme {
+    color: #b8000e !important;
+}
+.fa-2x {
+    font-size: 2em;
+}
+.gsc-icon-box .highlight-icon .icon-container .icon {
+    position: relative;
+    z-index: 11;
+    display: inline-block;
+}
+.highlight_content {
+    display: table-cell;
+}
+.gsc-icon-box .highlight_content.verticle-align-middle {
+    vertical-align: middle;
+}
+.gsc-icon-box .highlight_content {
+    margin-top: 5px;
+}
+.highlight_content .title {
+    margin: 0 0 15px;
+}
+.gsc-icon-box .highlight_content .title {
+    font-size: 20px;
+    color: #2A2C38;
+    margin: 0 0 10px;
+}
+.highlight_content .desc {
+    margin-top: 8px;
+}
+.gsc-icon-box .highlight_content .desc p {
+    margin-bottom: 0;
+    color: #171717 !important;
+    line-height: 22px !important;
+    font-size: 16px !important;
+}
+ul.tick_list {
+    padding: 0;
+    margin: 12px 0 25px 0;
+}
+ul.tick_list li {
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.tick_list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tick_list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+  }
+  
+  .tick_list li::before {
+    content: "✔"; /* tick symbol */
+    position: absolute;
+    left: 0;
+    color: red;
+    font-weight: bold;
+  }
+  
