@@ -16,24 +16,24 @@ function PaymentProductivitySection() {
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                How We Boost Payment Productivity
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Simplify financial operations and empower your team with a 
+                    payment ecosystem designed for speed, accuracy,
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Automate invoicing, reminders, and settlements to save time.
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Provide real-time tracking of transactions and payment statuses.
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Gain actionable insights with financial analytics & reporting.
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">

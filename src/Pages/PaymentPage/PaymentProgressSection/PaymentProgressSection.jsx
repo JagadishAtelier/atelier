@@ -30,25 +30,24 @@ function PaymentProgressSection() {
               </div>
               <div className="prog-common-title-wrap">
                 <h1 className="prog-common-title">
-                  Track progress to keep an eye on workflow.
+                Track payment progress with complete visibility.
                 </h1>
               </div>
               <div className="prog-progress-text-wrap">
                 <p className="prog-features-text">
-                  Shall without could down her good as please. Might would
-                  twists a get king's and or an equally commas
+                Gain real-time insights into your financial workflows. 
                 </p>
               </div>
 
               <ul className="prog-progress-list-wrap">
                 <li className="prog-progress-list">
-                  Arduous clearly, but of were up do finger doner
+                Monitor payment milestones and ensure timely settlements.
                 </li>
                 <li className="prog-progress-list">
-                  Make regulatory with in claim fly including where
+                Get instant visibility into pending, cleared, or failed payments.
                 </li>
                 <li className="prog-progress-list last">
-                  Worn you the too what free of one desk wonder
+                Improve accountability with detailed progress analytics and reports.
                 </li>
               </ul>
 

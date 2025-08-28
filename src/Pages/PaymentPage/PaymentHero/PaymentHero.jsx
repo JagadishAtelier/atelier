@@ -19,11 +19,13 @@ function PaymentHero() {
               <div className="fea-hero-subtitle">Atelier Features</div>
             </div>
             <div className="fea-hero-title-wrap">
-              <h1 className="fea-hero-title">Admission & Academics Management</h1>
+              <h1 className="fea-hero-title">Portal & Payment Management</h1>
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">
-              Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+              A centralized portal to manage user access, digital payments, and financial workflows. 
+              Our solution simplifies fee collection, automates billing, and ensures secure, 
+              real-time payment processing while offering a seamless experience for both users and administrators.
               </p>
             </div>
             <div className="fea-hero-btn-wrap">
@@ -105,18 +107,18 @@ function PaymentHero() {
   {[
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
-      alt: "Atelier Portal",
-      title: "Atelier Portal",
+      alt: "Unified Payment Portal",
+      title: "Unified Payment Portal",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
-      alt: "Atelier ERP",
-      title: "Atelier ERP",
+      alt: "Billing Automation",
+      title: "Automated Billing",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
-      alt: "Atelier HRMs",
-      title: "Atelier HRMs",
+      alt: "Secure Transactions",
+      title: "Secure Transactions",
     },
   ].map((item, index) => (
     <div className="image-hover-wrapper" key={index}>

@@ -5,58 +5,62 @@ import {
   FaStar, 
   FaCheckCircle, 
   FaBook, 
-  FaClipboardCheck 
+  FaClipboardCheck ,
+  FaLock, 
+  FaCreditCard, 
+  FaFileInvoice, 
+  FaShieldAlt 
 } from "react-icons/fa";
 const PaymentEngagement = () => {
   // Data array for the two cards
   const cards = [
     {
-      icon: <FaCheckCircle className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Seamless Admission Process",
+      icon: <FaCreditCard className="text-theme" style={{ fontSize: "30px" }} />,
+      title: "Unified Payment Gateway",
       description:
-        "Streamline your institution’s admission process with an intuitive and automated system. From online applications to document verification, ensure a hassle-free experience for students and administrators.",
+        "Enable smooth fee collection, online transactions, and digital wallets all from a single platform.",
       points: [
-        "Online Application & Registration",
-        "Automated Document Verification",
-        "Fee Payment & Receipt Generation",
-        "Merit-Based & Direct Admission Support",
+        "OMulti-Mode Payment Support (UPI, Cards, Net Banking)",
+        "Instant Fee Receipt Generation",
+        "Seamless Mobile & Web Payments",
+        "Integration with Leading Gateways",
       ],
       extraClass: "alumini_space", // custom extra class if needed
     },
     {
-        icon: <FaUsers className="text-theme "style={{ fontSize: "30px" }}  />,
-      title: "Student Information Management",
+        icon: <FaFileInvoice className="text-theme "style={{ fontSize: "30px" }}  />,
+      title: "Automated Billing & Invoicing",
       description:
-        "Keep track of student records effortlessly with a centralized system that provides real-time access to academic and personal details.",
+        "Simplify finance operations with auto-generated invoices, reminders, and settlements.",
       points: [
-        "Comprehensive Student Profiles",
-        "Attendance & Performance Tracking",
-        "Course & Batch Management",
-        "Parent & Guardian Communication",
+        "Smart Invoice Creation",
+        "Automated Due Reminders",
+        "Subscription & Recurring Payments",
+        "Ledger & Financial Reports",
       ],
     },
     {
-      icon: <FaBook className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Academic Planning & Course Management",
+      icon: <FaUsers className="text-theme" style={{ fontSize: "30px" }} />,
+      title: "Centralized Portal Access",
       description:
-        "Enhance learning outcomes with a well-structured academic management system that ensures smooth course delivery.",
+        "Provide users with a single secure login to access all services, transactions, and dashboards.",
       points: [
-        "Curriculum & Syllabus Management",
-        "Timetable & Scheduling Automation",
-        "Faculty Allocation & Workload Management",
-        "Exam & Result Processing",
+        "Role-Based Access Control",
+        "Custom User Dashboards",
+        "Self-Service Portal for Clients",
+        "Admin Control & Monitoring",
       ],
     },
     {
-      icon: <FaClipboardCheck className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Grading & Assessment",
+      icon: <FaShieldAlt className="text-theme" style={{ fontSize: "30px" }} />,
+      title: "Secure Transactions",
       description:
-        "Simplify grading and assessment with automated evaluation tools that align with institutional policies.",
+        "Protect sensitive payment data with enterprise-grade security protocols.",
       points: [
-        "Customizable Grading Systems",
-        "Internal & External Assessment Tracking",
-        "Automated Report Card Generation",
-        "Student Performance Analytics",
+        "End-to-End Encryption",
+        "PCI-DSS Compliance",
+        "Fraud Detection & Alerts",
+        "Two-Factor Authentication",
       ],
     },
   ];
@@ -82,11 +86,14 @@ const PaymentEngagement = () => {
               <div className="gia-c-sub-title">Atelier Supports</div>
             </div>
                       <h2 className="title fweight-600 text-black">
-                        <span>Admission & Academics Management</span>
+                        <span>Portal & Payment Management</span>
                       </h2>
                       <div className="title-desc text-gray">
                         <p>
-                        Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+                        A powerful portal and payment ecosystem designed for 
+                          businesses, institutions, and organizations. 
+                          Manage transactions, automate billing, and 
+                          provide secure, user-friendly access—all in one place.
                         </p>
                       </div>
                     </div>
