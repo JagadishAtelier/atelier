@@ -12,51 +12,51 @@ const OfficeEngagement = () => {
   const cards = [
     {
       icon: <FaCheckCircle className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Seamless Admission Process",
+      title: "Governance & Compliance",
       description:
-        "Streamline your institution’s admission process with an intuitive and automated system. From online applications to document verification, ensure a hassle-free experience for students and administrators.",
+        "Ensure organizational compliance and accountability with built-in policy tracking, audit trails, and automated approval workflows.",
       points: [
-        "Online Application & Registration",
-        "Automated Document Verification",
-        "Fee Payment & Receipt Generation",
-        "Merit-Based & Direct Admission Support",
+        "Policy & Regulation Management",
+        "Automated Compliance Tracking",
+        "Audit-Ready Reports",
+        "Role-Based Access Control",
       ],
       extraClass: "alumini_space", // custom extra class if needed
     },
     {
         icon: <FaUsers className="text-theme "style={{ fontSize: "30px" }}  />,
-      title: "Student Information Management",
+      title: "Employee & Team Management",
       description:
-        "Keep track of student records effortlessly with a centralized system that provides real-time access to academic and personal details.",
+        "Manage workforce details, performance, and collaboration with a centralized office management system.",
       points: [
-        "Comprehensive Student Profiles",
-        "Attendance & Performance Tracking",
-        "Course & Batch Management",
-        "Parent & Guardian Communication",
+        "Employee Profiles & Roles",
+        "Team Communication Tools",
+        "Attendance & Leave Tracking",
+        "Performance Monitoring",
       ],
     },
     {
       icon: <FaBook className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Academic Planning & Course Management",
+      title: "Meeting & Decision Management",
       description:
-        "Enhance learning outcomes with a well-structured academic management system that ensures smooth course delivery.",
+        "Streamline board meetings and decision-making with digital agendas, action item tracking, and secure document sharing.",
       points: [
-        "Curriculum & Syllabus Management",
-        "Timetable & Scheduling Automation",
-        "Faculty Allocation & Workload Management",
-        "Exam & Result Processing",
+        "Board & Committee Management",
+        "Agenda & Minutes Automation",
+        "Task Assignment & Follow-ups",
+        "Secure File & Notes Sharing",
       ],
     },
     {
       icon: <FaClipboardCheck className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Grading & Assessment",
+      title: "Workflow & Approvals",
       description:
-        "Simplify grading and assessment with automated evaluation tools that align with institutional policies.",
+        "Accelerate office operations with automated approval pipelines and workflow monitoring.",
       points: [
-        "Customizable Grading Systems",
-        "Internal & External Assessment Tracking",
-        "Automated Report Card Generation",
-        "Student Performance Analytics",
+        "Multi-Level Approval Workflows",
+        "Digital Forms & Requests",
+        "Task Prioritization & Delegation",
+        "Progress Tracking Dashboard",
       ],
     },
   ];
@@ -82,11 +82,13 @@ const OfficeEngagement = () => {
               <div className="gia-c-sub-title">Atelier Supports</div>
             </div>
                       <h2 className="title fweight-600 text-black">
-                        <span>Admission & Academics Management</span>
+                        <span>Office & Governance Management</span>
                       </h2>
                       <div className="title-desc text-gray">
                         <p>
-                        Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+                        Drive transparency, accountability, and efficiency in your
+                          organization with powerful governance and office management tools
+                          tailored for modern enterprises.
                         </p>
                       </div>
                     </div>

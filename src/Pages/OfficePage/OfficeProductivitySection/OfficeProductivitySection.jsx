@@ -16,24 +16,24 @@ function OfficeProductivitySection() {
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                How We Drive Office Productivity & Governance
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Improve operational efficiency and foster transparency with tools 
+                    designed to automate governance processes
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Automated workflow & approval pipelines to reduce delays
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Centralized dashboards for governance, compliance, and reporting
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Collaboration tools to streamline meetings and decision-making
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">
