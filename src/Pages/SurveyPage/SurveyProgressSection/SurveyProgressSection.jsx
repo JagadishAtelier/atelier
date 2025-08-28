@@ -30,25 +30,24 @@ function SurveyProgressSection() {
               </div>
               <div className="prog-common-title-wrap">
                 <h1 className="prog-common-title">
-                  Track progress to keep an eye on workflow.
+                Track Grievance & Survey Progress Effectively
                 </h1>
               </div>
               <div className="prog-progress-text-wrap">
                 <p className="prog-features-text">
-                  Shall without could down her good as please. Might would
-                  twists a get king's and or an equally commas
+                Stay informed with real-time updates on grievances and survey responses. Monitor resolution timelines, response rates, and overall organizational engagement.
                 </p>
               </div>
 
               <ul className="prog-progress-list-wrap">
                 <li className="prog-progress-list">
-                  Arduous clearly, but of were up do finger doner
+                Monitor grievance resolution from submission to closure.
                 </li>
                 <li className="prog-progress-list">
-                  Make regulatory with in claim fly including where
+                Track survey participation and feedback trends in real time.
                 </li>
                 <li className="prog-progress-list last">
-                  Worn you the too what free of one desk wonder
+                Analyze progress reports to optimize workflows and satisfaction.
                 </li>
               </ul>
 

@@ -19,11 +19,11 @@ function SurveyHero() {
               <div className="fea-hero-subtitle">Atelier Features</div>
             </div>
             <div className="fea-hero-title-wrap">
-              <h1 className="fea-hero-title">Admission & Academics Management</h1>
+              <h1 className="fea-hero-title">Grievance & Survey Management</h1>
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">
-              Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+              Streamline feedback collection, grievance resolution, and employee or client surveys with our intelligent platform. Track issues, measure satisfaction, and enhance productivity across teams.
               </p>
             </div>
             <div className="fea-hero-btn-wrap">
@@ -105,18 +105,18 @@ function SurveyHero() {
   {[
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
-      alt: "Atelier Portal",
-      title: "Atelier Portal",
+      alt: "Centralized Dashboard",
+      title: "Centralized Dashboard",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
-      alt: "Atelier ERP",
-      title: "Atelier ERP",
+      alt: "Survey Analytics",
+      title: "Survey Analytics",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
-      alt: "Atelier HRMs",
-      title: "Atelier HRMs",
+      alt: "Automated Feedback & Resolution",
+      title: "Automated Feedback & Resolution",
     },
   ].map((item, index) => (
     <div className="image-hover-wrapper" key={index}>

@@ -12,51 +12,51 @@ const SurveyEngagement = () => {
   const cards = [
     {
       icon: <FaCheckCircle className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Seamless Admission Process",
+      title: "Centralized Grievance Dashboard",
       description:
-        "Streamline your institution’s admission process with an intuitive and automated system. From online applications to document verification, ensure a hassle-free experience for students and administrators.",
+        "Monitor and manage all employee or client grievances from a single intuitive dashboard. Track, assign, and resolve issues efficiently.",
       points: [
-        "Online Application & Registration",
-        "Automated Document Verification",
-        "Fee Payment & Receipt Generation",
-        "Merit-Based & Direct Admission Support",
+        "Real-time Issue Tracking",
+        "Priority-based Assignment & Escalation",
+        "Status Updates & Notifications",
+        "Automated Resolution Workflows",
       ],
       extraClass: "alumini_space", // custom extra class if needed
     },
     {
         icon: <FaUsers className="text-theme "style={{ fontSize: "30px" }}  />,
-      title: "Student Information Management",
+      title: "Survey & Feedback Collection",
       description:
-        "Keep track of student records effortlessly with a centralized system that provides real-time access to academic and personal details.",
+        "Collect actionable feedback from employees, clients, or customers through smart surveys and forms, enhancing engagement and satisfaction.",
       points: [
-        "Comprehensive Student Profiles",
-        "Attendance & Performance Tracking",
-        "Course & Batch Management",
-        "Parent & Guardian Communication",
+        "Customizable Survey Templates",
+        "Anonymous Feedback Option",
+        "Scheduled & Triggered Surveys",
+        "Real-time Response Analysis",
       ],
     },
     {
       icon: <FaBook className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Academic Planning & Course Management",
+      title: "Analytics & Insights",
       description:
-        "Enhance learning outcomes with a well-structured academic management system that ensures smooth course delivery.",
+        "Transform raw survey and grievance data into actionable insights to improve processes, employee satisfaction, and overall organizational productivity.",
       points: [
-        "Curriculum & Syllabus Management",
-        "Timetable & Scheduling Automation",
-        "Faculty Allocation & Workload Management",
-        "Exam & Result Processing",
+        "Data Visualization & Reports",
+        "Trend & Sentiment Analysis",
+        "Performance Benchmarking",
+        "Actionable Recommendations",
       ],
     },
     {
       icon: <FaClipboardCheck className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Grading & Assessment",
+      title: "Automated Resolution & Follow-up",
       description:
-        "Simplify grading and assessment with automated evaluation tools that align with institutional policies.",
+        "Streamline the grievance resolution process with automation. Ensure timely follow-ups and closure to enhance trust and transparency.",
       points: [
-        "Customizable Grading Systems",
-        "Internal & External Assessment Tracking",
-        "Automated Report Card Generation",
-        "Student Performance Analytics",
+        "Automated Issue Routing",
+        "Follow-up Reminders & Alerts",
+        "Closure & Feedback Tracking",
+        "Audit Trail & Compliance Reports",
       ],
     },
   ];
@@ -82,11 +82,11 @@ const SurveyEngagement = () => {
               <div className="gia-c-sub-title">Atelier Supports</div>
             </div>
                       <h2 className="title fweight-600 text-black">
-                        <span>Admission & Academics Management</span>
+                        <span>Grievance & Survey Management</span>
                       </h2>
                       <div className="title-desc text-gray">
                         <p>
-                        Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+                        Collect, track, and resolve grievances while capturing meaningful survey feedback. Make informed decisions and enhance organizational efficiency with actionable insights.
                         </p>
                       </div>
                     </div>

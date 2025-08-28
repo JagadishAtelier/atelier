@@ -16,24 +16,23 @@ function SurveyProductivitySection() {
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                Boost Productivity with Smart Grievance & Survey Management
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Streamline workflows, improve response times, and enhance employee or client satisfaction by leveraging automated grievance tracking and survey insights.
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Centralize grievances and feedback for faster resolution.
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Automate notifications, follow-ups, and task assignments.
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Gain actionable insights through analytics and reports.
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">
