@@ -5101,6 +5101,7 @@
   
     .navbar-container {
       grid-column-gap: 80px;
+      align-items: normal;
     }
   
     .nav-menu-link-holder {
@@ -5439,7 +5440,7 @@
       background-color: white;
       padding: 1rem;
       gap: 1rem;
-      width: 50%;
+      width: 100%;
     }
   
     .mobile-nav-link {

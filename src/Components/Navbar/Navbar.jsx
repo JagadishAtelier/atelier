@@ -8,8 +8,16 @@ function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
+  const [isMobileFeaturesOpen, setIsMobileFeaturesOpen] = useState(false); 
   const closeTimeout = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
+    useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleMouseEnter = () => {
     if (closeTimeout.current) {
@@ -33,6 +41,10 @@ function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const toggleMobileFeatures = () => setIsMobileFeaturesOpen(prev => !prev);
+
+  
   const isNotHome = location.pathname !== '/';
   const isWhiteBackground = scrolled || isNotHome;
   return (
@@ -137,8 +149,25 @@ function Navbar() {
                 {isMenuOpen && (
           <div className="mobile-nav-menu">
             <a href="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="/features/admission" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Admission & Academics Management</a>
-      <a href="/features/students" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Student Engagement & Support</a>
+                  {/* Mobile Features Collapsible */}
+                  <div className="mobile-nav-link features-mobile" onClick={toggleMobileFeatures}>
+                    Features
+                    <i className={`bi bi-chevron-down arrow-icon ${isMobileFeaturesOpen ? "rotate" : ""}`}></i>
+                  </div>
+                  {isMobileFeaturesOpen && (
+                    <div className="mobile-dropdown">
+                      <a href="/features/admission" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Admission & Academics Management</a>
+                      <a href="/features/students" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Student Engagement & Support</a>
+                      <a href="/features/alumni" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Alumni & Placement Management</a>
+                      <a href="/features/coe" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>COE & Advanced Reporting</a>
+                      <a href="/features/survey" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Grievance & Survey Management</a>
+                      <a href="/features/hostel" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Hostel & Transport Management</a>
+                      <a href="/features/lib" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Learning & Library Management</a>
+                      <a href="/features/office" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Office & Governance Management</a>
+                      <a href="/features/portal" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Portal & Payment Management</a>
+                      <a href="/features/rnd" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>R&D and Governance</a>
+                    </div>
+                  )}
             <a href="/about" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="/inner-pages/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <a href="/inner-pages/contact" className="mobile-nav-button" onClick={() => setIsMenuOpen(false)}>Book Now</a>
