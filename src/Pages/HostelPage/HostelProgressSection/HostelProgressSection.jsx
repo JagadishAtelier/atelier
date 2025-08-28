@@ -30,25 +30,25 @@ function HostelProgressSection() {
               </div>
               <div className="prog-common-title-wrap">
                 <h1 className="prog-common-title">
-                  Track progress to keep an eye on workflow.
+                Track Progress & Monitor Hostel and Transport Efficiency
                 </h1>
               </div>
               <div className="prog-progress-text-wrap">
                 <p className="prog-features-text">
-                  Shall without could down her good as please. Might would
-                  twists a get king's and or an equally commas
+                Stay updated with real-time insights into hostel occupancy, 
+                    mess management, and transport performance.
                 </p>
               </div>
 
               <ul className="prog-progress-list-wrap">
                 <li className="prog-progress-list">
-                  Arduous clearly, but of were up do finger doner
+                Real-time reports on hostel occupancy & room utilization
                 </li>
                 <li className="prog-progress-list">
-                  Make regulatory with in claim fly including where
+                Attendance & route progress tracking for buses
                 </li>
                 <li className="prog-progress-list last">
-                  Worn you the too what free of one desk wonder
+                Data-driven analytics for performance & resource planning
                 </li>
               </ul>
 

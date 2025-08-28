@@ -5,58 +5,61 @@ import {
   FaStar, 
   FaCheckCircle, 
   FaBook, 
-  FaClipboardCheck 
+  FaClipboardCheck,
+  FaBus, 
+  FaBed, 
+  FaUtensils, 
+  FaShieldAlt,  
 } from "react-icons/fa";
 const HostelEngagement = () => {
   // Data array for the two cards
   const cards = [
     {
-      icon: <FaCheckCircle className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Seamless Admission Process",
+      icon: <FaBed className="text-theme" style={{ fontSize: "30px" }} />,
+      title: "Smart Hostel Allocation",
       description:
-        "Streamline your institution’s admission process with an intuitive and automated system. From online applications to document verification, ensure a hassle-free experience for students and administrators.",
+        "Automate room allotments and manage hostel occupancy with real-time availability tracking, ensuring transparency and efficiency.",
       points: [
-        "Online Application & Registration",
-        "Automated Document Verification",
-        "Fee Payment & Receipt Generation",
-        "Merit-Based & Direct Admission Support",
-      ],
-      extraClass: "alumini_space", // custom extra class if needed
-    },
-    {
-        icon: <FaUsers className="text-theme "style={{ fontSize: "30px" }}  />,
-      title: "Student Information Management",
-      description:
-        "Keep track of student records effortlessly with a centralized system that provides real-time access to academic and personal details.",
-      points: [
-        "Comprehensive Student Profiles",
-        "Attendance & Performance Tracking",
-        "Course & Batch Management",
-        "Parent & Guardian Communication",
+        "Room Allotment & Change Requests",
+        "Digital Attendance & Leave Records",
+        "Visitor & Guest Management",
+        "Integrated Billing for Hostel Fees",
       ],
     },
     {
-      icon: <FaBook className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Academic Planning & Course Management",
+        icon: <FaShieldAlt className="text-theme "style={{ fontSize: "30px" }}  />,
+      title: "Student Safety & Compliance",
       description:
-        "Enhance learning outcomes with a well-structured academic management system that ensures smooth course delivery.",
+        "Ensure a safe and secure environment in hostel and transport facilities with integrated compliance tools.",
       points: [
-        "Curriculum & Syllabus Management",
-        "Timetable & Scheduling Automation",
-        "Faculty Allocation & Workload Management",
-        "Exam & Result Processing",
+        "Emergency Alerts & Notifications",
+        "Fire & Safety Compliance Records",
+        "Biometric/Smart Card Access",
+        "Incident Reporting & Tracking",
       ],
     },
     {
-      icon: <FaClipboardCheck className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Grading & Assessment",
+      icon: <FaBus className="text-theme" style={{ fontSize: "30px" }} />,
+      title: "Transport Scheduling & Tracking",
       description:
-        "Simplify grading and assessment with automated evaluation tools that align with institutional policies.",
+        "Plan and monitor transport services with intelligent scheduling and live tracking for student safety and punctuality.",
       points: [
-        "Customizable Grading Systems",
-        "Internal & External Assessment Tracking",
-        "Automated Report Card Generation",
-        "Student Performance Analytics",
+        "Route & Bus Allocation",
+        "GPS-Based Real-Time Tracking",
+        "Driver & Vehicle Management",
+        "Automated Fee Collection",
+      ],
+    },
+    {
+      icon: <FaUtensils  className="text-theme" style={{ fontSize: "30px" }} />,
+      title: "Mess & Facility Management",
+      description:
+        "Digitize mess planning and resource allocation to ensure smooth operations and quality services for students.",
+      points: [
+        "Meal Planning & Scheduling",
+        "Inventory & Resource Tracking",
+        "Feedback & Complaint Management",
+        "Expense & Budget Monitoring",
       ],
     },
   ];
@@ -82,11 +85,14 @@ const HostelEngagement = () => {
               <div className="gia-c-sub-title">Atelier Supports</div>
             </div>
                       <h2 className="title fweight-600 text-black">
-                        <span>Admission & Academics Management</span>
+                        <span>Hostel & Transport Management</span>
                       </h2>
                       <div className="title-desc text-gray">
                         <p>
-                        Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+                        Simplify hostel operations and transportation services with 
+                          our advanced ERP solutions. From room allocation to GPS-based 
+                          transport tracking, ensure safety, efficiency, and a seamless 
+                          student experience.
                         </p>
                       </div>
                     </div>

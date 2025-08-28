@@ -16,24 +16,25 @@ function HostelProductivitySection() {
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                Boosting Efficiency in Hostel & Transport Operations
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Our Hostel & Transport Management system automates 
+                    administrative tasks, reduces manual errors, and ensures 
+                    smooth day-to-day operations.
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Automated room allocation & transport scheduling
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Real-time GPS tracking for safety & punctuality
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Centralized dashboards for hostel, mess & transport insights
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">

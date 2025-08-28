@@ -16,14 +16,18 @@ function HostelHero() {
         <div className="fea-container">
           <div className="fea-hero-content">
             <div className="fea-hero-subtitle-wrap">
-              <div className="fea-hero-subtitle">Atelier Features</div>
+              <div className="fea-hero-subtitle"> Smart Campus Solutions</div>
             </div>
             <div className="fea-hero-title-wrap">
-              <h1 className="fea-hero-title">Admission & Academics Management</h1>
+              <h1 className="fea-hero-title">Hostel & Transport Management</h1>
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">
-              Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+              Our software simplifies hostel and transport administration by 
+                  managing room allocations, attendance, mess planning, and 
+                  student transportation. With real-time tracking and automated 
+                  scheduling, institutions ensure security, efficiency, and 
+                  hassle-free operations for both students and staff.
               </p>
             </div>
             <div className="fea-hero-btn-wrap">
@@ -105,18 +109,18 @@ function HostelHero() {
   {[
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
-      alt: "Atelier Portal",
-      title: "Atelier Portal",
+      alt: "Smart Hostel Dashboard",
+      title: "Smart Hostel Dashboard",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
-      alt: "Atelier ERP",
-      title: "Atelier ERP",
+      alt: "Transport Scheduling",
+      title: "Transport Scheduling",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
-      alt: "Atelier HRMs",
-      title: "Atelier HRMs",
+      alt: "Student Safety Tracking",
+      title: "Student Safety Tracking",
     },
   ].map((item, index) => (
     <div className="image-hover-wrapper" key={index}>
