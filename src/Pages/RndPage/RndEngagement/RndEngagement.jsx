@@ -5,58 +5,59 @@ import {
   FaStar, 
   FaCheckCircle, 
   FaBook, 
-  FaClipboardCheck 
+  FaClipboardCheck ,
+  FaLightbulb
 } from "react-icons/fa";
 const RndEngagement = () => {
   // Data array for the two cards
   const cards = [
     {
-      icon: <FaCheckCircle className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Seamless Admission Process",
+      icon: <FaLightbulb className="text-theme" style={{ fontSize: "30px" }} />,
+      title: "Innovation & R&D Excellence",
       description:
-        "Streamline your institution’s admission process with an intuitive and automated system. From online applications to document verification, ensure a hassle-free experience for students and administrators.",
+        "Drive breakthrough ideas and accelerate product development with structured research and innovation frameworks.",
       points: [
-        "Online Application & Registration",
-        "Automated Document Verification",
-        "Fee Payment & Receipt Generation",
-        "Merit-Based & Direct Admission Support",
+        "Innovation Labs & Prototyping",
+        "Collaborative Research Programs",
+        "Technology Forecasting",
+        "IP & Patent Management",
       ],
       extraClass: "alumini_space", // custom extra class if needed
     },
     {
         icon: <FaUsers className="text-theme "style={{ fontSize: "30px" }}  />,
-      title: "Student Information Management",
+      title: "Team Collaboration & Engagement",
       description:
-        "Keep track of student records effortlessly with a centralized system that provides real-time access to academic and personal details.",
+        "Foster cross-functional collaboration and knowledge sharing to align teams with organizational goals.",
       points: [
-        "Comprehensive Student Profiles",
-        "Attendance & Performance Tracking",
-        "Course & Batch Management",
-        "Parent & Guardian Communication",
+        "Cross-Team Knowledge Sharing",
+        "Centralized Communication Channels",
+        "Collaborative Project Spaces",
+        "Employee Engagement Analytics",
       ],
     },
     {
       icon: <FaBook className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Academic Planning & Course Management",
+      title: "Governance & Compliance",
       description:
-        "Enhance learning outcomes with a well-structured academic management system that ensures smooth course delivery.",
+        "Ensure transparency and accountability with strong governance models and compliance frameworks.",
       points: [
-        "Curriculum & Syllabus Management",
-        "Timetable & Scheduling Automation",
-        "Faculty Allocation & Workload Management",
-        "Exam & Result Processing",
+        "Regulatory & Policy Compliance",
+        "Data Security & Privacy Controls",
+        "Audit Trails & Risk Management",
+        "Ethical AI & Responsible Innovation",
       ],
     },
     {
       icon: <FaClipboardCheck className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Grading & Assessment",
+      title: "Performance & Outcome Tracking",
       description:
-        "Simplify grading and assessment with automated evaluation tools that align with institutional policies.",
+        "Measure impact and ensure long-term success with data-driven insights and governance metrics.",
       points: [
-        "Customizable Grading Systems",
-        "Internal & External Assessment Tracking",
-        "Automated Report Card Generation",
-        "Student Performance Analytics",
+        "KPIs & Performance Dashboards",
+        "Impact Analysis of R&D Projects",
+        "Governance Scorecards",
+        "Continuous Improvement Cycles",
       ],
     },
   ];

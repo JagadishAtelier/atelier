@@ -30,25 +30,25 @@ function RndProgressSection() {
               </div>
               <div className="prog-common-title-wrap">
                 <h1 className="prog-common-title">
-                  Track progress to keep an eye on workflow.
+                Track R&D Progress & Governance Compliance
                 </h1>
               </div>
               <div className="prog-progress-text-wrap">
                 <p className="prog-features-text">
-                  Shall without could down her good as please. Might would
-                  twists a get king's and or an equally commas
+                Monitor the progress of your research initiatives and governance tasks 
+                    with real-time dashboards and project milestone tracking.
                 </p>
               </div>
 
               <ul className="prog-progress-list-wrap">
                 <li className="prog-progress-list">
-                  Arduous clearly, but of were up do finger doner
+                Visualize R&D project milestones and timelines
                 </li>
                 <li className="prog-progress-list">
-                  Make regulatory with in claim fly including where
+                Track compliance, audits, and regulatory adherence
                 </li>
                 <li className="prog-progress-list last">
-                  Worn you the too what free of one desk wonder
+                Optimize workflows with performance metrics and insights
                 </li>
               </ul>
 

@@ -16,24 +16,24 @@ function RndProductivitySection() {
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                Driving Productivity Through R&D & Governance
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Enhance organizational efficiency by combining innovation-driven R&D initiatives 
+                    with robust governance frameworks.
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Implement structured R&D workflows for faster innovation cycles
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Apply governance frameworks to ensure transparency and accountability
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Monitor and optimize performance with data-driven insights
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">

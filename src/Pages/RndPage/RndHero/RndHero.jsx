@@ -16,14 +16,15 @@ function RndHero() {
         <div className="fea-container">
           <div className="fea-hero-content">
             <div className="fea-hero-subtitle-wrap">
-              <div className="fea-hero-subtitle">Atelier Features</div>
+              <div className="fea-hero-subtitle">Innovating for the Future</div>
             </div>
             <div className="fea-hero-title-wrap">
-              <h1 className="fea-hero-title">Admission & Academics Management</h1>
+              <h1 className="fea-hero-title">Research & Development (R&D) and Governance</h1>
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">
-              Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+              Empowering organizations with cutting-edge software innovation, structured R&D frameworks, and 
+                  governance models that ensure transparency, compliance, and sustainable growth.
               </p>
             </div>
             <div className="fea-hero-btn-wrap">
@@ -105,18 +106,18 @@ function RndHero() {
   {[
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
-      alt: "Atelier Portal",
-      title: "Atelier Portal",
+      alt: "Innovation Lab",
+      title: "Innovation Lab",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
-      alt: "Atelier ERP",
-      title: "Atelier ERP",
+      alt: "Governance Framework",
+      title: "Governance Framework",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
-      alt: "Atelier HRMs",
-      title: "Atelier HRMs",
+      alt: "Future-Ready Solutions",
+      title: "Future-Ready Solutions",
     },
   ].map((item, index) => (
     <div className="image-hover-wrapper" key={index}>
