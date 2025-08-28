@@ -1,5 +1,4 @@
 import React from 'react';
-import './AdmissionPageFeaturesProduct.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -10,18 +9,18 @@ function AdmissionPageFeaturesProduct() {
   const slides = [
     {
       img: 'https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683060e285adcdb24eb10956_thumb-19.webp',
-      title: 'Experience the product before you build',
-      text: 'Curto apud subito placeat adipisci venia. Vergo accusantium victus decerno...',
+      title: 'Seamless Online Admissions',
+      text: 'Provide applicants with an easy, fully digital admission process – from application submission and document verification to fee payment and offer letters.',
     },
     {
       img: 'https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683060e285adcdb24eb10956_thumb-19-p-1080.webp',
-      title: 'Deploy Faster, Smarter, Easier',
-      text: 'Alter valde utrum. Clementia deporto substantia certe virgo tamen sponte...',
+      title: 'Smart Academic Management',
+      text: 'Manage courses, faculty assignments, student attendance, and performance tracking in one centralized platform built for scalability.',
     },
     {
       img: 'https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683060e285adcdb24eb10956_thumb-19-p-800.webp',
-      title: 'Launch Confidently with Atelier',
-      text: 'Officiis sortitus degero surgo. Vulticulus tolero bos animadverto...',
+      title: 'Analytics & Insights',
+      text: 'Generate real-time reports on admissions, academic progress, and student engagement to make data-driven academic decisions.',
     },
   ];
 
@@ -35,7 +34,7 @@ function AdmissionPageFeaturesProduct() {
             </div>
             <div className="pro-common-title-wrap">
               <h1 className="pro-common-title white">
-                What you see is what you launch
+              Experience streamlined admissions and academic excellence
               </h1>
             </div>
           </div>

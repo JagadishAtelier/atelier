@@ -51,14 +51,14 @@
 .gia-giants-item-top {
     grid-column-gap: 13px;
     grid-row-gap: 13px;
-    align-items: center;
+    align-items: baseline !important;
     margin-bottom: 12px;
-    display: flex
+    display: flex;
 ;
 }
 .gia-giants-item-title {
     font-size: 18px;
-    line-height:3rem;
+    line-height:2rem !important;
     letter-spacing: var(--_letter-spacing---ls-0);
     margin-top: 0;
     margin-bottom: 0;

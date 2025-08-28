@@ -1,5 +1,4 @@
 import React from 'react'
-import './AdmissionPageLaunchFaster.css'
 import { Link } from "react-router-dom";
 function AdmissionPageLaunchFaster() {
   return (
@@ -13,7 +12,7 @@ function AdmissionPageLaunchFaster() {
             </div>
             <div className="lau-common-title-wrap">
               <h1 className="lau-common-title">
-                Ready to build something remarkable?
+              Ready to transform admissions & academics?
               </h1>
             </div>
             <div className="lau-cta-btn-wrap">

@@ -1,5 +1,4 @@
 import React from 'react'
-import './AdmissionPageProgressSection.css'
 function AdmissionPageProgressSection() {
   return (
     <div>
@@ -26,29 +25,30 @@ function AdmissionPageProgressSection() {
 
             <div className="prog-section-heading progress-heading">
               <div className="prog-c-sub-title-wrap">
-                <div className="prog-c-sub-title">Atelier Progress</div>
+                <div className="prog-c-sub-title">Admissions & Academics Progress</div>
               </div>
               <div className="prog-common-title-wrap">
                 <h1 className="prog-common-title">
-                  Track progress to keep an eye on workflow.
+                Track student progress and streamline academic workflows
                 </h1>
               </div>
               <div className="prog-progress-text-wrap">
                 <p className="prog-features-text">
-                  Shall without could down her good as please. Might would
-                  twists a get king's and or an equally commas
+                Monitor every stage of admissions and academics with real-time tracking. 
+                    From application status to academic performance, keep everything transparent, 
+                    measurable, and easy to manage.
                 </p>
               </div>
 
               <ul className="prog-progress-list-wrap">
                 <li className="prog-progress-list">
-                  Arduous clearly, but of were up do finger doner
+                Track admission applications, approvals, and enrollments with ease
                 </li>
                 <li className="prog-progress-list">
-                  Make regulatory with in claim fly including where
+                Monitor student attendance, grades, and course progression in real time
                 </li>
                 <li className="prog-progress-list last">
-                  Worn you the too what free of one desk wonder
+                Generate insights with automated reports for faculty and administrators
                 </li>
               </ul>
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import './AdmissionPagePlatformSection.css'
 import { Link } from 'react-router-dom';
 function AdmissionPagePlatformSection() {
   return (
@@ -14,7 +13,7 @@ function AdmissionPagePlatformSection() {
             </div>
             <div className="pla-common-title-wrap">
               <h1 className="pla-common-title">
-                One platform for all the controls you need
+              One platform for all your admission & academic controls
               </h1>
             </div>
           </div>
@@ -25,12 +24,11 @@ function AdmissionPagePlatformSection() {
             <div className="pla-platform-item-2">
               <div className="pla-platform-item-content">
                 <div className="pla-platform-item-title-wrap">
-                  <p className="pla-platform-item-title">Innovation Center</p>
+                  <p className="pla-platform-item-title">Smart Admission Management</p>
                 </div>
                 <div className="pla-platform-item-text-wrap">
                   <p className="pla-platform-item-text">
-                    Days, will period, don't often turn for were the
-                    importance, some for indication at present not.
+                  Digitize the entire admission cycle — from online applications to merit-based selections and fee payments.
                   </p>
                 </div>
               </div>
@@ -55,12 +53,11 @@ function AdmissionPagePlatformSection() {
             <div className="pla-platform-item-2">
               <div className="pla-platform-item-content">
                 <div className="pla-platform-item-title-wrap">
-                  <p className="pla-platform-item-title">Assistance for expansion</p>
+                  <p className="pla-platform-item-title">Centralized Academic Planning</p>
                 </div>
                 <div className="pla-platform-item-text-wrap">
                   <p className="pla-platform-item-text">
-                    Opposite think you on to result, to but as back a little
-                    the and stash of characters she that theoretically
+                  Automate timetables, manage courses, allocate faculty, and ensure smooth curriculum delivery.
                   </p>
                 </div>
               </div>
@@ -86,17 +83,17 @@ function AdmissionPagePlatformSection() {
           <div className="pla-platform-layout-3">
             <div className="pla-platform-item-content-2">
               <div className="pla-platform-item-title-wrap-2">
-                <p className="pla-platform-item-title-2">Continue to stay in contact</p>
+                <p className="pla-platform-item-title-2">Stay connected across your institution</p>
               </div>
               <ul role="list" className="pla-platform-item-list-wrap">
                 <li className="pla-platform-item-list">
-                  Become one towards console the if seven world
+                Real-time student & faculty communication
                 </li>
                 <li className="pla-platform-item-list">
-                  My asking overcome it o'clock he and first found day
+                Parent access to attendance and performance
                 </li>
                 <li className="pla-platform-item-list last">
-                  Some my entirely the been without more to designer
+                Automated notifications & reminders
                 </li>
               </ul>
               <div className="pla-platform-item-btn-wrap">

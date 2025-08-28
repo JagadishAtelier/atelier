@@ -21,6 +21,14 @@ import FeaturesHero from './Components/FeaturesPage/FeaturesHero/FeaturesHero';
 import AtelierErp from './Components/AtelierErp/AtelierErp';
 import AtelierHrms from './Components/AtelierHrms/AtelierHrms';
 import AdmissionPageHero from './Pages/AdmissionPage/AdmissionPageHero/AdmissionPageHero';
+import HostelHero from './Pages/HostelPage/HostelHero/HostelHero';
+import CoeHero from './Pages/CoePage/CoeHero/CoeHero';
+import LibHero from './Pages/LibPage/LibHero/LibHero';
+import AlumniHero from './Pages/AlumniPage/AlumniHero/AlumniHero';
+import OfficeHero from './Pages/OfficePage/OfficeHero/OfficeHero';
+import PaymentHero from './Pages/PaymentPage/PaymentHero/PaymentHero';
+import RndHero from './Pages/RndPage/RndHero/RndHero';
+import SurveyHero from './Pages/SurveyPage/SurveyHero/SurveyHero';
 
 function HomePage() {
   return (
@@ -50,6 +58,14 @@ function App() {
         <Route path="/inner-pages/contact" element={<ContactPage/>} />
         <Route path="/features/students" element={<FeaturesHero/>} />
         <Route path="/features/admission" element={<AdmissionPageHero/>} />
+        <Route path="/features/hostel" element={<HostelHero/>} />
+        <Route path="/features/coe" element={<CoeHero/>} />
+        <Route path="/features/lib" element={<LibHero/>} />
+        <Route path="/features/alumni" element={<AlumniHero/>} />
+        <Route path="/features/office" element={<OfficeHero/>} />
+        <Route path="/features/portal" element={<PaymentHero/>} />
+        <Route path="/features/rnd" element={<RndHero/>} />
+        <Route path="/features/survey" element={<SurveyHero/>} />
       </Routes>
       <FooterSection/>
     </Router>

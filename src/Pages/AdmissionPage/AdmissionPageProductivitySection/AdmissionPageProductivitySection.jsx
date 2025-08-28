@@ -1,5 +1,4 @@
 import React from 'react'
-import './AdmissionPageProductivitySection.css'
 import { Link } from 'react-router-dom';
 function AdmissionPageProductivitySection() {
   return (
@@ -11,29 +10,28 @@ function AdmissionPageProductivitySection() {
             <div className="prod-section-heading progress-heading-2">
               <div className='prod-center-mob'>
                 <div className="prod-c-sub-title-wrap">
-                  <div className="prod-c-sub-title">Atelier Productivity</div>
+                  <div className="prod-c-sub-title">Admissions & Academics Productivity</div>
                 </div>
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                Boost efficiency in managing admissions and academics
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Streamline your institution’s operations by automating manual tasks, reducing paperwork, and enabling faculty, students, and administrators to focus on what truly matters – learning and growth.
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Simplify admissions with automated application processing and document verification
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Enhance academic productivity through smart scheduling, attendance, and grading
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Gain insights with real-time dashboards and reports for faster decision-making
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">

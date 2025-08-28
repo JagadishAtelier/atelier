@@ -91,6 +91,14 @@ function Navbar() {
     <div className="dropdown-menu">
       <a href="/features/admission" className="dropdown-item">Admission & Academics Management</a>
       <a href="/features/students" className="dropdown-item">Student Engagement & Support</a>
+      <a href="/features/alumni" className="dropdown-item">Alumni & Placement Management</a>
+      <a href="/features/coe" className="dropdown-item">COE & Advanced Reporting</a>
+      <a href="/features/survey" className="dropdown-item">Grievance & Survey Management</a>
+      <a href="/features/hostel" className="dropdown-item">Hostel & Transport Management</a>
+      <a href="/features/lib" className="dropdown-item">Learning & Library Management</a>
+      <a href="/features/office" className="dropdown-item">Office & Governance Management</a>
+      <a href="/features/portal" className="dropdown-item">Portal & Payment Management</a>
+      <a href="/features/rnd" className="dropdown-item">Research & Development (R&D) and Governance</a>
     </div>
   )}
 </div>

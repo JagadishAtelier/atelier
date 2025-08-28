@@ -1,5 +1,4 @@
 import React from "react";
-import './AdmissionPageEngagement.css'
 import { 
   FaUsers, 
   FaStar, 
@@ -14,7 +13,7 @@ const AdmissionPageEngagement = () => {
       icon: <FaCheckCircle className="text-theme" style={{ fontSize: "30px" }} />,
       title: "Seamless Admission Process",
       description:
-        "Streamline your institution’s admission process with an intuitive and automated system. From online applications to document verification, ensure a hassle-free experience for students and administrators.",
+        "Digitize your admissions with a transparent, error-free system that saves time for both students and administrators.",
       points: [
         "Online Application & Registration",
         "Automated Document Verification",
@@ -27,19 +26,19 @@ const AdmissionPageEngagement = () => {
         icon: <FaUsers className="text-theme "style={{ fontSize: "30px" }}  />,
       title: "Student Information Management",
       description:
-        "Keep track of student records effortlessly with a centralized system that provides real-time access to academic and personal details.",
+        "Maintain a 360° view of every student with real-time academic and personal data.",
       points: [
-        "Comprehensive Student Profiles",
+        "Centralized Student Profiles",
         "Attendance & Performance Tracking",
         "Course & Batch Management",
-        "Parent & Guardian Communication",
+        "Parent-Teacher Communication",
       ],
     },
     {
       icon: <FaBook className="text-theme" style={{ fontSize: "30px" }} />,
       title: "Academic Planning & Course Management",
       description:
-        "Enhance learning outcomes with a well-structured academic management system that ensures smooth course delivery.",
+        "Ensure smooth course delivery with intelligent scheduling and resource allocation.",
       points: [
         "Curriculum & Syllabus Management",
         "Timetable & Scheduling Automation",
@@ -86,7 +85,7 @@ const AdmissionPageEngagement = () => {
                       </h2>
                       <div className="title-desc text-gray">
                         <p>
-                        Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+                        Automate student admissions, centralize academic data, and enable smarter decision-making with our all-in-one education management platform.
                         </p>
                       </div>
                     </div>

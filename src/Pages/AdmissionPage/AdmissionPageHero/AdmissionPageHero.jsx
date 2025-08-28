@@ -1,5 +1,4 @@
 import React from 'react'
-import './AdmissionPageHero.css'
 import { Link } from 'react-router-dom';
 import AdmissionPageSection from '../AdmissionPageSection/AdmissionPageSection';
 import AdmissionPageProgressSection from '../AdmissionPageProgressSection/AdmissionPageProgressSection';
@@ -23,7 +22,7 @@ function AdmissionPageHero() {
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">
-              Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+              Digitize your institution with our all-in-one platform for student admissions, academic planning, course management, and faculty coordination. Ensure accuracy, transparency, and seamless operations with AI-powered automation.
               </p>
             </div>
             <div className="fea-hero-btn-wrap">

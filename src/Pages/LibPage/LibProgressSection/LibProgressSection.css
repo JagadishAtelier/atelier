@@ -1,0 +1,198 @@
+.prog-progress-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.prog-section-spacing {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.prog-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.prog-progress-layout {
+    grid-column-gap: 140px;
+    grid-row-gap: 140px;
+    align-items: flex-start;
+    display: flex
+;
+}
+.prog-progress-thumb-wrap {
+    border-radius: 16px;
+    width: 100%;
+    max-width: 547px;
+    overflow: hidden;
+}
+.prog-section-heading.progress-heading {
+    width: 100%;
+    max-width: 498px;
+}
+.prog-c-sub-title-wrap {
+    border: 1px solid #0000001a;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    padding: 6px 16px;
+    display: inline-block;
+}
+.prog-c-sub-title {
+    font-size:12px;
+    line-height: var(--_line-height---lh-116);
+    letter-spacing: var(--_letter-spacing---ls-1);
+    font-weight: 500;
+}
+.prog-common-title {
+    color: var(--dark);
+    font-size:48px;
+    line-height:3.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.prog-progress-text-wrap {
+    margin-top: 20px;
+}
+.prog-features-text {
+    font-size: 16px;
+    line-height:1.5rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: black;
+}
+.prog-progress-list-wrap {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.prog-progress-list {
+    font-size:16px;
+    line-height:1rem;
+    background-image: url(https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821c62af1a6279d8f705c93_icon-1.svg);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 24px;
+    padding-left: 25px;
+    list-style-type: none;
+    color: black;
+}
+.prog-progress-list.last {
+    margin-bottom: 0;
+}
+.prog-progress-btn-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.prog-btn-wrap {
+    z-index: 1;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    font-size:14px;
+    line-height: var(--_line-height---lh-112);
+    letter-spacing: var(--_letter-spacing---ls-1);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .3s linear;
+    display: inline-flex
+;
+    position: relative;
+    overflow: hidden;
+}
+.prog-btn-inner {
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    display: flex
+;
+}
+.prog-btn-icon-wrap {
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 16px;
+    display: flex
+;
+    overflow: hidden;
+}
+.prog-btn-icon {
+    flex: none;
+    width: 14px;
+    line-height: 1px;
+}
+
+@media (max-width: 1024px) {
+    .prog-progress-layout {
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+    }
+  
+    .prog-common-title {
+      font-size: 36px;
+      line-height: 2.8rem;
+      text-align: center;
+    }
+  
+    .prog-section-heading.progress-heading {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .prog-progress-thumb-wrap {
+      max-width: 100%;
+    }
+  
+    .prog-features-text,
+    .prog-progress-list {
+      text-align: center;
+    }
+  
+    .prog-progress-btn-wrap {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .prog-progress-section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  
+    .prog-common-title {
+      font-size: 28px;
+      line-height: 2.2rem;
+    }
+  
+    .prog-features-text {
+      font-size: 14px;
+    }
+  
+    .prog-progress-list {
+      font-size: 14px;
+      padding-left: 20px;
+      background-size: 14px;
+    }
+  
+    .prog-btn-wrap {
+      font-size: 12px;
+      padding: 10px 14px;
+    }
+  
+    .prog-btn-icon {
+      width: 12px;
+    }
+  }
+  
