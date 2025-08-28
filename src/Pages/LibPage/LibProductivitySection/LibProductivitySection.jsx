@@ -16,24 +16,24 @@ function LibProductivitySection() {
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                How Atelier boosts productivity in learning & library management
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Atelier streamlines academic workflows, automates routine tasks, 
+                    and enhances collaboration so educators,
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Automates borrowing, returns, and digital resource access
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Reduces manual workload with centralized academic records
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Provides real-time analytics for data-driven decision-making
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">

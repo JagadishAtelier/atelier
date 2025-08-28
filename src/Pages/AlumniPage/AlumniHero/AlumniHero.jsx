@@ -19,7 +19,7 @@ function AlumniHero() {
               <div className="fea-hero-subtitle">Atelier Features</div>
             </div>
             <div className="fea-hero-title-wrap">
-              <h1 className="fea-hero-title">Admission & Academics Management</h1>
+              <h1 className="fea-hero-title">Comprehensive Hostel & Transport Management</h1>
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">

@@ -16,14 +16,18 @@ function LibHero() {
         <div className="fea-container">
           <div className="fea-hero-content">
             <div className="fea-hero-subtitle-wrap">
-              <div className="fea-hero-subtitle">Atelier Features</div>
+              <div className="fea-hero-subtitle">Smart Library Solutions</div>
             </div>
             <div className="fea-hero-title-wrap">
-              <h1 className="fea-hero-title">Admission & Academics Management</h1>
+              <h1 className="fea-hero-title">Learning & Library Management</h1>
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">
-              Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+              Empower institutions with a centralized digital platform to manage
+              learning resources, e-books, research papers, journals, and physical
+              library assets. Enable students and faculty to access materials anytime,
+              track borrowing history, and integrate with e-learning platforms for a
+              seamless academic experience.
               </p>
             </div>
             <div className="fea-hero-btn-wrap">
@@ -105,18 +109,18 @@ function LibHero() {
   {[
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
-      alt: "Atelier Portal",
-      title: "Atelier Portal",
+      alt: "Digital Library",
+      title: "Digital Library",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
-      alt: "Atelier ERP",
-      title: "Atelier ERP",
+      alt: "E-Learning Hub",
+      title: "E-Learning Hub",
     },
     {
       src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
-      alt: "Atelier HRMs",
-      title: "Atelier HRMs",
+      alt: "Student Access",
+      title: "Student Access",
     },
   ].map((item, index) => (
     <div className="image-hover-wrapper" key={index}>

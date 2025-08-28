@@ -12,51 +12,51 @@ const LibEngagement = () => {
   const cards = [
     {
       icon: <FaCheckCircle className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Seamless Admission Process",
+      title: "Digital Resource Management",
       description:
-        "Streamline your institution’s admission process with an intuitive and automated system. From online applications to document verification, ensure a hassle-free experience for students and administrators.",
+        "Centralize and manage all digital and physical library resources with ease, ensuring quick access for students and faculty.",
       points: [
-        "Online Application & Registration",
-        "Automated Document Verification",
-        "Fee Payment & Receipt Generation",
-        "Merit-Based & Direct Admission Support",
+        "E-books, Journals & Research Papers",
+        "Centralized Resource Repository",
+        "Categorization & Metadata Support",
+        "Advanced Search & Filtering",
       ],
       extraClass: "alumini_space", // custom extra class if needed
     },
     {
         icon: <FaUsers className="text-theme "style={{ fontSize: "30px" }}  />,
-      title: "Student Information Management",
+      title: "User Access & Membership",
       description:
-        "Keep track of student records effortlessly with a centralized system that provides real-time access to academic and personal details.",
+        "Provide personalized access to resources with smart membership and role-based controls.",
       points: [
-        "Comprehensive Student Profiles",
-        "Attendance & Performance Tracking",
-        "Course & Batch Management",
-        "Parent & Guardian Communication",
+        "Student & Faculty Memberships",
+        "Borrowing & Lending Policies",
+        "Role-Based Access Controls",
+        "Multi-Device Accessibility",
       ],
     },
     {
       icon: <FaBook className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Academic Planning & Course Management",
+      title: "Learning Content Integration",
       description:
-        "Enhance learning outcomes with a well-structured academic management system that ensures smooth course delivery.",
+        "Seamlessly integrate library resources with e-learning platforms to enhance the digital classroom experience.",
       points: [
-        "Curriculum & Syllabus Management",
-        "Timetable & Scheduling Automation",
-        "Faculty Allocation & Workload Management",
-        "Exam & Result Processing",
+        "LMS Integration for Study Materials",
+        "Video & Multimedia Resource Support",
+        "Interactive Content Sharing",
+        "Collaborative Learning Tools",
       ],
     },
     {
       icon: <FaClipboardCheck className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Grading & Assessment",
+      title: "Analytics & Reporting",
       description:
-        "Simplify grading and assessment with automated evaluation tools that align with institutional policies.",
+        "Gain insights into resource usage, learning patterns, and student engagement with built-in analytics.",
       points: [
-        "Customizable Grading Systems",
-        "Internal & External Assessment Tracking",
-        "Automated Report Card Generation",
-        "Student Performance Analytics",
+        "Real-Time Usage Reports",
+        "Resource Popularity Insights",
+        "Borrowing & Return Statistics",
+        "AI-Powered Learning Analytics",
       ],
     },
   ];
