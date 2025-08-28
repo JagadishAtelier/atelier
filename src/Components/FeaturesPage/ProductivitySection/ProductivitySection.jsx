@@ -16,24 +16,23 @@ function ProductivitySection() {
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                How Our Software Boosts Productivity
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Our Student Engagement & Support software helps educational institutions streamline workflows,
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Ensure students never miss deadlines or important updates.
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Facilitate smooth communication between faculty, students, and support staff.
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Track student engagement, performance, and productivity trends.
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">

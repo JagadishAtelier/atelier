@@ -25,7 +25,7 @@ function FeaturesHero() {
             </div>
             <div className="fea-hero-text-wrap">
               <p className="fea-hero-text">
-              Our Student Engagement & Support module is designed to nurture student well-being, encourage participation, and provide the guidance students need to thrive—academically, emotionally, and socially.
+              Our Student Engagement & Support software module empowers educational institutions to foster meaningful student interactions, provide real-time support, and track engagement across digital platforms.
               </p>
             </div>
             <div className="fea-hero-btn-wrap">
