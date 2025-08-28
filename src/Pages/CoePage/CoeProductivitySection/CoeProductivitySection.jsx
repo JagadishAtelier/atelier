@@ -11,29 +11,29 @@ function CoeProductivitySection() {
             <div className="prod-section-heading progress-heading-2">
               <div className='prod-center-mob'>
                 <div className="prod-c-sub-title-wrap">
-                  <div className="prod-c-sub-title">Atelier Productivity</div>
+                  <div className="prod-c-sub-title">COE-Driven Productivity</div>
                 </div>
               </div>
               <div className="prod-common-title-wrap">
                 <h1 className="prod-common-title">
-                  How you plan to increase productivity
+                Driving Productivity Through Data & Insights
                 </h1>
               </div>
               <div className="prod-progress-text-wrap">
                 <p className="prod-features-text">
-                  Doing planning the with away. Rendering the are gleaning him
-                  be domed is will. And option to hide money.
+                Our COE framework enhances organizational efficiency by aligning strategy, 
+      technology, and people.
                 </p>
               </div>
               <ul role="list" className="prod-progress-list-wrap">
                 <li className="prod-progress-list">
-                  Assumed have and with the project the of then
+                Real-time dashboards for workforce performance monitoring
                 </li>
                 <li className="prod-progress-list">
-                  The as was no morning that half easy that the boss
+                Automated reporting to reduce manual effort and errors
                 </li>
                 <li className="prod-progress-list last">
-                  Towards we've over designer paper frequencies
+                Data-driven decision-making for sustainable productivity growth
                 </li>
               </ul>
               <div className="prod-progress-btn-wrap">

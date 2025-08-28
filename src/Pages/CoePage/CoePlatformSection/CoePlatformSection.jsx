@@ -14,7 +14,7 @@ function CoePlatformSection() {
             </div>
             <div className="pla-common-title-wrap">
               <h1 className="pla-common-title">
-                One platform for all the controls you need
+              One Platform to Drive Excellence & Insights
               </h1>
             </div>
           </div>
@@ -25,12 +25,13 @@ function CoePlatformSection() {
             <div className="pla-platform-item-2">
               <div className="pla-platform-item-content">
                 <div className="pla-platform-item-title-wrap">
-                  <p className="pla-platform-item-title">Innovation Center</p>
+                  <p className="pla-platform-item-title">Center of Excellence (COE)</p>
                 </div>
                 <div className="pla-platform-item-text-wrap">
                   <p className="pla-platform-item-text">
-                    Days, will period, don't often turn for were the
-                    importance, some for indication at present not.
+                  Build a centralized framework for innovation and governance. 
+                Our COE solutions standardize best practices, streamline 
+                operations, and ensure compliance across the enterprise.
                   </p>
                 </div>
               </div>

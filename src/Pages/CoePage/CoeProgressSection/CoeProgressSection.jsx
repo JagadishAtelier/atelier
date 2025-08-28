@@ -26,29 +26,29 @@ function CoeProgressSection() {
 
             <div className="prog-section-heading progress-heading">
               <div className="prog-c-sub-title-wrap">
-                <div className="prog-c-sub-title">Atelier Progress</div>
+                <div className="prog-c-sub-title">COE Progress</div>
               </div>
               <div className="prog-common-title-wrap">
                 <h1 className="prog-common-title">
-                  Track progress to keep an eye on workflow.
+                Track Progress with Actionable Insights
                 </h1>
               </div>
               <div className="prog-progress-text-wrap">
                 <p className="prog-features-text">
-                  Shall without could down her good as please. Might would
-                  twists a get king's and or an equally commas
+                Stay on top of your institutional and organizational workflow with COE-driven 
+      monitoring tools.
                 </p>
               </div>
 
               <ul className="prog-progress-list-wrap">
                 <li className="prog-progress-list">
-                  Arduous clearly, but of were up do finger doner
+                Real-time monitoring of academic and administrative workflows
                 </li>
                 <li className="prog-progress-list">
-                  Make regulatory with in claim fly including where
+                Custom dashboards to visualize key performance indicators (KPIs)
                 </li>
                 <li className="prog-progress-list last">
-                  Worn you the too what free of one desk wonder
+                Predictive analytics to identify risks and optimize outcomes
                 </li>
               </ul>
 

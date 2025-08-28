@@ -25,38 +25,38 @@ const CoeEngagement = () => {
     },
     {
         icon: <FaUsers className="text-theme "style={{ fontSize: "30px" }}  />,
-      title: "Student Information Management",
+      title: "Team Engagement & Collaboration",
       description:
-        "Keep track of student records effortlessly with a centralized system that provides real-time access to academic and personal details.",
+        "Enhance workforce collaboration with structured engagement models, empowering teams to innovate and deliver consistently.",
       points: [
-        "Comprehensive Student Profiles",
-        "Attendance & Performance Tracking",
-        "Course & Batch Management",
-        "Parent & Guardian Communication",
+        "Role-Based Access & Permissions",
+        "Cross-Functional Collaboration",
+        "Employee Engagement Tracking",
+        "Knowledge Sharing Hub",
       ],
     },
     {
       icon: <FaBook className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Academic Planning & Course Management",
+      title: "Advanced Reporting & Analytics",
       description:
-        "Enhance learning outcomes with a well-structured academic management system that ensures smooth course delivery.",
+        "Gain actionable insights with real-time data visualization, predictive analytics, and interactive dashboards that fuel decision-making.",
       points: [
-        "Curriculum & Syllabus Management",
-        "Timetable & Scheduling Automation",
-        "Faculty Allocation & Workload Management",
-        "Exam & Result Processing",
+        "Custom KPI Dashboards",
+        "Predictive Analytics & Forecasting",
+        "Interactive Reports & Filters",
+        "Exportable Reports (PDF/Excel/CSV)",
       ],
     },
     {
       icon: <FaClipboardCheck className="text-theme" style={{ fontSize: "30px" }} />,
-      title: "Grading & Assessment",
+      title: "Performance & Productivity Insights",
       description:
-        "Simplify grading and assessment with automated evaluation tools that align with institutional policies.",
+        "Track efficiency and measure outcomes with performance-driven reporting tools that align with business objectives.",
       points: [
-        "Customizable Grading Systems",
-        "Internal & External Assessment Tracking",
-        "Automated Report Card Generation",
-        "Student Performance Analytics",
+        "Department & Project Performance Tracking",
+        "Automated Report Generation",
+        "Real-Time Productivity Metrics",
+        "Business Intelligence Integration",
       ],
     },
   ];
@@ -79,14 +79,16 @@ const CoeEngagement = () => {
                   >
                     <div className="heading-content clearfix">
                     <div className="gia-c-sub-title-wrap">
-              <div className="gia-c-sub-title">Atelier Supports</div>
+              <div className="gia-c-sub-title">Atelier  COE Solutions</div>
             </div>
                       <h2 className="title fweight-600 text-black">
-                        <span>Admission & Academics Management</span>
+                        <span>COE & Advanced Reporting</span>
                       </h2>
                       <div className="title-desc text-gray">
                         <p>
-                        Manages the student admission process, academic records, course enrollments, and faculty assignments, ensuring a streamlined academic workflow.
+                        Our COE & Advanced Reporting solutions empower organizations to drive
+    excellence, unify operations, and leverage data-driven insights for
+    sustainable growth and digital transformation.
                         </p>
                       </div>
                     </div>
