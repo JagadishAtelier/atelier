@@ -105,17 +105,17 @@ function RndHero() {
           <div className="fea-about-hero-thumb-wrap">
   {[
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      src: "https://www.itcilo.org/sites/default/files/styles/fullbody_image/public/resources/cover-images/Inn%20tolkit.jpg?h=b044a8f9&itok=tu5B5WZz",
       alt: "Innovation Lab",
       title: "Innovation Lab",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      src: "https://www.cloudficient.com/hubfs/governance%20framework.webp",
       alt: "Governance Framework",
       title: "Governance Framework",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
+      src: "https://media.vcg.group/media/2021/03/iStock-1206799135-resized.jpg",
       alt: "Future-Ready Solutions",
       title: "Future-Ready Solutions",
     },

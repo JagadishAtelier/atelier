@@ -76,17 +76,17 @@ function RndProductivitySection() {
             </div>
             <div className="prod-progress-thumb-wrap">
               <img
-                src="https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d44bff6ae3ce10169e43_thumb-6.webp"
+                src="https://accelmg.com/wp-content/uploads/2020/05/Beyond_TTM_small.jpg"
                 loading="lazy"
                 alt="thumb-6"
                 className="prod-progress-thumb"
                 sizes="(max-width: 1641px) 100vw, 1641px"
                 srcSet="
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d44bff6ae3ce10169e43_thumb-6-p-500.webp   500w,
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d44bff6ae3ce10169e43_thumb-6-p-800.webp   800w,
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d44bff6ae3ce10169e43_thumb-6-p-1080.webp 1080w,
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d44bff6ae3ce10169e43_thumb-6-p-1600.webp 1600w,
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d44bff6ae3ce10169e43_thumb-6.webp        1641w
+                https://accelmg.com/wp-content/uploads/2020/05/Beyond_TTM_small.jpg   500w,
+                https://accelmg.com/wp-content/uploads/2020/05/Beyond_TTM_small.jpg   800w,
+                https://accelmg.com/wp-content/uploads/2020/05/Beyond_TTM_small.jpg 1080w,
+                https://accelmg.com/wp-content/uploads/2020/05/Beyond_TTM_small.jpg 1600w,
+                https://accelmg.com/wp-content/uploads/2020/05/Beyond_TTM_small.jpg       1641w
                 "
               />
             </div>
