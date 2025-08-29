@@ -9,15 +9,15 @@ function AlumniProgressSection() {
           <div className="prog-progress-layout">
             <div className="prog-progress-thumb-wrap">
               <img
-                src="https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d198c55246b0dd6546d4_thumb-5.webp"
+                src="https://www.verywellmind.com/thmb/xDe8G7YvSVe5jz9aL3U9WYqKQK4=/4251x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-178608173-5adbe3fa8e1b6e00372211c4.jpg"
                 loading="lazy"
                 sizes="(max-width: 1641px) 100vw, 1641px"
                 srcSet="
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d198c55246b0dd6546d4_thumb-5-p-500.webp 500w,
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d198c55246b0dd6546d4_thumb-5-p-800.webp 800w,
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d198c55246b0dd6546d4_thumb-5-p-1080.webp 1080w,
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d198c55246b0dd6546d4_thumb-5-p-1600.webp 1600w,
-                  https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821d198c55246b0dd6546d4_thumb-5.webp 1641w
+                https://www.verywellmind.com/thmb/xDe8G7YvSVe5jz9aL3U9WYqKQK4=/4251x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-178608173-5adbe3fa8e1b6e00372211c4.jpg 500w,
+                https://www.verywellmind.com/thmb/xDe8G7YvSVe5jz9aL3U9WYqKQK4=/4251x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-178608173-5adbe3fa8e1b6e00372211c4.jpg 800w,
+                https://www.verywellmind.com/thmb/xDe8G7YvSVe5jz9aL3U9WYqKQK4=/4251x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-178608173-5adbe3fa8e1b6e00372211c4.jpg 1080w,
+                https://www.verywellmind.com/thmb/xDe8G7YvSVe5jz9aL3U9WYqKQK4=/4251x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-178608173-5adbe3fa8e1b6e00372211c4.jpg 1600w,
+                https://www.verywellmind.com/thmb/xDe8G7YvSVe5jz9aL3U9WYqKQK4=/4251x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-178608173-5adbe3fa8e1b6e00372211c4.jpg 1641w
                 "
                 alt="Progress thumbnail"
                 className="prog-progress-thumb"

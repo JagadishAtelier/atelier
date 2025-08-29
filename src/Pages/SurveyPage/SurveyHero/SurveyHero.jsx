@@ -104,17 +104,17 @@ function SurveyHero() {
           <div className="fea-about-hero-thumb-wrap">
   {[
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      src: "https://cdn.cpdonline.co.uk/wp-content/uploads/2024/08/08103650/Promoting-Clear-Communication.jpg",
       alt: "Centralized Dashboard",
       title: "Centralized Dashboard",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      src: "https://a-us.storyblok.com/f/1003529/742x463/a8695800ad/monitoring-improvement.png",
       alt: "Survey Analytics",
       title: "Survey Analytics",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
+      src: "https://workpro.com/hubfs/Young%20female%20businesswoman%20in%20the%20office.jpeg",
       alt: "Automated Feedback & Resolution",
       title: "Automated Feedback & Resolution",
     },

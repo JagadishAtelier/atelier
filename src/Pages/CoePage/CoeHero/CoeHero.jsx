@@ -107,19 +107,19 @@ function CoeHero() {
           <div className="fea-about-hero-thumb-wrap">
   {[
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      src: "https://gens-associates.com/wordpress/wp-content/uploads/2021/03/Gens_Focus_FPO_2-400x260.jpg",
       alt: "Atelier Portal",
-      title: "Atelier Portal",
+      title: "Our Focus and History",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      src: "https://pearllemonleads.com/wp-content/uploads/2024/03/featured-image-How-to-Get-Local-Customers.jpg",
       alt: "Atelier ERP",
-      title: "Atelier ERP",
+      title: "Our Customers and Approach",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
+      src: "https://www.advisory.com/content/advisory/us/en/company/products/expert-support/_jcr_content/root/container_1581629625/container/flexiblehero.coreimg.jpeg/1756237854241/team-working-discuss-presentation.jpeg",
       alt: "Atelier HRMs",
-      title: "Atelier HRMs",
+      title: "Our Team, Advisory Board and Partners",
     },
   ].map((item, index) => (
     <div className="image-hover-wrapper" key={index}>
