@@ -57,7 +57,8 @@ function Navbar() {
           data-easing="ease"
           data-easing2="ease"
           role="banner"
-          className={`navbar w-nav ${isWhiteBackground ? 'scrolled' : ''}`}
+          className={`navbar w-nav  ${isWhiteBackground ? 'scrolled' : ''}`}
+          style={{opacity:"1",borderColor:"rgba(255, 255, 255, 0.08)",willChange:"background",backgroundColor:"rgba(255, 255, 255, 0.05)"}}
         >
           <div className="container navbar-container">
             <div className="navbar-holder">
@@ -68,15 +69,19 @@ function Navbar() {
                   className="brand w-nav-brand w--current"
                   aria-label="home"
                 >
-                  <img
-                    src={logo}
-                    loading="lazy"
-                    alt="logo"
-                    className="brand-image"
-                    style={{
-                      filter: isWhiteBackground ? 'none' : '',
-                    }}
-                  />
+<img
+  src={logo}
+  loading="lazy"
+  alt="logo"
+  className="brand-image"
+  style={{
+    filter: isWhiteBackground
+      ? 'none' // makes logo appear white
+      : 'invert(50%) brightness(200%)',
+    transition: 'filter 0.3s ease', // smooth transition
+  }}
+/>
+
                 </a>
                 <nav
   role="navigation"

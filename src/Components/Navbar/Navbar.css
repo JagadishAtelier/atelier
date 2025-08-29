@@ -2316,6 +2316,7 @@
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
+    padding: 0 !important;
   }
   
   .container.no-paddings {
@@ -2477,6 +2478,7 @@
   
   .navbar {
     z-index: 50;
+    border-bottom: 1px solid #cdd0e5;
     background-color: var(--colors--bg-color);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -5100,8 +5102,8 @@
     }
   
     .navbar-container {
-      grid-column-gap: 80px;
       align-items: normal;
+      width: 96%;
     }
   
     .nav-menu-link-holder {
