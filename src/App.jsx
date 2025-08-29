@@ -29,6 +29,7 @@ import OfficeHero from './Pages/OfficePage/OfficeHero/OfficeHero';
 import PaymentHero from './Pages/PaymentPage/PaymentHero/PaymentHero';
 import RndHero from './Pages/RndPage/RndHero/RndHero';
 import SurveyHero from './Pages/SurveyPage/SurveyHero/SurveyHero';
+import NewNav from './Components/NewNav/NewNav';
 
 function HomePage() {
   return (
@@ -49,7 +50,7 @@ function HomePage() {
 function App() {
   return (
     <Router>
-      <Navbar />
+      <NewNav/>
       <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage />} />
