@@ -107,17 +107,17 @@ function OfficeHero() {
           <div className="fea-about-hero-thumb-wrap">
   {[
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      src: "https://www.figma.com/community/resource/5364650e-eebc-423e-b3f9-a758ccc7b1c3/thumbnail",
       alt: "Governance Dashboard",
       title: "Governance Dashboard",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      src: "https://www.tripwire.com/sites/default/files/Policy-Compliance.jpg",
       alt: "Policy & Compliance",
       title: "Policy & Compliance",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
+      src: "https://www.diligent.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F33u1mixi%2Fproduction%2F15850142858138934f1eb3b39d0b127cc382b473-1080x720.jpg&w=2048&q=75",
       alt: "Meeting & Approvals",
       title: "Meeting & Approvals",
     },

@@ -108,17 +108,17 @@ function HostelHero() {
           <div className="fea-about-hero-thumb-wrap">
   {[
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      src: "https://iotiq.co.in/assets/NEW%20IMAGES/Solutions/Smart%20Hostel/Reduce%20dependency%20on%20manual%20labour.jpg",
       alt: "Smart Hostel Dashboard",
       title: "Smart Hostel Dashboard",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      src: "https://mavenmachines.com/wp-content/uploads/2023/10/Dispatch-Suite_Dispatch-Page_FINAL_2.png",
       alt: "Transport Scheduling",
       title: "Transport Scheduling",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
+      src: "https://cdn.mobisoftinfotech.com/assets/images/solutions/school-bus-tracking/key-features-seamless-integrations-school-bus-tracking.webp",
       alt: "Student Safety Tracking",
       title: "Student Safety Tracking",
     },

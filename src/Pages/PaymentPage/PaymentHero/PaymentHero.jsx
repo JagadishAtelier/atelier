@@ -106,17 +106,17 @@ function PaymentHero() {
           <div className="fea-about-hero-thumb-wrap">
   {[
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      src: "https://ebz-static.s3.ap-south-1.amazonaws.com/easebuzz-static/UPI-Payments.png",
       alt: "Unified Payment Portal",
       title: "Unified Payment Portal",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      src: "https://revenue.kiwi/wp-content/uploads/2024/09/image001-3.jpg",
       alt: "Billing Automation",
       title: "Automated Billing",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
+      src: "https://etedge-insights.com/wp-content/uploads/2024/11/shutterstock_2446518931.jpg",
       alt: "Secure Transactions",
       title: "Secure Transactions",
     },

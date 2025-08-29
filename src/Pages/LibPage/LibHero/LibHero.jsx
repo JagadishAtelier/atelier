@@ -108,17 +108,17 @@ function LibHero() {
           <div className="fea-about-hero-thumb-wrap">
   {[
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      src: "https://www.reutlingen-university.de/fileadmin/_processed_/b/8/csm_Buecherregal_Katalog_1cf5c6077e.jpg",
       alt: "Digital Library",
       title: "Digital Library",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      src: "https://medconverge.in/wp-content/uploads/2019/09/e-learning.jpg",
       alt: "E-Learning Hub",
       title: "E-Learning Hub",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f7022b063ce0f4afae_thumb-11.webp",
+      src: "https://media.istockphoto.com/id/1500285927/photo/young-woman-a-university-student-studying-online.jpg?s=612x612&w=0&k=20&c=yvFDnYMNEJ6WEDYrAaOOLXv-Jhtv6ViBRXSzJhL9S_k=",
       alt: "Student Access",
       title: "Student Access",
     },
