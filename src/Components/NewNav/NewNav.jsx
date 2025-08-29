@@ -1,7 +1,33 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './NewNav.css'
+import logo from '../../Assets/AST.png'
 function NewNav() {
     const [openDropdown, setOpenDropdown] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() => {
+        // Detect mobile screen
+        const checkMobile = () => {
+          setIsMobile(window.innerWidth <= 768);
+        };
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
+      }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          setScrolled(window.scrollY > 500);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+
+      const isNotHome = location.pathname !== '/';
+      const isWhiteBackground = scrolled || isNotHome;
   return (
     <div className="new-nav-header">
       <div className="new-nav-w-layout-blockcontainer new-nav-container position-relative new-nav-w-container">
@@ -13,31 +39,38 @@ function NewNav() {
           data-easing="ease"
           data-easing2="ease"
           role="banner"
-          className="new-nav-navbar new-nav-w-nav"
+          className={`new-nav-navbar new-nav-w-nav  ${isWhiteBackground ? 'scrolled' : ''}`}
         >
         
                       {/* Navbar */}
                       <div className="new-nav-navbar-wrapper">
       {/* Logo */}
-      <a href="/home-01" className="new-nav-navbar-brand-header new-nav-w-nav-brand">
+      <a href="/" className="new-nav-navbar-brand-header new-nav-w-nav-brand">
         <img
-          src="https://cdn.prod.website-files.com/67fb5942fe2143f8740c18cc/67fb5942fe2143f8740c1f4e_logo.svg"
+          src={logo}
           loading="lazy"
           alt="Logo"
           className="new-nav-navbar-brand-header-logo"
+          style={{
+            filter: isWhiteBackground
+              ? 'none' // makes logo appear white
+              : 'invert(50%) brightness(200%)',
+            transition: 'filter 0.3s ease', // smooth transition
+          }}
         />
       </a>
 
       {/* Navigation Menu */}
-      <nav role="navigation" className="new-nav-nav-menu-wrapper new-nav-w-nav-menu">
+      <nav role="navigation" className={`new-nav-nav-menu-wrapper new-nav-w-nav-menu ${isMenuOpen ? "open" : ""}`}>
         <ul role="list" className="new-nav-nav-menu new-nav-w-list-unstyled">
           {/* Dropdown */}
           <li className="new-nav-list-item"><a href="/" className="new-nav-nav-link">Home</a></li>
           <li className="new-nav-dropdown-list-item">
             <div
               className="new-nav-nav-dropdown new-nav-w-dropdown"
-              onMouseEnter={() => setOpenDropdown(true)}
-              onMouseLeave={() => setOpenDropdown(false)}
+              onMouseEnter={!isMobile ? () => setOpenDropdown(true) : undefined}
+              onMouseLeave={!isMobile ? () => setOpenDropdown(false) : undefined}
+              onClick={isMobile ? () => setOpenDropdown(!openDropdown) : undefined}
             >
               <div
                 className="new-nav-nav-dropdown-toggle new-nav-w-dropdown-toggle"
@@ -50,7 +83,7 @@ function NewNav() {
               </div>
 
               {/* Dropdown List */}
-              {openDropdown && (
+              {!isMobile && openDropdown && (
                 <nav className="new-nav-nav-dropdown-list new-nav-w-dropdown-list">
                   <div className="new-nav-mega-menu">
                     <div className="new-nav-menu-item-list">
@@ -60,33 +93,47 @@ function NewNav() {
                         <a href="/features/alumni" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Alumni & Placement Management</a>
                         <a href="/features/coe" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">COE & Advanced Reporting</a>
                         <a href="/features/survey" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Grievance & Survey Management</a>
-                        <a href="/company" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Hostel & Transport Management</a>
-                        <a href="/features" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Learning & Library Management</a>
-                        <a href="/features" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Office & Governance Management</a>
-                        <a href="/features" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Portal & Payment Management</a>
-                        <a href="/features" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">R&D and Governance</a>
+                        <a href="/features/hostel" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Hostel & Transport Management</a>
+                        <a href="/features/lib" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Learning & Library Management</a>
+                        <a href="/features/office" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Office & Governance Management</a>
+                        <a href="/features/portal" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">Portal & Payment Management</a>
+                        <a href="/features/rnd" className="new-nav-nav-dropdown-link new-nav-w-dropdown-link">R&D and Governance</a>
                       </div>
                     </div>
                   </div>
                 </nav>
               )}
+                  {isMobile && openDropdown && (
+      <ul className="mobile-submenu">
+        <li><a href="/features/admission">Admission & Academics Management</a></li>
+        <li><a href="/features/students">Student Engagement & Support</a></li>
+        <li><a href="/features/alumni">Alumni & Placement Management</a></li>
+        <li><a href="/features/coe">COE & Advanced Reporting</a></li>
+        <li><a href="/features/survey">Grievance & Survey Management</a></li>
+        <li><a href="/features/hostel">Hostel & Transport Management</a></li>
+        <li><a href="/features/lib">Learning & Library Management</a></li>
+        <li><a href="/features/office">Office & Governance Management</a></li>
+        <li><a href="/features/portal">Portal & Payment Management</a></li>
+        <li><a href="/features/rnd">R&D and Governance</a></li>
+      </ul>
+    )}
             </div>
           </li>
 
           {/* Other menu items */}
-          <li className="new-nav-list-item"><a href="/company" className="new-nav-nav-link">Contact</a></li>
-          <li className="new-nav-list-item"><a href="/pricing-01" className="new-nav-nav-link">pricing</a></li>
+          <li className="new-nav-list-item"><a href="/about" className="new-nav-nav-link">About</a></li>
+          <li className="new-nav-list-item"><a href="/inner-pages/contact" className="new-nav-nav-link">Contact</a></li>
         </ul>
       </nav>
 
       {/* Signup Button */}
       <div className="new-nav-navbar-button">
         <a
-          href="/sign-up"
+          href="/inner-pages/contact"
           className="new-nav-button w-variant-7778ebb7-2c5c-cfaa-dc4f-71e962a09032 new-nav-w-inline-block"
         >
           <div className="new-nav-button-area">
-            <div className="new-nav-button-text">SignUp</div>
+            <div className="new-nav-button-text">Book Now</div>
             <div className="new-nav-button-icon-wrapper">
               <img
                 src="https://cdn.prod.website-files.com/67fb5942fe2143f8740c18cc/67fb5942fe2143f8740c1f4d_arrow-right-02.svg"
@@ -97,27 +144,18 @@ function NewNav() {
           </div>
         </a>
       </div>
-
-      {/* Mobile Menu Button */}
-      <div className="new-nav-menu-button new-nav-w-nav-button" role="button" tabIndex="0">
-        <div className="new-nav-menu-button-icon">
-          {/* You can replace with react-lottie or svg */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 740 530"
-            width="30"
-            height="20"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="40"
-              d="M0 100 H740 M0 265 H740 M0 430 H740"
-              stroke="black"
-            />
-          </svg>
-        </div>
-      </div>
+      <div
+              className="mob-new-nav-menu-button mob-new-nav-w-nav-button"
+              role="button"
+              tabIndex="0"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <i className="bi bi-x-lg" style={{ fontSize: "1.8rem" }}></i> // Close icon
+              ) : (
+                <i className="bi bi-list" style={{ fontSize: "2rem" }}></i> // Hamburger icon
+              )}
+            </div>
     </div>
         </div>
       </div>
