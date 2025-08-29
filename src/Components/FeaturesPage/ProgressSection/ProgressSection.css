@@ -24,6 +24,12 @@
     width: 100%;
     max-width: 547px;
     overflow: hidden;
+    height: 500px !important;
+}
+.prog-progress-thumb-wrap img{
+  object-fit: cover !important;
+  height: 100% !important;
+  width: 100% !important;
 }
 .prog-section-heading.progress-heading {
     width: 100%;

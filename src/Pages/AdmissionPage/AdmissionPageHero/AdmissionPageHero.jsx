@@ -103,12 +103,12 @@ function AdmissionPageHero() {
           <div className="fea-about-hero-thumb-wrap">
   {[
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f71f89b00a6eb5120f_thumb-9.webp",
+      src: "https://www.spelman.edu/_2-Images/admissions/admissions-4.jpg",
       alt: "Atelier Portal",
       title: "Atelier Portal",
     },
     {
-      src: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/683048f616d416ba44568c03_thumb-10.webp",
+      src: "https://www.spelman.edu/_2-Images/academics/academics-classroom-9.jpg",
       alt: "Atelier ERP",
       title: "Atelier ERP",
     },

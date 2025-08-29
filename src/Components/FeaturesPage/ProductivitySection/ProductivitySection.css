@@ -128,6 +128,12 @@
     width: 100%;
     max-width: 547px;
     overflow: hidden;
+    height: 500px;
+}
+.prod-progress-thumb-wrap img{
+  object-fit: cover !important;
+  height: 100% !important;
+  width: 100% !important;
 }
 /* Responsive: Tablet (768px and below) */
 @media screen and (max-width: 768px) {
