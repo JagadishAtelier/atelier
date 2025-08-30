@@ -242,7 +242,7 @@
     }
   
     .erp-section-headline-text {
-      font-size: 1.75rem;
+      font-size: 1.50rem;
       line-height: 2.4rem;
     }
   
@@ -270,7 +270,7 @@
       font-size: 24px;
       width: 90%;
       line-height: 2.2rem;
-      text-align: start;
+      text-align: center;
     }
     .erp-section-button{
       margin: auto;

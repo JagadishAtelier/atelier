@@ -78,7 +78,7 @@ function BlogPost() {
               sliderRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
             }
           }
-        }, 3000);
+        }, 300000000);
       
         return () => clearInterval(interval);
       }, [filteredData]);
