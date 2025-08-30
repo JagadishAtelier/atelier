@@ -4,7 +4,7 @@ import './FooterSection.css';
 function FooterSection() {
   return (
     <div>
-      <section className="foo-section footer">
+      <section className="foo-section footer" data-aos="zoom-in">
         <div className="foo-container">
           <div className="foo-footer-content">
             <div className="foo-footer-info">

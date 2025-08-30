@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 function PortfolioFooter() {
   const navigate = useNavigate()
   return (
-    <div className='portfolio-footer-container'>
+    <div className='portfolio-footer-container' data-aos="zoom-in">
     <div className='footer-container-port'>
       <div className='portfolio-left-conatiner'>
         <h1>Let's Connect</h1>

@@ -4,7 +4,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import HeroSection from './Components/HeroSection/HeroSection';
 import Features from './Components/Features/Features';
@@ -35,19 +37,26 @@ function HomePage() {
   return (
     <>
 
-      <HeroSection />
+      <HeroSection data-aos="fade-up"/>
       {/* <Features /> */}
-      <AtelierErp/>
-      <AtelierHrms/>
-      <CourseSection/>
-      <SmartFeatures />
-      <BlogPost />
-      <FAQSection />
+      <AtelierErp data-aos="zoom-in"/>
+      <AtelierHrms data-aos="zoom-in"/>
+      <CourseSection data-aos="zoom-in"/>
+      <SmartFeatures data-aos="zoom-in"/>
+      <BlogPost data-aos="zoom-in"/>
+      <FAQSection data-aos="zoom-in"/>
     </>
   );
 }
 
 function App() {
+  useEffect(()=>{
+    AOS.init({
+      duration:2000,
+      once:true,
+      easing:'ease-in-out'
+    })
+  })
   return (
     <Router>
       <NewNav/>

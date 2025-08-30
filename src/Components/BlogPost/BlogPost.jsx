@@ -78,7 +78,7 @@ function BlogPost() {
               sliderRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
             }
           }
-        }, 300000000);
+        }, 3000);
       
         return () => clearInterval(interval);
       }, [filteredData]);
@@ -99,7 +99,7 @@ function BlogPost() {
       
       
   return (
-    <div className=" blog-container">
+    <div className=" blog-container" data-aos="zoom-in">
 
       <div className="blog-tabs">
         <div className="blog-head-and-tabs">

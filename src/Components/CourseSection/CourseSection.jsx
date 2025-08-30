@@ -62,7 +62,7 @@ function CourseSection() {
   }, [cardWidth]);
 
   return (
-    <section className="lms-section">
+    <section className="lms-section" data-aos="zoom-in">
       <h2 className="lms-title">Comprehensive Learning Management System</h2>
       <p className="lms-subtitle">
         Nova LMS is a powerful and flexible platform designed to enhance online learning and training experiences.

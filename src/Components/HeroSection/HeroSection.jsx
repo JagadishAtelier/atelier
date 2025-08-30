@@ -157,7 +157,7 @@ function HeroSection() {
   
   return (
     <div>
-      <div data-w-id="fa14a2cc-8e59-b8f9-6108-3fd80f7015c7" className="wrapper">
+      <div data-w-id="fa14a2cc-8e59-b8f9-6108-3fd80f7015c7" className="wrapper" data-aos="zoom-in">
         <div id="Pricing" className="section">
           <div className="hero-section-wrapper">
             <div className="container">

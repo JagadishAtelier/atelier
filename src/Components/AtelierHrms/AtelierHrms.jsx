@@ -36,7 +36,7 @@ const features = [
   ];
 function AtelierHrms() {
   return (
-    <div>
+    <div data-aos="zoom-in">
        <section id="Feature" className="hrm-feature-01-section">
       <div className="hrm-feature-01-desktop">
         <div className="hrm-vertical-padding-small">

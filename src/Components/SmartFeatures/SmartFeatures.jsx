@@ -28,7 +28,7 @@ function SmartFeatures() {
   }, []);
 
   return (
-    <div style={{marginTop:"2%"}}>
+    <div style={{marginTop:"2%"}} data-aos="zoom-in">
       <section
         data-w-id="563f3494-b7b7-2e37-b2f7-2fb5d68984a4"
         className="section feature"

@@ -8,7 +8,7 @@ import 'swiper/css/grid';
 
 function AtelierErp() {
   return (
-    <div>
+    <div data-aos="zoom-in">
           <section className="erp-section_help-transform erp-section-margin">
           <div className='header-design-for-all'>
                   <div className="pla-c-sub-title-wrap">

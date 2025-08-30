@@ -43,7 +43,7 @@ function FAQSection() {
   ];
 
   return (
-    <div id='faq'>
+    <div id='faq' data-aos="zoom-in">
       <div className="w-layout-blockcontainer containers w-container" style={{marginTop:'5%'}}>
         <div className="faq-wrapper">
           <div className="faq-flex-wrap">
