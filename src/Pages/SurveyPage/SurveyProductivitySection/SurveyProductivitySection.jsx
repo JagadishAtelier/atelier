@@ -1,5 +1,4 @@
 import React from 'react'
-import './SurveyProductivitySection.css'
 import { Link } from 'react-router-dom';
 function SurveyProductivitySection() {
   return (

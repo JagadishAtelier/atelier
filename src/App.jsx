@@ -50,13 +50,13 @@ function HomePage() {
 }
 
 function App() {
-  // useEffect(()=>{
-  //   AOS.init({
-  //     duration:2000,
-  //     once:true,
-  //     easing:'ease-in-out'
-  //   })
-  // },[])
+  useEffect(()=>{
+    AOS.init({
+      duration:2000,
+      once:true,
+      easing:'ease-in-out'
+    })
+  },[])
   return (
     <Router>
       <NewNav/>

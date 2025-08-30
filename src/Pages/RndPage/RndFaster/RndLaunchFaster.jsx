@@ -1,5 +1,4 @@
 import React from 'react'
-import './RndLaunchFaster.css'
 import { Link } from "react-router-dom";
 function RndLaunchFaster() {
   return (

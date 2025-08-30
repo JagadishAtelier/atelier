@@ -1,5 +1,4 @@
 import React from 'react'
-import './OfficePlatformSection.css'
 import { Link } from 'react-router-dom';
 function OfficePlatformSection() {
   return (

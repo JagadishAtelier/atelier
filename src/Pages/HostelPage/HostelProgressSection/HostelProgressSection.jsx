@@ -1,5 +1,4 @@
 import React from 'react'
-import './HostelProgressSection.css'
 function HostelProgressSection() {
   return (
     <div data-aos="zoom-in">

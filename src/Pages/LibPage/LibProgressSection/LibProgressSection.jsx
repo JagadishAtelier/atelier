@@ -1,5 +1,4 @@
 import React from 'react'
-import './LibProgressSection.css'
 function LibProgressSection() {
   return (
     <div data-aos="zoom-in">

@@ -1,5 +1,4 @@
 import React from 'react'
-import './CoeProgressSection.css'
 function CoeProgressSection() {
   return (
     <div data-aos="zoom-in">

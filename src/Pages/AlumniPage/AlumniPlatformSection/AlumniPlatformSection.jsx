@@ -1,5 +1,4 @@
 import React from 'react'
-import './AlumniPlatformSection.css'
 import { Link } from 'react-router-dom';
 function AlumniPlatformSection() {
   return (

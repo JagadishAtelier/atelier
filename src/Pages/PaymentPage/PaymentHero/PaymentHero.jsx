@@ -1,5 +1,4 @@
 import React from 'react'
-import './PaymentHero.css'
 import { Link } from 'react-router-dom';
 import PaymentSection from '../PaymentSection/PaymentSection';
 import PaymentProgressSection from '../PaymentProgressSection/PaymentProgressSection';

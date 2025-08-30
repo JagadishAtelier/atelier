@@ -1,5 +1,4 @@
 import React from 'react'
-import './AlumniProductivitySection.css'
 import { Link } from 'react-router-dom';
 function AlumniProductivitySection() {
   return (

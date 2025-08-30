@@ -1,5 +1,4 @@
 import React from 'react'
-import './PaymentLaunchFaster.css'
 import { Link } from "react-router-dom";
 function PaymentLaunchFaster() {
   return (

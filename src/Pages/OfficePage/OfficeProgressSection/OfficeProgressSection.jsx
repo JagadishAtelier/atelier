@@ -1,5 +1,4 @@
 import React from 'react'
-import './OfficeProgressSection.css'
 function OfficeProgressSection() {
   return (
     <div data-aos="zoom-in">

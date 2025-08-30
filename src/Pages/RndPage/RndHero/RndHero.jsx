@@ -1,5 +1,4 @@
 import React from 'react'
-import './RndHero.css'
 import { Link } from 'react-router-dom';
 import RndSection from '../RndSection/RndSection';
 import RndProgressSection from '../RndProgressSection/RndProgressSection';

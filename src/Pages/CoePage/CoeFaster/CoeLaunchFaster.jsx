@@ -1,5 +1,4 @@
 import React from 'react'
-import './CoeLaunchFaster.css'
 import { Link } from "react-router-dom";
 function CoeLaunchFaster() {
   return (

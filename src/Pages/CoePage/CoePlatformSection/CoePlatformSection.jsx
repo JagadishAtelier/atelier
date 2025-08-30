@@ -1,5 +1,4 @@
 import React from 'react'
-import './CoePlatformSection.css'
 import { Link } from 'react-router-dom';
 function CoePlatformSection() {
   return (

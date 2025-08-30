@@ -149,6 +149,13 @@
     grid-template-rows: auto;
     grid-template-columns: 1fr 1.5fr;
 }
+.hrm-section-title{
+  font-size: 45px;
+  line-height: 3.5rem;
+  width: 80%;
+  font-weight: bold;
+  margin: auto;
+}
 
 @media (max-width: 1024px) {
     .hrm-feature-01-desktop {

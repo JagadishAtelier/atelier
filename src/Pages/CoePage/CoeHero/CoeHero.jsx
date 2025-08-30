@@ -1,5 +1,4 @@
 import React from 'react'
-import './CoeHero.css'
 import { Link } from 'react-router-dom';
 import CoeSection from '../CoeSection/CoeSection';
 import CoeProgressSection from '../CoeProgressSection/CoeProgressSection';

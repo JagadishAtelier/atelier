@@ -1,5 +1,4 @@
 import React from 'react'
-import './OfficeProductivitySection.css'
 import { Link } from 'react-router-dom';
 function OfficeProductivitySection() {
   return (

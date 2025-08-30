@@ -1,5 +1,5 @@
 import React from 'react'
-import './HostelHero.css'
+
 import { Link } from 'react-router-dom';
 import HostelSection from '../HostelSection/HostelSection';
 import HostelProgressSection from '../HostelProgressSection/HostelProgressSection';

@@ -1,5 +1,4 @@
 import React from 'react'
-import './SurveyHero.css'
 import { Link } from 'react-router-dom';
 import SurveySection from '../SurveySection/SurveySection';
 import SurveyProgressSection from '../SurveyProgressSection/SurveyProgressSection';

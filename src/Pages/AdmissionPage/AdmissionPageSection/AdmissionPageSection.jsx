@@ -1,5 +1,4 @@
 import React from 'react'
-import './AdmissionPageSection.css'
 const giantsData = [
     {
       icon: "https://cdn.prod.website-files.com/681e379395f5c7d43dcb3760/6821cad29acc56c3e5d69658_icon-2.svg",

@@ -1,5 +1,4 @@
 import React from 'react'
-import './LibProductivitySection.css'
 import { Link } from 'react-router-dom';
 function LibProductivitySection() {
   return (

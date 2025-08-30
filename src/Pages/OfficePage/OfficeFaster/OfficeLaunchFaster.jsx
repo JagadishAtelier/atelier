@@ -1,5 +1,4 @@
 import React from 'react'
-import './OfficeLaunchFaster.css'
 import { Link } from "react-router-dom";
 function OfficeLaunchFaster() {
   return (

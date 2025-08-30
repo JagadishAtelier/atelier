@@ -1,5 +1,4 @@
 import React from 'react'
-import './AlumniHero.css'
 import { Link } from 'react-router-dom';
 import AlumniSection from '../AlumniSection/AlumniSection';
 import AlumniProgressSection from '../AlumniProgressSection/AlumniProgressSection';

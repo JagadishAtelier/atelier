@@ -1,5 +1,4 @@
 import React from 'react'
-import './RndProgressSection.css'
 function RndProgressSection() {
   return (
     <div data-aos="zoom-in">

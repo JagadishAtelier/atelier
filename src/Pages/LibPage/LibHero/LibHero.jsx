@@ -1,5 +1,4 @@
 import React from 'react'
-import './LibHero.css'
 import { Link } from 'react-router-dom';
 import LibSection from '../LibSection/LibSection';
 import LibProgressSection from '../LibProgressSection/LibProgressSection';

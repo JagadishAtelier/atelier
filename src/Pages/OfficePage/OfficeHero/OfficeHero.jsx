@@ -1,5 +1,4 @@
 import React from 'react'
-import './OfficeHero.css'
 import { Link } from 'react-router-dom';
 import OfficeSection from '../OfficeSection/OfficeSection';
 import OfficeProgressSection from '../OfficeProgressSection/OfficeProgressSection';

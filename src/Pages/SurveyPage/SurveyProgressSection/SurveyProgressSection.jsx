@@ -1,5 +1,4 @@
 import React from 'react'
-import './SurveyProgressSection.css'
 function SurveyProgressSection() {
   return (
     <div data-aos="zoom-in">

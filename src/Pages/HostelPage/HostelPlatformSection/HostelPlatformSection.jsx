@@ -1,5 +1,4 @@
 import React from 'react'
-import './HostelPlatformSection.css'
 import { Link } from 'react-router-dom';
 function HostelPlatformSection() {
   return (

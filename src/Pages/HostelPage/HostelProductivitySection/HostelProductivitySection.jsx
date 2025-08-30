@@ -1,5 +1,4 @@
 import React from 'react'
-import './HostelProductivitySection.css'
 import { Link } from 'react-router-dom';
 function HostelProductivitySection() {
   return (

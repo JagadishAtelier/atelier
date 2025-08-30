@@ -49,10 +49,9 @@ function AtelierHrms() {
               <div className="pla-c-sub-title">Atelier HRM</div>
             </div>
             </div>
-                <h3 className="hrm-section-title hrm-slide-bottom-400ms">
-                  Take control of your day,<br />
-                  <span className="hrm-text-weight-bold">organize your life</span>
-                </h3>
+                <h1 className="hrm-section-title hrm-slide-bottom-400ms">
+                  Take control of your day organize your life
+                </h1>
               </div>
               <div className="hrm-sub-title-center hrm-slide-bottom-600ms">
                 <p className="hrm-text-neutral-03">

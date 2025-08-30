@@ -1,5 +1,4 @@
 import React from "react";
-import './HostelEngagement.css'
 import { 
   FaUsers, 
   FaStar, 

@@ -1,5 +1,4 @@
 import React from 'react'
-import './RndProductivitySection.css'
 import { Link } from 'react-router-dom';
 function RndProductivitySection() {
   return (

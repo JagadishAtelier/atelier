@@ -1,5 +1,4 @@
 import React from 'react'
-import './PaymentProgressSection.css'
 function PaymentProgressSection() {
   return (
     <div data-aos="zoom-in">

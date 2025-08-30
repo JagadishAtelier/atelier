@@ -1,5 +1,4 @@
 import React from 'react'
-import './RndPlatformSection.css'
 import { Link } from 'react-router-dom';
 function RndPlatformSection() {
   return (

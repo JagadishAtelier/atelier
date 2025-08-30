@@ -1,5 +1,4 @@
 import React from 'react'
-import './AlumniProgressSection.css'
 function AlumniProgressSection() {
   return (
     <div data-aos="zoom-in">
