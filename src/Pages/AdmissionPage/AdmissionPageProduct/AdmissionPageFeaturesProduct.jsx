@@ -25,7 +25,7 @@ function AdmissionPageFeaturesProduct() {
   ];
 
   return (
-    <div className="pro-product-section">
+    <div className="pro-product-section" data-aos="zoom-in">
       <div className="pro-section-spacing">
         <div className="pro-container">
           <div className="pro-section-heading product-heading">

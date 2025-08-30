@@ -10,7 +10,7 @@ import SurveyEngagement from '../SurveyEngagement/SurveyEngagement';
 
 function SurveyHero() {
   return (
-    <div>
+    <div data-aos="zoom-in">
         <div className="fea-c-hero-section f-hero-shape">
       <div className="fea-section-spacing">
         <div className="fea-container">

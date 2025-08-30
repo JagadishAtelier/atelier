@@ -3,7 +3,7 @@ import './RndProductivitySection.css'
 import { Link } from 'react-router-dom';
 function RndProductivitySection() {
   return (
-    <div>
+    <div data-aos="zoom-in">
       <div className="prod-productivity-section">
       <div className="prod-section-spacing">
         <div className="prod-container">

@@ -3,7 +3,7 @@ import './SurveyProductivitySection.css'
 import { Link } from 'react-router-dom';
 function SurveyProductivitySection() {
   return (
-    <div>
+    <div data-aos="zoom-in">
       <div className="prod-productivity-section">
       <div className="prod-section-spacing">
         <div className="prod-container">

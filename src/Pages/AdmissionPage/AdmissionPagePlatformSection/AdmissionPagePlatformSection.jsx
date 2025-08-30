@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 function AdmissionPagePlatformSection() {
   return (
-    <div>
+    <div data-aos="zoom-in">
        <div className="pla-platform-section-2">
       <div className="pla-section-spacing">
         <div className="pla-container">

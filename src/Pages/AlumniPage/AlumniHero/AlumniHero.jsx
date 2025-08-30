@@ -10,7 +10,7 @@ import AlumniEngagement from '../AlumniEngagement/AlumniEngagement';
 
 function AlumniHero() {
   return (
-    <div>
+    <div data-aos="zoom-in">
         <div className="fea-c-hero-section f-hero-shape">
       <div className="fea-section-spacing">
         <div className="fea-container">

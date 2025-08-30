@@ -2,7 +2,7 @@ import React from 'react'
 import './AlumniProgressSection.css'
 function AlumniProgressSection() {
   return (
-    <div>
+    <div data-aos="zoom-in">
           <div className="prog-progress-section">
       <div className="prog-section-spacing">
         <div className="prog-container">

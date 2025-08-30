@@ -3,7 +3,7 @@ import './HostelLaunchFaster.css'
 import { Link } from "react-router-dom";
 function HostelLaunchFaster() {
   return (
-    <div>
+    <div data-aos="zoom-in">
        <div className="lau-footer-component">
       <div className="lau-cta-section">
         <div className="lau-container">

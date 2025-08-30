@@ -68,6 +68,7 @@ const HostelEngagement = () => {
     <div
       className="gbb-row-wrapper section row-first-level blue-bg-sectn gbb-row bg-size-cover"
       data-onepage-title="Image Content"
+      data-aos="zoom-in"
     >
       <div className="bb-inner default">
         <div className="bb-container container p-0">

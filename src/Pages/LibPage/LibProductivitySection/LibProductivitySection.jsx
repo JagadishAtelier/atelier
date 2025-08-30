@@ -3,8 +3,8 @@ import './LibProductivitySection.css'
 import { Link } from 'react-router-dom';
 function LibProductivitySection() {
   return (
-    <div>
-      <div className="prod-productivity-section">
+    <div data-aos="zoom-in">
+      <div className="prod-productivity-section" >
       <div className="prod-section-spacing">
         <div className="prod-container">
           <div className="prod-progress-layout-2">

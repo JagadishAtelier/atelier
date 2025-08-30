@@ -63,19 +63,19 @@ function App() {
       <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blog/:name" element={<BlogDetails />} />
-        <Route path="/about" element={<AboutPageHero/>} />
-        <Route path="/inner-pages/contact" element={<ContactPage/>} />
-        <Route path="/features/students" element={<FeaturesHero/>} />
-        <Route path="/features/admission" element={<AdmissionPageHero/>} />
-        <Route path="/features/hostel" element={<HostelHero/>} />
-        <Route path="/features/coe" element={<CoeHero/>} />
-        <Route path="/features/lib" element={<LibHero/>} />
-        <Route path="/features/alumni" element={<AlumniHero/>} />
-        <Route path="/features/office" element={<OfficeHero/>} />
-        <Route path="/features/portal" element={<PaymentHero/>} />
-        <Route path="/features/rnd" element={<RndHero/>} />
-        <Route path="/features/survey" element={<SurveyHero/>} />
+        <Route path="/blog/:name" element={<BlogDetails data-aos="zoom-in"/>} />
+        <Route path="/about" element={<AboutPageHero data-aos="zoom-in"/>} />
+        <Route path="/inner-pages/contact" element={<ContactPage data-aos="zoom-in"/>} />
+        <Route path="/features/students" element={<FeaturesHero data-aos="zoom-in"/>} />
+        <Route path="/features/admission" element={<AdmissionPageHero data-aos="zoom-in"/>} />
+        <Route path="/features/hostel" element={<HostelHero data-aos="zoom-in"/>} />
+        <Route path="/features/coe" element={<CoeHero data-aos="zoom-in"/>} />
+        <Route path="/features/lib" element={<LibHero data-aos="zoom-in"/>} />
+        <Route path="/features/alumni" element={<AlumniHero data-aos="zoom-in"/>} />
+        <Route path="/features/office" element={<OfficeHero data-aos="zoom-in"/>} />
+        <Route path="/features/portal" element={<PaymentHero data-aos="zoom-in"/>} />
+        <Route path="/features/rnd" element={<RndHero data-aos="zoom-in"/>} />
+        <Route path="/features/survey" element={<SurveyHero data-aos="zoom-in"/>} />
       </Routes>
       <FooterSection/>
     </Router>

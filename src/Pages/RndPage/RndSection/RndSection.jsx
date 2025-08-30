@@ -52,7 +52,7 @@ const giantsData = [
   ];
 function RndSection() {
   return (
-    <div>
+    <div data-aos="zoom-in">
       <div className="gia-giants-section">
       <div className="gia-section-spacing">
         <div className="gia-container">

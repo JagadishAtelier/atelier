@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 function AdmissionPageProductivitySection() {
   return (
-    <div>
+    <div data-aos="zoom-in">
       <div className="prod-productivity-section">
       <div className="prod-section-spacing">
         <div className="prod-container">

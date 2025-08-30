@@ -1,7 +1,7 @@
 import React from 'react'
 function AdmissionPageProgressSection() {
   return (
-    <div>
+    <div data-aos="zoom-in">
           <div className="prog-progress-section">
       <div className="prog-section-spacing">
         <div className="prog-container">
