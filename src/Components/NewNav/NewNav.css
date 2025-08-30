@@ -383,10 +383,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     .new-nav-list-item,
     .new-nav-dropdown-list-item {
       width: 100%;
+      color: black !important;
     }
   
     .new-nav-nav-link {
-      color: black; /* ensure contrast on white bg */
+      color: black !important; /* ensure contrast on white bg */
       font-size: 18px;
       padding: 10px 0;
       width: 100%;
@@ -421,6 +422,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 0;
     padding: 0;
     width: 100%;
+  }
+  .new-nav-w-dropdown{
+    color: black;
   }
 
   /* Make links look like normal list items */

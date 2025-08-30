@@ -295,9 +295,16 @@
     .fea-hero-btn-wrap {
       gap: 8px;
     }
+    .fea-btn-wrap{
+      width: 100%;
+    }
+    .fea-btn-wrap-3{
+      width: 100% !important;
+    }
   
     .image-hover-wrapper {
       margin: 6px;
+      height: 200px;
     }
   
     .image-hover-overlay span {

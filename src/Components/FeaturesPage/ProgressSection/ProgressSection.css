@@ -160,11 +160,12 @@
       max-width: 100%;
     }
   
-    .prog-features-text,
-    .prog-progress-list {
+    .prog-features-text {
       text-align: center;
     }
-  
+    .prog-progress-list{
+      text-align: left !important;
+    }
     .prog-progress-btn-wrap {
       justify-content: center;
       text-align: center;
@@ -190,15 +191,20 @@
       font-size: 14px;
       padding-left: 20px;
       background-size: 14px;
+      text-align: left;
     }
   
     .prog-btn-wrap {
       font-size: 12px;
       padding: 10px 14px;
+      width: 100%;
     }
   
     .prog-btn-icon {
       width: 12px;
+    }
+    .prog-progress-thumb-wrap{
+      height: 250px !important;
     }
   }
   

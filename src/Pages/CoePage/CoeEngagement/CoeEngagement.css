@@ -219,11 +219,6 @@ ul.tick_list li {
             align-items: center !important;
             justify-content: center !important;
     }
-    .row{
-        width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
     .highlight_content .desc{
         display: flex;
     flex-direction: column;
