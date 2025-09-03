@@ -193,7 +193,7 @@ ul.tick_list li {
   
     .white_card .column-inner {
       padding: 20px;
-      margin-bottom: 20px;
+      margin-bottom:0;
     }
   
     .gsc-icon-box .highlight_content .title {
@@ -213,7 +213,6 @@ ul.tick_list li {
         width: 100% !important;
         padding: 0 !important;
         margin: 0 !important;
-        gap: 20px;
     }
   }
   
@@ -235,6 +234,13 @@ ul.tick_list li {
   
     .gsc-icon-box .highlight_content .desc p {
       font-size: 13px !important;
+    }
+    .gbb-row .bb-inner{
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .gsc-heading.align-center{
+      padding-bottom: 0;
     }
   }
   

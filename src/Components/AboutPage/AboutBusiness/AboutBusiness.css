@@ -206,8 +206,8 @@
   /* Mobile */
   @media screen and (max-width: 767px) {
     .section.business {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding-top: 25px;
+      padding-bottom: 25px;
       background-size: cover;
     }
   

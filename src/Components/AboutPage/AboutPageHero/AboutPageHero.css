@@ -160,7 +160,7 @@
 /* Tablet (≤991px) */
 @media screen and (max-width: 991px) {
     .section.about-page {
-      padding-top: 80px;
+      padding-top: 100px;
     }
   
     .about-page-title {
@@ -225,6 +225,9 @@
   
     .about-image {
       border-radius: 12px;
+    }
+    .about-wrap{
+      margin-top: 25px;
     }
   }
   

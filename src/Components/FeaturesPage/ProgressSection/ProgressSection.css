@@ -141,7 +141,7 @@
 @media (max-width: 1024px) {
     .prog-progress-layout {
       flex-direction: column;
-      gap: 60px;
+      gap: 25px;
       align-items: center;
     }
   

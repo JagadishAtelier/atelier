@@ -137,5 +137,8 @@
     .gia-giants-item-text {
       font-size: 12px;
     }
+    .gia-section-heading.giants-heading{
+      margin-bottom: 25px;
+    }
   }
   

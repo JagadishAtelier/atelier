@@ -268,7 +268,7 @@
 /* Tablet (≤991px) */
 @media screen and (max-width: 991px) {
     .test-section.trusted {
-      padding-top: 100px;
+      padding-top: 25px;
     }
   
     .team-title {
