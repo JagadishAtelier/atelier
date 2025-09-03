@@ -26,6 +26,7 @@
     gap: 20px;
     position: relative;
     flex-wrap: wrap;
+    overflow: hidden;
   }
   
   .lms-feature-card {

@@ -60,3 +60,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+
+html, body {
+  overflow-x: hidden; /* prevent horizontal */
+  overflow-y: auto;   /* keep normal vertical */
+}

@@ -43,11 +43,11 @@ function FAQSection() {
   ];
 
   return (
-    <div id='faq' data-aos="zoom-in">
+    <div id='faq'>
       <div className="w-layout-blockcontainer containers w-container" style={{marginTop:'5%'}}>
         <div className="faq-wrapper">
           <div className="faq-flex-wrap">
-            <div className="faq-left-wrap">
+            <div className="faq-left-wrap"  data-aos="fade-down">
               <h2
                 className="faq-title"
                 style={{
@@ -74,7 +74,7 @@ function FAQSection() {
             </div>
 
             {/* FAQ Right Side */}
-            <div className="faq-right-wrap">
+            <div className="faq-right-wrap"  data-aos="fade-up">
               <div className="faq-item-flex-wrap">
                 {faqItems.map((item, index) => (
                   <React.Fragment key={index}>

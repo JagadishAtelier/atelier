@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from "react-router-dom";
 function PaymentLaunchFaster() {
   return (
-    <div data-aos="zoom-in">
+    <div data-aos="fade-right">
        <div className="lau-footer-component">
       <div className="lau-cta-section">
         <div className="lau-container">
-          <div className="lau-section-heading cta-heading">
+          <div className="lau-section-heading cta-heading" >
             <div className="lau-c-sub-title-wrap">
               <div className="lau-c-sub-title">Launch faster</div>
             </div>

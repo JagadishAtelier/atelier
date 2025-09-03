@@ -40,8 +40,8 @@
 .abt-cho-easy-details {
     text-align: center;
     max-width: 636px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 400;
     line-height: 150%;
 }
@@ -103,7 +103,7 @@
     background-color: var(--primary-color);
 }
 .abt-cho-choose-v1-wrap {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .abt-cho-choose-v1-grid-wrap {
     grid-column-gap: 16px;

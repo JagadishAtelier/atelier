@@ -48,7 +48,7 @@ function Navbar() {
   const isNotHome = location.pathname !== '/';
   const isWhiteBackground = scrolled || isNotHome;
   return (
-    <div>
+    <div data-aos="fade-down">
       <div className="fixed-nav">
         <div
           data-animation="default"

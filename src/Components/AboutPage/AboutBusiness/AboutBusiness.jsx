@@ -84,7 +84,7 @@ function AboutBusiness() {
           <div className="business-wrapper">
             <div className="about-business-flex-wrap">
               {/* LEFT */}
-              <div className="about-business-left-wrap">
+              <div className="about-business-left-wrap" data-aos="fade-right">
                 <h2
                   data-w-id="3fd46d74-d992-bab3-e0b6-b55f075ff3ef"
                   style={{ opacity: 1 }}
@@ -180,6 +180,7 @@ function AboutBusiness() {
                       data-w-id={item.id}
                       style={{ opacity: 1 }}
                       className="about-business-single-wrap"
+                      data-aos="fade-left"
                     >
                       <div className="about-business-single-title">{item.title}</div>
                       <p className="about-business-single-details">{item.desc}</p>

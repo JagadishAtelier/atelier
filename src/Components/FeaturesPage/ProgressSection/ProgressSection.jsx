@@ -2,12 +2,12 @@ import React from 'react'
 import './ProgressSection.css'
 function ProgressSection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
           <div className="prog-progress-section">
       <div className="prog-section-spacing">
         <div className="prog-container">
           <div className="prog-progress-layout">
-            <div className="prog-progress-thumb-wrap">
+            <div className="prog-progress-thumb-wrap" data-aos="fade-right">
               <img
                 src="https://www.kangaroos.ai/wp-content/uploads/elementor/thumbs/AI-Student-Progress-Tracking-qk3pbhv1mu718180k6bq5efo0fax3buik2osf7uqu6.jpg"
                 loading="lazy"
@@ -24,7 +24,7 @@ function ProgressSection() {
               />
             </div>
 
-            <div className="prog-section-heading progress-heading">
+            <div className="prog-section-heading progress-heading" data-aos="fade-left">
               <div className="prog-c-sub-title-wrap">
                 <div className="prog-c-sub-title">Atelier Progress</div>
               </div>

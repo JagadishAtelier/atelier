@@ -1,12 +1,12 @@
 import React from 'react'
 function AdmissionPageProgressSection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
           <div className="prog-progress-section">
       <div className="prog-section-spacing">
         <div className="prog-container">
           <div className="prog-progress-layout">
-            <div className="prog-progress-thumb-wrap">
+            <div className="prog-progress-thumb-wrap" data-aos="fade-right">
               <img
                 src="https://www.flowlu.com/site/assets/files/33045/student_2.712x443.png"
                 loading="lazy"
@@ -23,7 +23,7 @@ function AdmissionPageProgressSection() {
               />
             </div>
 
-            <div className="prog-section-heading progress-heading">
+            <div className="prog-section-heading progress-heading" data-aos="fade-left">
               <div className="prog-c-sub-title-wrap">
                 <div className="prog-c-sub-title">Admissions & Academics Progress</div>
               </div>

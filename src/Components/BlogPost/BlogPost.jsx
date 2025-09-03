@@ -220,10 +220,10 @@ function BlogPost() {
       
       
   return (
-    <div className=" blog-container" data-aos="zoom-in">
+    <div className=" blog-container" >
 
       <div className="blog-tabs">
-        <div className="blog-head-and-tabs">
+        <div className="blog-head-and-tabs" data-aos="fade-right">
         <div className="blog-section-content">
             <h2 className="blog-main-heading">Featured Posts</h2>
         </div>
@@ -248,7 +248,7 @@ function BlogPost() {
         </div>
         <div className="blog-collection-list"ref={sliderRef}>
     {[...filteredData, ...filteredData].map((post, idx) => (
-      <div className="blog-collection-item" key={idx + post.name}>
+      <div className="blog-collection-item" key={idx + post.name} data-aos={idx % 2 === 0 ? "fade-up" : "fade-down"}>
         <div className="blog-card" onClick={()=>navigate(`/blog/${post.name}`,{state:{post}})} style={{cursor:"pointer"}}>
           <div className="blog-image-wrapper">
             <img

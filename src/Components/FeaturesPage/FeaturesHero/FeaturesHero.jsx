@@ -12,11 +12,11 @@ import StudentEngagement from '../StudentEngagement/StudentEngagement';
 
 function FeaturesHero() {
   return (
-    <div data-aos="zoom-in">
+    <div>
         <div className="fea-c-hero-section f-hero-shape">
       <div className="fea-section-spacing">
         <div className="fea-container">
-          <div className="fea-hero-content">
+          <div className="fea-hero-content" data-aos="fade-right">
             <div className="fea-hero-subtitle-wrap">
               <div className="fea-hero-subtitle">Atelier Features</div>
             </div>

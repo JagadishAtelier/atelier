@@ -3,7 +3,7 @@ import './AboutDashBoard.css';
 
 function AboutDashBoard() {
   return (
-    <div>
+    <div data-aos="fade-up">
       <section className="section cta">
         <div className="w-layout-blockcontainer-cta cta-container w-container-cta">
           <div className="cta-wrapper">

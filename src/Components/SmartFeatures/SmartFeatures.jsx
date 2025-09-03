@@ -28,13 +28,13 @@ function SmartFeatures() {
   }, []);
 
   return (
-    <div style={{marginTop:"2%"}} data-aos="zoom-in">
+    <div style={{marginTop:"2%"}}>
       <section
         data-w-id="563f3494-b7b7-2e37-b2f7-2fb5d68984a4"
         className="section feature"
       >
         <div className="smart-containers centered">
-          <div data-wf--section-header--variant="center" className="section-header-wrap">
+          <div data-wf--section-header--variant="center" className="section-header-wrap"     data-aos="fade-left">
             <div
               data-w-id="a0327130-8c70-bb87-5c9d-f673fbbdd23b"
               className="tag-wrap"
@@ -61,7 +61,7 @@ function SmartFeatures() {
             </div>
           </div>
 
-          <div className="feature-grid">
+          <div className="feature-grid"     data-aos="fade-right">
             <div className="smart-feature-wrap">
               {/* Card 1 */}
               <div

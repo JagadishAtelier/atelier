@@ -9,7 +9,7 @@ import RndEngagement from '../RndEngagement/RndEngagement';
 
 function RndHero() {
   return (
-    <div data-aos="zoom-in">
+    <div data-aos="fade-right">
         <div className="fea-c-hero-section f-hero-shape">
       <div className="fea-section-spacing">
         <div className="fea-container">

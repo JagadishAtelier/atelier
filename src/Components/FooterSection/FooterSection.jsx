@@ -4,8 +4,8 @@ import './FooterSection.css';
 function FooterSection() {
   return (
     <div>
-      <section className="foo-section footer" data-aos="zoom-in">
-        <div className="foo-container">
+      <section className="foo-section footer">
+        <div className="foo-container"  data-aos="fade-up">
           <div className="foo-footer-content">
             <div className="foo-footer-info">
               <div className="foo-footer-contact" id="w-node-_38407cdc-e5a2-b07c-57ba-e616474027ef-000c7cc3">

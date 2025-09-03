@@ -1,12 +1,12 @@
 import React from 'react'
 function AlumniProgressSection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
           <div className="prog-progress-section">
       <div className="prog-section-spacing">
         <div className="prog-container">
           <div className="prog-progress-layout">
-            <div className="prog-progress-thumb-wrap">
+            <div className="prog-progress-thumb-wrap" data-aos="fade-right">
               <img
                 src="https://www.verywellmind.com/thmb/xDe8G7YvSVe5jz9aL3U9WYqKQK4=/4251x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-178608173-5adbe3fa8e1b6e00372211c4.jpg"
                 loading="lazy"
@@ -23,7 +23,7 @@ function AlumniProgressSection() {
               />
             </div>
 
-            <div className="prog-section-heading progress-heading">
+            <div className="prog-section-heading progress-heading" data-aos="fade-left">
               <div className="prog-c-sub-title-wrap">
                 <div className="prog-c-sub-title">Alumni  Progress</div>
               </div>

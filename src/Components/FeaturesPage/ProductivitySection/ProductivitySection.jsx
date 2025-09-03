@@ -3,12 +3,12 @@ import './ProductivitySection.css'
 import { Link } from 'react-router-dom';
 function ProductivitySection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
       <div className="prod-productivity-section">
       <div className="prod-section-spacing">
         <div className="prod-container">
           <div className="prod-progress-layout-2">
-            <div className="prod-section-heading progress-heading-2">
+            <div className="prod-section-heading progress-heading-2" data-aos="fade-right">
               <div className='prod-center-mob'>
                 <div className="prod-c-sub-title-wrap">
                   <div className="prod-c-sub-title">Atelier Productivity</div>
@@ -73,7 +73,7 @@ function ProductivitySection() {
                 </Link>
               </div>
             </div>
-            <div className="prod-progress-thumb-wrap">
+            <div className="prod-progress-thumb-wrap" data-aos="fade-left">
               <img
                 src="https://cdn.prod.website-files.com/65afd8dc16873da38e2b5ecb/6601737e389fac869ac92183_2021_07_rsz_presentation-of-chart-yv5qcbg.jpeg"
                 loading="lazy"

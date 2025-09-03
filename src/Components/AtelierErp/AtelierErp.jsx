@@ -8,7 +8,7 @@ import 'swiper/css/grid';
 
 function AtelierErp() {
   return (
-    <div data-aos="zoom-in">
+    <div>
           <section className="erp-section_help-transform erp-section-margin">
           <div className='header-design-for-all'>
                   <div className="pla-c-sub-title-wrap">
@@ -18,7 +18,7 @@ function AtelierErp() {
             </div>
       <div className="erp-w-layout-blockcontainer erp-global-wrapper erp-w-container">
         <div className="erp-global-padding">
-          <div className="erp-help-transform_wrapper">
+          <div className="erp-help-transform_wrapper" data-aos="fade-right">
             {/* Left Content */}
             <div
               data-w-id="aeb35c57-a2fb-8f94-e8b6-a01b0ce2cec3"
@@ -67,6 +67,7 @@ function AtelierErp() {
             <div
               data-w-id="aeb35c57-a2fb-8f94-e8b6-a01b0ce2ceca"
               className="erp-help-transform_content-right"
+              data-aos="fade-left"
             >
 <Swiper
   modules={[Autoplay, Grid]}
@@ -153,9 +154,13 @@ function AtelierErp() {
         "Oversees the institutional website, student portals, online fee payments, and digital transactions for a seamless user experience.",
       icon: "https://cdn.prod.website-files.com/67d5e6f8c0c32c5ff1c7f21d/67d9981903a04ab037735334_command-fill.svg",
     },
-  ].map((item, i) => (
+  ].map((item, i) =>
+  
+  {
+    const aosEffect = i % 2 === 0 ? "fade-up" : "fade-down";
+    return(
     <SwiperSlide key={i}>
-      <div className="erp-help-transform_card erp-drop-shadow">
+      <div className="erp-help-transform_card erp-drop-shadow" data-aos={aosEffect}>
         <div className="erp-help-transform_icon-wrapper">
           <img
             loading="lazy"
@@ -176,7 +181,9 @@ function AtelierErp() {
         </div>
       </div>
     </SwiperSlide>
-  ))}
+  )
+    }
+  )}
 </Swiper>
               <div className="erp-help-transform_bg"></div>
             </div>

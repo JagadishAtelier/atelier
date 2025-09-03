@@ -51,11 +51,11 @@ const giantsData = [
   ];
 function LibSection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
       <div className="gia-giants-section">
       <div className="gia-section-spacing">
         <div className="gia-container">
-          <div className="gia-section-heading giants-heading">
+          <div className="gia-section-heading giants-heading" data-aos="fade-right">
             <div className="gia-c-sub-title-wrap">
               <div className="gia-c-sub-title">Atelier Giants</div>
             </div>
@@ -67,7 +67,7 @@ function LibSection() {
           </div>
           <div className="gia-giants-layout">
             {giantsData.map(({ icon, alt, title, text }, index) => (
-              <div className="gia-giants-item" key={index}>
+              <div className="gia-giants-item" key={index} data-aos={index % 2 === 0 ? "fade-up" : "fade-down"} >
                 <div className="gia-giants-item-top">
                   <div className="gia-giants-item-icon-wrap">
                     <img

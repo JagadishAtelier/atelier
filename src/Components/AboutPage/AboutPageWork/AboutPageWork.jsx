@@ -31,7 +31,7 @@ function AboutPageWork() {
       <section className="section work">
         <div className="w-layout-blockcontainer-about-work container-about-work w-container-about-work">
           <div className="work-wrapper">
-            <div className="work-top-wrap">
+            <div className="work-top-wrap" data-aos="fade-right">
               <h2
                 data-w-id="baf608fd-acb4-c566-3e75-d6457d474a15"
                 style={{ opacity: 1 }}
@@ -115,6 +115,7 @@ function AboutPageWork() {
                     data-w-id={card.id}
                     style={{ opacity: 1 }}
                     className="about-work-card-wrap"
+                    data-aos={idx % 2 === 0 ? "fade-up" : "fade-down"} 
                   >
                     <img
                       src={card.icon}

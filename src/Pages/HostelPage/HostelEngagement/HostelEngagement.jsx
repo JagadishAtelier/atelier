@@ -67,13 +67,12 @@ const HostelEngagement = () => {
     <div
       className="gbb-row-wrapper section row-first-level blue-bg-sectn gbb-row bg-size-cover"
       data-onepage-title="Image Content"
-      data-aos="zoom-in"
     >
       <div className="bb-inner default">
         <div className="bb-container container p-0">
           <div className="row row-wrapper">
             {/* Heading Section */}
-            <div className="gsc-column col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div className="gsc-column col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" data-aos="fade-right">
               <div className="column-inner bg-size-cover">
                 <div className="column-content-inner">
                   <div
@@ -109,6 +108,7 @@ const HostelEngagement = () => {
                 className={`gsc-column  col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 white_card ${
                   card.extraClass || ""
                 }`}
+                data-aos={index % 2 === 0 ? "fade-up" : "fade-down"} 
               >
                 <div className="column-inner bg-size-cover border border-gray-200">
                   <div className="column-content-inner">

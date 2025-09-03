@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 function OfficeProductivitySection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
       <div className="prod-productivity-section">
       <div className="prod-section-spacing">
         <div className="prod-container">
           <div className="prod-progress-layout-2">
-            <div className="prod-section-heading progress-heading-2">
+            <div className="prod-section-heading progress-heading-2" data-aos="fade-right">
               <div className='prod-center-mob'>
                 <div className="prod-c-sub-title-wrap">
                   <div className="prod-c-sub-title">Atelier Productivity</div>
@@ -73,7 +73,7 @@ function OfficeProductivitySection() {
                 </Link>
               </div>
             </div>
-            <div className="prod-progress-thumb-wrap">
+            <div className="prod-progress-thumb-wrap" data-aos="fade-left">
               <img
                 src="https://modulardata.co.uk/wp-content/uploads/2024/09/how-to-improve-public-sector-productivity-and-innovation-bring-in-the-smes-feature.jpeg"
                 loading="lazy"

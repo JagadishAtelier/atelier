@@ -36,15 +36,15 @@ const features = [
   ];
 function AtelierHrms() {
   return (
-    <div data-aos="zoom-in">
+    <div>
        <section id="Feature" className="hrm-feature-01-section">
       <div className="hrm-feature-01-desktop">
         <div className="hrm-vertical-padding-small">
           <div className="hrm-w-layout-blockcontainer hrm-container-large hrm-w-container">
             <div className="hrm-divider-blank-medium" />
-            <div className="hrm-title-section-center">
+            <div className="hrm-title-section-center"  data-aos="fade-left">
               <div className="hrm-feature-title">
-              <div className='header-design-for-all'>
+              <div className='header-design-for-all hrm-box-text'>
                   <div className="pla-c-sub-title-wrap">
               <div className="pla-c-sub-title">Atelier HRM</div>
             </div>
@@ -61,7 +61,7 @@ function AtelierHrms() {
                 </p>
               </div>
             </div>
-            <div className="hrm-feature-bento-01 hrm-slide-bottom-400ms">
+            <div className="hrm-feature-bento-01 hrm-slide-bottom-400ms"  data-aos="fade-right">
               <div className="hrm-w-layout-grid hrm-grid-feature-01">
                 {features.slice(0, 2).map((f, i) => (
                   <div className="hrm-feature-wrapper" key={i}>

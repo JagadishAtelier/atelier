@@ -1,12 +1,12 @@
 import React from 'react'
 function LibProgressSection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
           <div className="prog-progress-section">
       <div className="prog-section-spacing">
         <div className="prog-container">
           <div className="prog-progress-layout">
-            <div className="prog-progress-thumb-wrap">
+            <div className="prog-progress-thumb-wrap" data-aos="fade-right">
               <img
                 src="https://media.planview.com/clarizen/wp-content/upload/2018/10/How-to-Use-Project-Status-Reports.jpg"
                 loading="lazy"
@@ -23,7 +23,7 @@ function LibProgressSection() {
               />
             </div>
 
-            <div className="prog-section-heading progress-heading">
+            <div className="prog-section-heading progress-heading" data-aos="fade-left">
               <div className="prog-c-sub-title-wrap">
                 <div className="prog-c-sub-title">Atelier Progress</div>
               </div>

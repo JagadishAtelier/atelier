@@ -12,7 +12,7 @@ function AboutPageHero() {
       <section className="section about-page">
         <div className="w-layout-blockcontainer-about about-container w-container-about">
           <div className="about-wrapper">
-            <div className="about-top-wrap">
+            <div className="about-top-wrap" data-aos="fade-right">
               <div
                 data-w-id="b9a2133f-03e3-caf1-ce0b-9803d6372efa"
                 style={{ opacity: 1 }}

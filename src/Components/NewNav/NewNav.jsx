@@ -29,7 +29,7 @@ function NewNav() {
       const isNotHome = location.pathname !== '/';
       const isWhiteBackground = scrolled || isNotHome;
   return (
-    <div className="new-nav-header" data-aos="zoom-in">
+    <div className="new-nav-header">
       <div className="new-nav-w-layout-blockcontainer new-nav-container position-relative new-nav-w-container">
         <div
           data-w-id="be61f925-d3a9-be49-f008-b802122495b1"

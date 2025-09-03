@@ -33,8 +33,8 @@
     color: var(--gray-color);
     text-align: center;
     max-width: 570px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 400;
     line-height: 150%;
     font-size: 18px;
@@ -81,7 +81,7 @@
     position: relative;
 }
 .about-work-wrap {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .about-work-grid-wrap {
     grid-column-gap: 20px;

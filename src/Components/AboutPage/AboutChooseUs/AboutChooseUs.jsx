@@ -31,7 +31,7 @@ function AboutChooseUs() {
       <section className="section choose-v1">
         <div className="w-layout-blockcontainer-abt-cho abt-cho-container w-container-abt-cho">
           <div className="abt-cho-choose-v1-wrapper">
-            <div className="abt-cho-easy-top-wrap">
+            <div className="abt-cho-easy-top-wrap" data-aos="fade-right">
               <h2
                 data-w-id="b9d69243-e3f6-8620-3a4c-0895a809a2dd"
                 style={{ opacity: 1 }}
@@ -109,6 +109,7 @@ function AboutChooseUs() {
                     data-w-id={item.id}
                     style={{ opacity: 1 }}
                     className="abt-cho-choose-v1-single-wrap"
+                    data-aos={index % 2 === 0 ? "fade-up" : "fade-down"} 
                   >
                     <div className="abt-cho-choose-v1-single-item">
                       <div className="abt-cho-choose-image-wrap">

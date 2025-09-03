@@ -1,12 +1,12 @@
 import React from 'react'
 function CoeProgressSection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
           <div className="prog-progress-section">
       <div className="prog-section-spacing">
         <div className="prog-container">
           <div className="prog-progress-layout">
-            <div className="prog-progress-thumb-wrap">
+            <div className="prog-progress-thumb-wrap" data-aos="fade-right">
               <img
                 src="https://fastercapital.com/i/Analytics--How-to-Use-Analytics-to-Monitor-and-Improve-Your-PPC-Performance-and-Insights--Actionable-Insights-and-Reporting.webp"
                 loading="lazy"
@@ -23,7 +23,7 @@ function CoeProgressSection() {
               />
             </div>
 
-            <div className="prog-section-heading progress-heading">
+            <div className="prog-section-heading progress-heading" data-aos="fade-left">
               <div className="prog-c-sub-title-wrap">
                 <div className="prog-c-sub-title">COE Progress</div>
               </div>

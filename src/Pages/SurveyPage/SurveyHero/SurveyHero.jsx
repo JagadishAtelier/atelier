@@ -9,11 +9,11 @@ import SurveyEngagement from '../SurveyEngagement/SurveyEngagement';
 
 function SurveyHero() {
   return (
-    <div data-aos="zoom-in">
+    <div>
         <div className="fea-c-hero-section f-hero-shape">
       <div className="fea-section-spacing">
         <div className="fea-container">
-          <div className="fea-hero-content">
+          <div className="fea-hero-content" data-aos="fade-right">
             <div className="fea-hero-subtitle-wrap">
               <div className="fea-hero-subtitle">Atelier Features</div>
             </div>
@@ -118,7 +118,7 @@ function SurveyHero() {
       title: "Automated Feedback & Resolution",
     },
   ].map((item, index) => (
-    <div className="image-hover-wrapper" key={index}>
+    <div className="image-hover-wrapper" key={index} data-aos={index % 2 === 0 ? "fade-up" : "fade-down"} >
       <img
         src={item.src}
         alt={item.alt}

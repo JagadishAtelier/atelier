@@ -69,13 +69,13 @@ function AboutTestimonial() {
       <section className="test-section trusted">
         <div className="w-layout-blockcontainer-test test-container w-containertest">
           <div className="trusted-wrap">
-            <div className="trusted-top-wrap">
+            <div className="trusted-top-wrap" data-aos="fade-right">
               <h2 className="team-title"id='testimonials'>Trusted by 6k+ people to move business forward</h2>
             </div>
 
             <div className="trusted-bottom-wrap">
               {/* Row 1 */}
-              <div className="trusted-row-01">
+              <div className="trusted-row-01" data-aos="fade-right">
                 <div className="trusted-item-list-wraap">
                   <div className="trusted-item _02">
                     <div className={`trusted-item-text-wrapper ${fade1 ? 'fade-in' : 'fade-out'}`}>
@@ -109,7 +109,7 @@ function AboutTestimonial() {
               </div>
 
               {/* Row 2 */}
-              <div className="trusted-row-02">
+              <div className="trusted-row-02" data-aos="fade-up">
                 <div className="trusted-item-image">
                   <img
                     src="https://cdn.prod.website-files.com/681b3a6cecccc4f90e5ef403/684c6686532dde0099f6246b_Trusted%20Row%20Image%2002.avif"
@@ -133,7 +133,7 @@ function AboutTestimonial() {
               </div>
 
               {/* Row 3 */}
-              <div className="trusted-row-03">
+              <div className="trusted-row-03" data-aos="fade-left">
                 <div className="trusted-item-list-wraap">
                   <div className="trusted-item _03">
                     <div className={`trusted-item-text-wrapper ${fade2 ? 'fade-in' : 'fade-out'}`}>

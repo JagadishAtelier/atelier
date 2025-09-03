@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 function AdmissionPageProductivitySection() {
   return (
-    <div data-aos="zoom-in">
+    <div>
       <div className="prod-productivity-section">
       <div className="prod-section-spacing">
         <div className="prod-container">
           <div className="prod-progress-layout-2">
-            <div className="prod-section-heading progress-heading-2">
+            <div className="prod-section-heading progress-heading-2" data-aos="fade-right">
               <div className='prod-center-mob'>
                 <div className="prod-c-sub-title-wrap">
                   <div className="prod-c-sub-title">Admissions & Academics Productivity</div>
@@ -72,7 +72,7 @@ function AdmissionPageProductivitySection() {
                 </Link>
               </div>
             </div>
-            <div className="prod-progress-thumb-wrap">
+            <div className="prod-progress-thumb-wrap" data-aos="fade-left">
               <img
                 src="https://www.iitms.co.in/higher-education-erp/img/Dashboard-screenshot-2.webp"
                 loading="lazy"

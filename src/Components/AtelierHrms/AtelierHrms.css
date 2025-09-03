@@ -3,6 +3,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+.hrm-box-text{
+   margin-bottom: 0 !important;
+}
 .hrm-feature-01-desktop {
     z-index: 999;
     max-width: 100%;
@@ -66,8 +69,8 @@
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     padding: 2rem;
     display: flex
 ;

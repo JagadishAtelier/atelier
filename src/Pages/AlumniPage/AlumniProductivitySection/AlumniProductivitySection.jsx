@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 function AlumniProductivitySection() {
   return (
-    <div data-aos="zoom-in" >
+    <div >
       <div className="prod-productivity-section">
       <div className="prod-section-spacing">
         <div className="prod-container">
           <div className="prod-progress-layout-2">
-            <div className="prod-section-heading progress-heading-2">
+            <div className="prod-section-heading progress-heading-2"data-aos="fade-right">
               <div className='prod-center-mob'>
                 <div className="prod-c-sub-title-wrap">
                   <div className="prod-c-sub-title">Alumni Productivity</div>
@@ -73,7 +73,7 @@ function AlumniProductivitySection() {
                 </Link>
               </div>
             </div>
-            <div className="prod-progress-thumb-wrap">
+            <div className="prod-progress-thumb-wrap" data-aos="fade-left">
               <img
                 src="https://shiminly.com/wp-content/uploads/2023/02/empower_students.jpg"
                 loading="lazy"

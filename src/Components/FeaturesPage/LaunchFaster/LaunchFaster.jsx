@@ -3,7 +3,7 @@ import './LaunchFaster.css'
 import { Link } from "react-router-dom";
 function LaunchFaster() {
   return (
-    <div data-aos="zoom-in">
+    <div data-aos="fade-right">
        <div className="lau-footer-component">
       <div className="lau-cta-section">
         <div className="lau-container">

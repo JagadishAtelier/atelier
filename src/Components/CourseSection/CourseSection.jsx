@@ -62,12 +62,14 @@ function CourseSection() {
   }, [cardWidth]);
 
   return (
-    <section className="lms-section" data-aos="zoom-in">
+    <section className="lms-section">
+      <div  data-aos="fade-left">
       <h2 className="lms-title">Comprehensive Learning Management System</h2>
       <p className="lms-subtitle">
         Nova LMS is a powerful and flexible platform designed to enhance online learning and training experiences.
         It enables seamless course management, learner engagement, performance tracking, and content delivery.
       </p>
+      </div>
 
       <div className="lms-features-wrapper">
       <button className="lms-arrow-button left" onClick={() => {
@@ -79,8 +81,11 @@ function CourseSection() {
   </button>
         <div className="carousel-viewport" ref={sliderRef}>
           <div className="carousel-track">
-            {[...features, ...features].map((feature, index) => (
-              <div key={index} className="lms-feature-card">
+            {[...features, ...features].map((feature, index) => 
+            {
+              const aosEffect = index % 2 === 0 ? "fade-up" : "fade-down";
+              return(
+              <div key={index} className="lms-feature-card"data-aos={aosEffect}>
                 <div className="lms-feature-icon">
                   <i className={`bi ${feature.icon}`}></i>
                 </div>
@@ -88,7 +93,8 @@ function CourseSection() {
                 <p className="lms-feature-desc">{feature.description}</p>
                 <button className="lms-learn-more">Learn More</button>
               </div>
-            ))}
+            )
+              })}
           </div>
         </div>
         <button className="lms-arrow-button right" onClick={() => {
