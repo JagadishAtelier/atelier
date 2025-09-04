@@ -99,7 +99,7 @@ function HeroSection() {
           }, 0.1)
           .to(".dashboad-holder", {
             rotateY: -50,
-            rotateX:2,       // 🔥 increase tilt
+            rotateX:5,       // 🔥 increase tilt
             scale: 1.1,
             ease: "power1.out",
             duration: 1,
