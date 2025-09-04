@@ -2,7 +2,7 @@ import React, { useEffect,useRef } from 'react';
 import './HeroSection.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import dashBoard from '../../Assets/ERP_Dashboard.png'
+import dashBoard from '../../Assets/image/WhatsApp Image 2025-09-04 at 14.23.21_1b7fb0de.jpg'
 const logos = [
   "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg",
   "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg",
@@ -91,15 +91,15 @@ function HeroSection() {
           //   0.3
           // )          
           tl.to(".dashboad-holder", {
-            rotateY: -30,
+            rotateY: -15,
             rotateX:2,       // 🔥 tilt on X-axis for real 3D depth
             scale: 1.05,
             ease: "power1.out",
             duration: 0.8,
           }, 0.1)
           .to(".dashboad-holder", {
-            rotateY: -30,
-            rotateX:5,       // 🔥 increase tilt
+            rotateY: -50,
+            rotateX:2,       // 🔥 increase tilt
             scale: 1.1,
             ease: "power1.out",
             duration: 1,
