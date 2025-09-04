@@ -2,7 +2,7 @@ import React, { useEffect,useRef } from 'react';
 import './HeroSection.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import dashBoard from '../../Assets/image/WhatsApp Image 2025-09-04 at 14.23.21_1b7fb0de.jpg'
+import dashBoard from '../../Assets/image/Desktop - 1.png'
 const logos = [
   "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg",
   "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg",
