@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import './NewNav.css'
-import logo from '../../Assets/AST.png'
+import logo from '../../Assets/image/Atelier_technology_white logo.png'
+import logo2 from '../../Assets/AST.png'
 function NewNav() {
     const [openDropdown, setOpenDropdown] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -47,14 +48,11 @@ function NewNav() {
       {/* Logo */}
       <a href="/" className="new-nav-navbar-brand-header new-nav-w-nav-brand">
         <img
-          src={logo}
+          src={isNotHome ? logo2 : scrolled ? logo2 : logo}
           loading="lazy"
           alt="Logo"
           className="new-nav-navbar-brand-header-logo"
           style={{
-            filter: isWhiteBackground
-              ? 'none' // makes logo appear white
-              : 'invert(50%) brightness(200%)',
             transition: 'filter 0.3s ease', // smooth transition
           }}
         />

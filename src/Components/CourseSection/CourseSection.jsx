@@ -31,7 +31,7 @@ const features = [
 
 function CourseSection() {
   const sliderRef = useRef(null);
-  const [cardWidth, setCardWidth] = useState(350 + 30); // Card width + gap
+  const [cardWidth, setCardWidth] = useState(355 + 30); // Card width + gap
 
   useEffect(() => {
     const handleResize = () => {

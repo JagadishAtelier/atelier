@@ -3891,14 +3891,10 @@
     display: flex;
   }
   
-  .hero-heading-holder {
-    max-width: 720px;
-  }
-  
   .hero-text {
     color: var(--colors--bg-color);
     letter-spacing: -2px;
-    font-size: 69px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 1.1;
   }
@@ -5010,6 +5006,7 @@
   
   .company-logo-wrapper {
     z-index: 3;
+    padding-top: 120px;
   }
   
   .bg-video {

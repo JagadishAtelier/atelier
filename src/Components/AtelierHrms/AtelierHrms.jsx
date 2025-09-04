@@ -64,7 +64,7 @@ function AtelierHrms() {
             <div className="hrm-feature-bento-01 hrm-slide-bottom-400ms"  data-aos="fade-right">
               <div className="hrm-w-layout-grid hrm-grid-feature-01">
                 {features.slice(0, 2).map((f, i) => (
-                  <div className="hrm-feature-wrapper" key={i}>
+                  <div className="hrm-feature-wrapper" key={i} data-aos={i % 2 === 0 ? "fade-up" : "fade-down"} >
                     <div className="hrm-feature-image-01">
                       <img src={f.image} alt="Feature Graphic" className={f.className} />
                     </div>

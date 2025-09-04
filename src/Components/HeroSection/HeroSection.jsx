@@ -2,7 +2,7 @@ import React, { useEffect,useRef } from 'react';
 import './HeroSection.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import dashBoard from '../../Assets/dashBoard.png'
+import dashBoard from '../../Assets/ERP_Dashboard.png'
 const logos = [
   "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg",
   "https://cdn.prod.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg",
@@ -24,7 +24,7 @@ function HeroSection() {
           ".feature-grid-content-holder-2",
           { y: 0, opacity: 1 },
           { 
-            y: 200,
+            y: 300,
             opacity: 0.9,
             ease: "power1.out",
             scrollTrigger: {
@@ -57,8 +57,8 @@ function HeroSection() {
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: ".dashboad-holder",
-              start: "top 40%",
-              end: "+=4000",
+              start: "top 10%",
+              end: "+=5000",
               scrub: true,
               markers: false,
             },
@@ -176,15 +176,14 @@ function HeroSection() {
                   <div className="animate-on-load-01">
                     <div className="hero-heading-holder">
                       <h1 className="hero-text">
-                        Your Money. Your Sky. Your Future is here.
+                        Launch your SaaS or Startup website with Atelier in days,not weeks
                       </h1>
                     </div>
                   </div>
                   <div className="animate-on-load-02">
                     <div className="paragraph-holder awards-holder">
                       <p className="white-text">
-                        Built on a foundation of trust and security, we ensure
-                        that your finances are always protected.
+                        Get a ready to launch Webflow template for building any kind of modern website
                       </p>
                     </div>
                   </div>
