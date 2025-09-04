@@ -47,6 +47,11 @@
     }
   }
   
-.dashboad-holder {
-  transform-style: preserve-3d;
-}
+  .perspective {
+    perspective: 1200px;
+  }
+  
+  .dashobard-wrapper {
+    transform-style: preserve-3d;
+  }
+  

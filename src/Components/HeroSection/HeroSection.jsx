@@ -20,6 +20,7 @@ function HeroSection() {
     ScrollTrigger.matchMedia({
       // ✅ Desktop only (≥768px)
       "(min-width: 768px)": function () {
+        
         gsap.fromTo(
           ".feature-grid-content-holder-2",
           { y: 0, opacity: 1 },
@@ -31,7 +32,7 @@ function HeroSection() {
               trigger: ".feature-grid-content-holder-2",
               start: "top -80%",
               end: "bottom top",
-              scrub: 5,
+              scrub:10,
               markers: false,
             },
           }
@@ -89,26 +90,21 @@ function HeroSection() {
           //   },
           //   0.3
           // )          
-            .to(".dashboad-holder", {
-              rotateY: -40,
-              scale: 1.01,
-              rotateZ:3,
-              ease: "power1.out",
-              duration: 0.5,
-            }, 0.1)
-            .to(".dashboad-holder", {
-              rotateY: -45,
-              scale: 1.015,
-              ease: "power1.out",
-              duration: 0.5,
-            })
-            
-            .to(".dashboad-holder", {
-              y: alignY + 300,
-              rotation: 40,
-              ease: "none",
-              duration: 1,
-            });
+          tl.to(".dashboad-holder", {
+            rotateY: -30,
+            rotateX:2,       // 🔥 tilt on X-axis for real 3D depth
+            scale: 1.05,
+            ease: "power1.out",
+            duration: 0.8,
+          }, 0.1)
+          .to(".dashboad-holder", {
+            rotateY: -30,
+            rotateX:5,       // 🔥 increase tilt
+            scale: 1.1,
+            ease: "power1.out",
+            duration: 1,
+          });
+          
         },
   
         "(max-width: 767px)": function () {
