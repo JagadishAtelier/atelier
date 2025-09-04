@@ -67,7 +67,10 @@
     overflow: hidden;
 }
 .new-nav-navbar-brand-header {
-    padding-left: 0;
+    position: relative  !important;   /* make it the reference for absolute children */
+    display: inline-block !important;
+    width: 120px !important;         /* or whatever size your logo should be */
+    height: 40px !important;
 }
 .new-nav-w-nav-brand {
     float: left;
@@ -522,3 +525,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       }
   }
   
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;          /* fill the wrapper */
+    height: 100%;
+    object-fit: contain;  /* scale nicely */
+    transition: opacity 0.3s ease;
+  }
+  
+  .logo.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .logo.visible {
+    opacity: 1;
+  }
+  
+  .logo1 {
+    width: 150px;   /* adjust size */
+    height: 50px;   /* adjust size */
+    object-fit: cover;
+  }

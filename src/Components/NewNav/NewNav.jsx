@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import './NewNav.css'
-import logo from '../../Assets/image/Atelier_technology_white logo.png'
+import logo from '../../Assets/image/blue_logo.svg'
 import logo2 from '../../Assets/AST.png'
 function NewNav() {
     const [openDropdown, setOpenDropdown] = useState(false);
@@ -18,14 +18,23 @@ function NewNav() {
         return () => window.removeEventListener("resize", checkMobile);
       }, []);
 
-    useEffect(() => {
+      useEffect(() => {
+        let ticking = false;
+      
         const handleScroll = () => {
-          setScrolled(window.scrollY > 500);
+          if (!ticking) {
+            window.requestAnimationFrame(() => {
+              setScrolled(window.scrollY > 500);
+              ticking = false;
+            });
+            ticking = true;
+          }
         };
-    
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+      
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
       }, []);
+      
 
       const isNotHome = location.pathname !== '/';
       const isWhiteBackground = scrolled || isNotHome;
@@ -47,15 +56,21 @@ function NewNav() {
                       <div className="new-nav-navbar-wrapper">
       {/* Logo */}
       <a href="/" className="new-nav-navbar-brand-header new-nav-w-nav-brand">
-        <img
+        {/* <img
           src={isNotHome ? logo2 : scrolled ? logo2 : logo}
+          // src={logo2}
           loading="lazy"
           alt="Logo"
           className="new-nav-navbar-brand-header-logo"
           style={{
             transition: 'filter 0.3s ease', // smooth transition
           }}
-        />
+        /> */}
+  <img
+    src={isWhiteBackground ? logo2 : logo}
+    alt="Logo"
+    className={isWhiteBackground ? "logo logo2" : "logo logo1"}
+  />
       </a>
 
       {/* Navigation Menu */}

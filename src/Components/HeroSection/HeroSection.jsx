@@ -57,8 +57,8 @@ function HeroSection() {
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: ".dashboad-holder",
-              start: "top 10%",
-              end: "+=5000",
+              start: "top 30%",
+              end: "+=4000",
               scrub: true,
               markers: false,
             },
@@ -70,25 +70,25 @@ function HeroSection() {
             ease: "power2.out",
             duration: 1,
           })
-          tl.to(".dashboad-holder", {
-            boxShadow: `0 0 50px 50px rgba(255, 255, 255, 0.20)`,  // white glow only
-            duration: 0.3,
-            ease: "none",
-          }, 0)
-          .to(
-            ".dashboad-holder",
-            {
-              boxShadow: `
-                10px 10px 30px rgba(0, 0, 0, 0.1),
-               -10px -10px 30px rgba(0, 0, 0, 0.1),
-                -10px 10px 30px rgba(0, 0, 0, 0.1),
-                10px -10px 30px rgba(0, 0, 0, 0.1)
-              `,
-              ease: "none",
-              duration:0.3,
-            },
-            0.3
-          )          
+          // tl.to(".dashboad-holder", {
+          //   boxShadow: `0 0 50px 50px rgba(255, 255, 255, 0.20)`,  // white glow only
+          //   duration: 0.3,
+          //   ease: "none",
+          // }, 0)
+          // .to(
+          //   ".dashboad-holder",
+          //   {
+          //     boxShadow: `
+          //       10px 10px 30px rgba(0, 0, 0, 0.1),
+          //      -10px -10px 30px rgba(0, 0, 0, 0.1),
+          //       -10px 10px 30px rgba(0, 0, 0, 0.1),
+          //       10px -10px 30px rgba(0, 0, 0, 0.1)
+          //     `,
+          //     ease: "none",
+          //     duration:0.3,
+          //   },
+          //   0.3
+          // )          
             .to(".dashboad-holder", {
               rotateY: -40,
               scale: 1.01,
